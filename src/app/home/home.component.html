@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+  <section id="navbarSection">
+    <app-navbar></app-navbar>
+  </section>
+  <main id="mainSection">
+    <div class="row">
+      <!-- blank section -->
+      <div class="col s12 m2 l1"></div>
+      <!-- categories section -->
+      <div class="col s12 m4 l2">
+        <section id="categoriesSection">
+          <app-categories></app-categories>
+        </section>
+      </div>
+      <!-- item section -->
+      <div class="col s12 m8 l8">
+        <!-- search section -->
+        <div class="row">
+          <div class="col s12 m6 l4">
+            <section id="searchSection">
+              <app-search></app-search>
+            </section>
+          </div>
+        </div>
+        <!-- itemlview section -->
+        <div class="row">
+          <section id="item-viewSection">
+            <app-item-view></app-item-view>
+          </section>
+        </div>
+      </div>
+      <!-- blank section -->
+      <div class="col s12 m2 l1"></div>
+    </div>
+  </main>
+  <section id="footerSection">
+    <app-footer></app-footer>
+  </section>
+</body>
+</html>

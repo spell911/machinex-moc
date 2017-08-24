@@ -1,3 +1,4 @@
+import { APP_ROUTES_PROVIDER } from './app.router';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -24,7 +25,8 @@ import { SearchComponent } from './search/search.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    APP_ROUTES_PROVIDER
   ],
   providers: [],
   bootstrap: [AppComponent]

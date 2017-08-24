@@ -6,7 +6,128 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./item-view.component.css']
 })
 export class ItemViewComponent implements OnInit {
-
+  items = [
+    {
+      itemName: "MC-G",
+      itemImg: "/assets/img/machine-test.jpg",
+      itemLink: "Link to Supplier",
+      itemDesc: "this a goof machine for every factory!"
+    },
+    {
+      itemName: "MC-G",
+      itemImg: "/assets/img/machine-test.jpg",
+      itemLink: "Link to Supplier",
+      itemDesc: "this a goof machine for every factory!"
+    },
+    {
+      itemName: "MC-G",
+      itemImg: "/assets/img/machine-test.jpg",
+      itemLink: "Link to Supplier",
+      itemDesc: "this a goof machine for every factory!"
+    },
+    {
+      itemName: "MC-G",
+      itemImg: "/assets/img/machine-test.jpg",
+      itemLink: "Link to Supplier",
+      itemDesc: "this a goof machine for every factory!"
+    },
+    {
+      itemName: "MC-G",
+      itemImg: "/assets/img/machine-test.jpg",
+      itemLink: "Link to Supplier",
+      itemDesc: "this a goof machine for every factory!"
+    },
+    {
+      itemName: "MC-G",
+      itemImg: "/assets/img/machine-test.jpg",
+      itemLink: "Link to Supplier",
+      itemDesc: "this a goof machine for every factory!"
+    },
+    {
+      itemName: "MC-G",
+      itemImg: "/assets/img/machine-test.jpg",
+      itemLink: "Link to Supplier",
+      itemDesc: "this a goof machine for every factory!"
+    },
+    {
+      itemName: "MC-G",
+      itemImg: "/assets/img/machine-test.jpg",
+      itemLink: "Link to Supplier",
+      itemDesc: "this a goof machine for every factory!"
+    },
+    {
+      itemName: "MC-G",
+      itemImg: "/assets/img/machine-test.jpg",
+      itemLink: "Link to Supplier",
+      itemDesc: "this a goof machine for every factory!"
+    },
+    {
+      itemName: "MC-G",
+      itemImg: "/assets/img/machine-test.jpg",
+      itemLink: "Link to Supplier",
+      itemDesc: "this a goof machine for every factory!"
+    },
+    {
+      itemName: "MC-G",
+      itemImg: "/assets/img/machine-test.jpg",
+      itemLink: "Link to Supplier",
+      itemDesc: "this a goof machine for every factory!"
+    },
+    {
+      itemName: "MC-G",
+      itemImg: "/assets/img/machine-test.jpg",
+      itemLink: "Link to Supplier",
+      itemDesc: "this a goof machine for every factory!"
+    },
+    {
+      itemName: "MC-G",
+      itemImg: "/assets/img/machine-test.jpg",
+      itemLink: "Link to Supplier",
+      itemDesc: "this a goof machine for every factory!"
+    },
+    {
+      itemName: "MC-G",
+      itemImg: "/assets/img/machine-test.jpg",
+      itemLink: "Link to Supplier",
+      itemDesc: "this a goof machine for every factory!"
+    },
+    {
+      itemName: "MC-G",
+      itemImg: "/assets/img/machine-test.jpg",
+      itemLink: "Link to Supplier",
+      itemDesc: "this a goof machine for every factory!"
+    },
+    {
+      itemName: "MC-G",
+      itemImg: "/assets/img/machine-test.jpg",
+      itemLink: "Link to Supplier",
+      itemDesc: "this a goof machine for every factory!"
+    },
+    {
+      itemName: "MC-G",
+      itemImg: "/assets/img/machine-test.jpg",
+      itemLink: "Link to Supplier",
+      itemDesc: "this a goof machine for every factory!"
+    },
+    {
+      itemName: "MC-G",
+      itemImg: "/assets/img/machine-test.jpg",
+      itemLink: "Link to Supplier",
+      itemDesc: "this a goof machine for every factory!"
+    },
+    {
+      itemName: "MC-G",
+      itemImg: "/assets/img/machine-test.jpg",
+      itemLink: "Link to Supplier",
+      itemDesc: "this a goof machine for every factory!"
+    },
+    {
+      itemName: "MC-G",
+      itemImg: "/assets/img/machine-test.jpg",
+      itemLink: "Link to Supplier",
+      itemDesc: "this a goof machine for every factory!"
+    }
+  ];
   constructor() { }
 
   ngOnInit() {

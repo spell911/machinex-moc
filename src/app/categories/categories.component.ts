@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Http } from '@angular/http';
+import 'rxjs/add/operator/map'
+import { HttpModule } from '@angular/http';
 
 @Component({
   selector: 'app-categories',
@@ -7,9 +10,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CategoriesComponent implements OnInit {
 
-  constructor() { }
+  results;
 
-  ngOnInit() {
+  alertMe(val){
+    alert('select '+ val);
   }
 
+  constructor(private http: Http) { }
+
+  ngOnInit() {
+
+    this.http.get('../assets/json/categories.json').subscribe(data => {
+      this.results = data.json()['Categories'];
+      console.log(this.results);
+    });
+
+  }
 }

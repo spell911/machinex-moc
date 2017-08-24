@@ -1,0 +1,76 @@
+{
+		"Categories": [
+			{
+				"name": "Red"
+			},
+			{
+				"name": "Blue"
+			},
+			{
+				"name": "Yellow"
+			},
+			{
+				"name": "Green"
+			},
+			{
+				"name": "purple"
+			},
+			{
+				"name": "indigo"
+			},
+			{
+				"name": "light-blue"
+			},
+			{
+				"name": "cyan"
+			},
+			{
+				"name": "teal"
+			},
+			{
+				"name": "lime"
+			},
+			{
+				"name": "light-green"
+			},
+			{
+				"name": "amber"
+			},
+			{
+				"name": "orange"
+			},
+			{
+				"name": "brown"
+			},
+			{
+				"name": "deep-orange"
+			},
+			{
+				"name": "grey"
+			},
+			{
+				"name": "black"
+			},
+			{
+				"name": "white"
+			},
+			{
+				"name": "transparent"
+			},
+			{
+				"name": "blue-grey"
+			},
+			{
+				"name": "deep-purple"
+			},
+			{
+				"name": " blue accent"
+			},
+			{
+				"name": "red darken"
+			},
+			{
+				"name": "pink accent"
+			}
+		]
+	}

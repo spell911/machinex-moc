@@ -12,10 +12,6 @@ export class CategoriesComponent implements OnInit {
 
   results;
 
-  alertMe(val){
-    alert('select '+ val);
-  }
-
   constructor(private http: Http) { }
 
   ngOnInit() {

@@ -11,6 +11,8 @@ import { FooterComponent } from './footer/footer.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { ItemViewComponent } from './item-view/item-view.component';
 import { SearchComponent } from './search/search.component';
+import { CategoriesViewComponent } from './categories-view/categories-view.component';
+import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { SearchComponent } from './search/search.component';
     FooterComponent,
     CategoriesComponent,
     ItemViewComponent,
-    SearchComponent
+    SearchComponent,
+    CategoriesViewComponent,
+    BreadcrumbsComponent
   ],
   imports: [
     BrowserModule,

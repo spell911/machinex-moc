@@ -1,14 +1,7 @@
-<!-- <form action="#" id="catForm">
-  <label for="catForm"><h5>Categories (25)</h5></label>
-  <p *ngFor="let categories of results">
-    <input type="checkbox" class="radio" id="{{categories.name}}" />
-    <label  for="{{categories.name}}">{{categories.name}}</label>
-
-  </p>
-</form> -->
 <ul class="collection with-header">
-  <li class="collection-header"><h5>Categories (25)</h5></li>
+  <li class="collection-header">
+    <h5>Categories (25)</h5></li>
   <div *ngFor="let categories of results">
-  <a href="#!" (click)="alertMe(''+categories.name)" class="collection-item">{{categories.name}}</a>
-</div>
+    <a href="CategoriesView/{{categories.name}}" class="collection-item">{{categories.name}}</a>
+  </div>
 </ul>

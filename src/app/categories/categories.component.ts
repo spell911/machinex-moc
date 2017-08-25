@@ -11,15 +11,18 @@ import { HttpModule } from '@angular/http';
 export class CategoriesComponent implements OnInit {
 
   results;
-
   constructor(private http: Http) { }
 
   ngOnInit() {
 
     this.http.get('../assets/json/categories.json').subscribe(data => {
       this.results = data.json()['Categories'];
-      console.log(this.results);
     });
+
+  }
+
+  setActive(value){
+    alert(value)
 
   }
 }

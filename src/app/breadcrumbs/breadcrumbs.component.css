@@ -1,0 +1,18 @@
+nav{
+  background-color: inherit;
+
+}
+
+nav a{
+  color: #212121;
+}
+
+nav a:hover {
+    color: #9E9E9E;
+    text-decoration: underline;
+
+}
+
+.breadcrumb:before {
+    color: #9E9E9E;
+}

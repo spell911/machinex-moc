@@ -13,6 +13,7 @@ import { ItemViewComponent } from './item-view/item-view.component';
 import { SearchComponent } from './search/search.component';
 import { CategoriesViewComponent } from './categories-view/categories-view.component';
 import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
+import { ItemDetailComponent } from './item-detail/item-detail.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
     ItemViewComponent,
     SearchComponent,
     CategoriesViewComponent,
-    BreadcrumbsComponent
+    BreadcrumbsComponent,
+    ItemDetailComponent
   ],
   imports: [
     BrowserModule,

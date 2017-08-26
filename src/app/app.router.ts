@@ -14,6 +14,14 @@ const APP_ROUTES: Routes = [
     component: CategoriesViewComponent
   },
   {
+    path: 'CategoriesView/:cateName',
+    component: BreadcrumbsComponent
+  },
+  {
+    path: 'CategoriesView/:cateName/itemdetail/:itemName',
+    component: ItemDetailComponent
+  },
+  {
     path: 'itemdetail/:itemName',
     component: ItemDetailComponent
   }

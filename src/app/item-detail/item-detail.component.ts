@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-item-detail',
@@ -7,13 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ItemDetailComponent implements OnInit {
 
-  constructor() { }
+  itemId : String;
 
-  ngOnInit() {
+  constructor(private route: ActivatedRoute) {
+    this.itemId = route.snapshot.params['itemId'];
   }
 
-  collapsClick(){
-    
+  ngOnInit() {
+    this.route.params.subscribe(params => {
+      let itemIdR = params["cateName"];
+      this.itemId = itemIdR;
+    });
   }
 
 }

@@ -1,54 +1,17 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-</head>
-
-<body>
-  <div class="row">
-    <!-- navbar section -->
-    <section id="navbarSection">
-      <app-navbar></app-navbar>
-    </section>
-    <!-- bredcrumbs section -->
-    <section id="breadcrumbsSection">
-      <app-breadcrumbs></app-breadcrumbs>
-    </section>
-  </div>
-  <main id="mainSection">
-    <div class="row">
-      <!-- blank section -->
-      <div class="col s12 m2 l1"></div>
-      <!-- categories section -->
-      <div class="col s12 m4 l2">
-        <section id="categoriesSection">
-          <app-categories></app-categories>
-        </section>
+<!-- cards view -->
+  {{cateName}}
+  <div class="col s12 m3 l3" *ngFor="let item of items">
+    <div class="card small">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="{{item.itemImg}}">
       </div>
-      <!-- item section -->
-      <div class="col s12 m8 l8">
-        <!-- search section -->
-        <div class="row">
-          <div class="col s12 m6 l4">
-            <section id="searchSection">
-              <app-search></app-search>
-            </section>
-          </div>
-        </div>
-        <!-- itemlview section -->
-        <div class="row">
-          <section id="item-viewSection">
-            <app-item-view></app-item-view>
-          </section>
-        </div>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4">{{item.itemName}}<i class="material-icons right">more_vert</i></span>
+        <p><a href="itemdetail">{{item.itemLink}}</a></p>
       </div>
-      <!-- blank section -->
-      <div class="col s12 m2 l1"></div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4">{{item.itemName}}<i class="material-icons right">close</i></span>
+        <p>{{item.itemDesc}}</p>
+      </div>
     </div>
-  </main>
-  <section id="footerSection">
-    <app-footer></app-footer>
-  </section>
-</body>
-
-</html>
+  </div>

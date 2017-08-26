@@ -6,6 +6,7 @@ import { ActivatedRoute } from '@angular/router';
   templateUrl: './categories-view.component.html',
   styleUrls: ['./categories-view.component.css']
 })
+
 export class CategoriesViewComponent implements OnInit {
 
   cateName: String;
@@ -16,5 +17,130 @@ export class CategoriesViewComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  items = [
+    {
+      itemName: "MC-G",
+      itemImg: "/assets/img/machine-test.jpg",
+      itemLink: "Link to Supplier",
+      itemDesc: "this a goof machine for every factory!"
+    },
+    {
+      itemName: "MC-G",
+      itemImg: "/assets/img/machine-test.jpg",
+      itemLink: "Link to Supplier",
+      itemDesc: "this a goof machine for every factory!"
+    },
+    {
+      itemName: "MC-G",
+      itemImg: "/assets/img/machine-test.jpg",
+      itemLink: "Link to Supplier",
+      itemDesc: "this a goof machine for every factory!"
+    },
+    {
+      itemName: "MC-G",
+      itemImg: "/assets/img/machine-test.jpg",
+      itemLink: "Link to Supplier",
+      itemDesc: "this a goof machine for every factory!"
+    },
+    {
+      itemName: "MC-G",
+      itemImg: "/assets/img/machine-test.jpg",
+      itemLink: "Link to Supplier",
+      itemDesc: "this a goof machine for every factory!"
+    },
+    {
+      itemName: "MC-G",
+      itemImg: "/assets/img/machine-test.jpg",
+      itemLink: "Link to Supplier",
+      itemDesc: "this a goof machine for every factory!"
+    },
+    {
+      itemName: "MC-G",
+      itemImg: "/assets/img/machine-test.jpg",
+      itemLink: "Link to Supplier",
+      itemDesc: "this a goof machine for every factory!"
+    },
+    {
+      itemName: "MC-G",
+      itemImg: "/assets/img/machine-test.jpg",
+      itemLink: "Link to Supplier",
+      itemDesc: "this a goof machine for every factory!"
+    },
+    {
+      itemName: "MC-G",
+      itemImg: "/assets/img/machine-test.jpg",
+      itemLink: "Link to Supplier",
+      itemDesc: "this a goof machine for every factory!"
+    },
+    {
+      itemName: "MC-G",
+      itemImg: "/assets/img/machine-test.jpg",
+      itemLink: "Link to Supplier",
+      itemDesc: "this a goof machine for every factory!"
+    },
+    {
+      itemName: "MC-G",
+      itemImg: "/assets/img/machine-test.jpg",
+      itemLink: "Link to Supplier",
+      itemDesc: "this a goof machine for every factory!"
+    },
+    {
+      itemName: "MC-G",
+      itemImg: "/assets/img/machine-test.jpg",
+      itemLink: "Link to Supplier",
+      itemDesc: "this a goof machine for every factory!"
+    },
+    {
+      itemName: "MC-G",
+      itemImg: "/assets/img/machine-test.jpg",
+      itemLink: "Link to Supplier",
+      itemDesc: "this a goof machine for every factory!"
+    },
+    {
+      itemName: "MC-G",
+      itemImg: "/assets/img/machine-test.jpg",
+      itemLink: "Link to Supplier",
+      itemDesc: "this a goof machine for every factory!"
+    },
+    {
+      itemName: "MC-G",
+      itemImg: "/assets/img/machine-test.jpg",
+      itemLink: "Link to Supplier",
+      itemDesc: "this a goof machine for every factory!"
+    },
+    {
+      itemName: "MC-G",
+      itemImg: "/assets/img/machine-test.jpg",
+      itemLink: "Link to Supplier",
+      itemDesc: "this a goof machine for every factory!"
+    },
+    {
+      itemName: "MC-G",
+      itemImg: "/assets/img/machine-test.jpg",
+      itemLink: "Link to Supplier",
+      itemDesc: "this a goof machine for every factory!"
+    },
+    {
+      itemName: "MC-G",
+      itemImg: "/assets/img/machine-test.jpg",
+      itemLink: "Link to Supplier",
+      itemDesc: "this a goof machine for every factory!"
+    },
+    {
+      itemName: "MC-G",
+      itemImg: "/assets/img/machine-test.jpg",
+      itemLink: "Link to Supplier",
+      itemDesc: "this a goof machine for every factory!"
+    },
+    {
+      itemName: "MC-G",
+      itemImg: "/assets/img/machine-test.jpg",
+      itemLink: "Link to Supplier",
+      itemDesc: "this a goof machine for every factory!"
+    }
+  ];
+
+
 
 }

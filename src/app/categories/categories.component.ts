@@ -18,17 +18,17 @@ import { APP_ROUTES_PROVIDER } from '../app.router';
 export class CategoriesComponent implements OnInit {
 
   results;
-  constructor(private http: Http) { }
+
+  constructor(private http: Http, private route: ActivatedRoute) { }
 
   ngOnInit() {
-
     this.http.get('../assets/json/categories.json').subscribe(data => {
       this.results = data.json()['Categories'];
     });
 
   }
 
-  setActive(value){
+  setActive(value) {
     alert(value)
 
   }

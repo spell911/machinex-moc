@@ -14,15 +14,9 @@ const APP_ROUTES: Routes = [
     component: CategoriesViewComponent
   },
   {
-    path: 'CategoriesView/:cateName',
-    component: BreadcrumbsComponent
-  },
-  {
-    path: 'itemdetail',
+    path: 'itemdetail/:itemName',
     component: ItemDetailComponent
   }
-
-
 ];
 
 export const APP_ROUTES_PROVIDER = RouterModule.forRoot(APP_ROUTES);﻿

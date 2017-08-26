@@ -12,8 +12,4 @@ export class ItemDetailComponent implements OnInit {
   ngOnInit() {
   }
 
-  collapsClick(){
-    
-  }
-
 }

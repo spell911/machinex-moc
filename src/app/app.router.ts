@@ -18,7 +18,7 @@ const APP_ROUTES: Routes = [
     component: BreadcrumbsComponent
   },
   {
-    path: 'itemdetail',
+    path: 'itemdetail/:itemDetail',
     component: ItemDetailComponent
   }
 

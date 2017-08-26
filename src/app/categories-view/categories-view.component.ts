@@ -12,10 +12,16 @@ export class CategoriesViewComponent implements OnInit {
   cateName: String;
 
   constructor(private route: ActivatedRoute) {
+
     this.cateName = route.snapshot.params['cateName'];
+    
   }
 
   ngOnInit() {
+    this.route.params.forEach(params => {
+      let cateNameR = params["cateName"];
+      this.cateName = cateNameR;
+    });
   }
 
   items = [

@@ -18,11 +18,13 @@ const APP_ROUTES: Routes = [
     component: BreadcrumbsComponent
   },
   {
-    path: 'itemdetail/:itemDetail',
+    path: 'CategoriesView/:cateName/itemdetail/:itemName',
+    component: ItemDetailComponent
+  },
+  {
+    path: 'itemdetail/:itemName',
     component: ItemDetailComponent
   }
-
-
 ];
 
 export const APP_ROUTES_PROVIDER = RouterModule.forRoot(APP_ROUTES);﻿

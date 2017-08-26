@@ -16,6 +16,11 @@ export class BreadcrumbsComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.route.params.subscribe(params => {
+      let cateNameR = params["cateName"];
+      this.cateName = cateNameR;
+    });
   }
+
 
 }

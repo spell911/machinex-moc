@@ -1,9 +1,12 @@
 <nav class="z-depth-0">
   <div class="col s12 m4 l10">
-    <div *ngIf="breadList.cateName != ','" class="nav-wrapper">
-      <a routerLink="/" class="breadcrumb">Home</a>
-      <a *ngFor="let breadList of breadList" routerLink="/CategoriesView/{{breadList}}" class="breadcrumb">{{breadList.cateName}}</a>
-      <!-- <a routerLink="/CategoriesView/{{itemName}}" class="breadcrumb">{{itemName}}</a> -->
+    <div class="nav-wrapper">
+      <!-- <a routerLink="/" class="breadcrumb">Home</a> -->
+      <!-- <a *ngFor="let breadList of breadList" routerLink="/CategoriesView/{{breadList}}" class="breadcrumb">{{breadList.cateName}}</a> -->
+      <a *ngIf="cateName != ''" href="/" class="breadcrumb">Home</a>
+      <!-- <a *ngFor="let breadList of breadList" href="/CategoriesView/{{breadList}}" class="breadcrumb">{{breadList}}</a> -->
+      <a *ngIf="cateNameCheck == true" href="/CategoriesView/{{cateName}}" class="breadcrumb">{{cateName}}</a>
+      <a *ngIf="itemNameCheck == true" href="/CategoriesView/{{cateName}}/itemdetail/{{itemName}}" class="breadcrumb">{{itemName}}</a>
     </div>
   </div>
 </nav>

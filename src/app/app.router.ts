@@ -7,11 +7,13 @@ import { ItemDetailComponent } from "./item-detail/item-detail.component";
 const APP_ROUTES: Routes = [
   {
     path: '',
-    component: ItemViewComponent
+    component: ItemViewComponent,
+    data: { breadcrumb: 'Home'}
   },
   {
     path: 'CategoriesView/:cateName',
-    component: CategoriesViewComponent
+    component: CategoriesViewComponent,
+    data: { breadcrumb: 'GG'}
   },
   {
     path: 'CategoriesView/:cateName',

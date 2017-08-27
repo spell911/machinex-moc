@@ -19,6 +19,7 @@ export class ItemDetailComponent implements OnInit {
       let itemNameR = params["cateName"];
       this.itemName = itemNameR;
     });
+    // console.log('hello there! '+ this.itemId);
   }
 
 }

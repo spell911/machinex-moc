@@ -12,16 +12,26 @@ export class BreadcrumbsComponent implements OnInit {
   cateName: String;
   itemName: String;
   breadList = [];
-  breadCheck = false;
+  cateNameCheck:boolean;
+  itemNameCheck:boolean;
   constructor(private route: ActivatedRoute) {
+
+    if(route.snapshot.params['cateName'] === undefined){
+      this.cateNameCheck = false;
+    }else{
+      this.cateNameCheck = true;
+    }
+
+    if(route.snapshot.params['itemName'] === undefined){
+      this.itemNameCheck = false;
+    }else{
+      this.itemNameCheck = true;
+    }
+
     this.cateName = route.snapshot.params['cateName'];
     this.itemName = route.snapshot.params['itemName'];
-    this.breadList = [
-      {
-        cateName: route.snapshot.params['cateName'],
-        itemName: route.snapshot.params['itemName'],
-      }
-    ];
+
+    // alert(this.cateNameCheck + "," + this.itemNameCheck);
   }
 
   ngOnInit() {
@@ -30,12 +40,6 @@ export class BreadcrumbsComponent implements OnInit {
       let itemNameR = params["itemName"];
       this.cateName = cateNameR;
       this.itemName = itemNameR;
-      this.breadList = [
-        {
-          cateName: cateNameR,
-          itemName: itemNameR,
-        }
-      ];
     });
   }
 

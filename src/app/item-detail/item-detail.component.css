@@ -5,3 +5,9 @@ div.col.s12.m7{
       right: auto;
 
 }
+
+div.card-action{
+position: absolute;
+bottom: 0;
+left: 0;
+}

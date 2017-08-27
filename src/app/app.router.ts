@@ -1,8 +1,8 @@
 import { Routes, RouterModule } from "@angular/router";
 import { CategoriesViewComponent } from "./categories-view/categories-view.component";
 import { BreadcrumbsComponent } from "./breadcrumbs/breadcrumbs.component";
-import { ItemDetailComponent } from "./item-detail/item-detail.component";
 import { ItemViewComponent } from "./item-view/item-view.component";
+import { ItemDetailComponent } from "./item-detail/item-detail.component";
 
 const APP_ROUTES: Routes = [
   {
@@ -20,6 +20,10 @@ const APP_ROUTES: Routes = [
   {
     path: 'CategoriesView/:cateName/itemdetail/:itemName',
     component: ItemDetailComponent
+  },
+  {
+    path: 'CategoriesView/:cateName/itemdetail/:itemName',
+    component: BreadcrumbsComponent
   },
   {
     path: 'itemdetail/:itemName',

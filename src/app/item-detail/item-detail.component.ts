@@ -8,16 +8,16 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class ItemDetailComponent implements OnInit {
 
-  itemId : String;
+  itemName : String;
 
   constructor(private route: ActivatedRoute) {
-    this.itemId = route.snapshot.params['itemId'];
+    this.itemName = route.snapshot.params['itemName'];
   }
 
   ngOnInit() {
     this.route.params.subscribe(params => {
-      let itemIdR = params["cateName"];
-      this.itemId = itemIdR;
+      let itemNameR = params["cateName"];
+      this.itemName = itemNameR;
     });
   }
 

@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { BreadcrumbModule } from 'angular2-crumbs';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -33,9 +32,7 @@ import { ItemDetailComponent } from './item-detail/item-detail.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    APP_ROUTES_PROVIDER,
-    BrowserModule,
-    BreadcrumbModule.forRoot()
+    APP_ROUTES_PROVIDER
   ],
   providers: [],
   bootstrap: [AppComponent]

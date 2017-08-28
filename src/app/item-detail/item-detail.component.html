@@ -25,7 +25,29 @@
         <div id="test-swipe-1" class="col s12 ">12000rpm BT30</div>
         <div id="test-swipe-2" class="col s12 ">60/60/60 mm/min</div>
         <div id="test-swipe-3" class="col s12 ">1.2G</div> -->
+        <div class="col s12 m7 l12">
+          <a class=" waves-effect waves-light btn" (click)="scaleBtOut()">VERTICAL</a>
+          <a class="waves-effect waves-light btn" (click)="scaleBtOut()">HORIZONTAL</a>
+        </div>
+        <br>
+        <!-- Scaled in -->
+        <div id="scale-bt" class="col s12 m7 l12 scale-transition scale-out">
 
+          <a (click)="scaleLbOut()" class="btn">
+        BT 40
+      </a>
+          <a (click)="scaleLbOut()" class="btn">
+        BT 50
+      </a>
+          <a (click)="scaleLbOut()" class="btn disabled">
+        BT 60
+      </a>
+        </div>
+
+        <div id="scale-Lb" class="collection scale-transition scale-out">
+          <a class="collection-item">Linear Type</a>
+          <a class="collection-item">Box Type</a>
+        </div>
 
 
         <div class="card-action">
@@ -35,22 +57,22 @@
 
     </div>
 
-    <div class="row s12 m7 l10 z-depth-1" >
+    <div class="row s12 m7 l10 z-depth-1">
 
       <div class="row s12 m7 l10">
-    <ul class="tabs z-depth-1">
-      <li class="tab"><a href="#test1" class="active">Product Detail</a></li>
-      <li class="tab"><a class="" href="#test2">Company Infomation</a></li>
+        <ul class="tabs z-depth-1">
+          <li class="tab"><a href="#test1" class="active">Product Detail</a></li>
+          <li class="tab"><a class="" href="#test2">Company Infomation</a></li>
 
 
-      <li class="indicator" style="right: 656px; left: 0px;"></li>
-    </ul>
- </div>
+          <li class="indicator" style="right: 656px; left: 0px;"></li>
+        </ul>
+      </div>
 
-    <div id="test1" class="col s12">Vertical Model <br> Spindle : 12000rpm BT30 <br> Single pallet, Max axial acceleration: 1.2G </div>
-    <div id="test2" class="col s12">AKIRA SEIKI<br>Always keep moving to advance your future success.</div>
+      <div id="test1" class="col s12">Vertical Model <br> Spindle : 12000rpm BT30 <br> Single pallet, Max axial acceleration: 1.2G </div>
+      <div id="test2" class="col s12">AKIRA SEIKI<br>Always keep moving to advance your future success.</div>
 
- </div>
+    </div>
 
     <ul class="collapsible popout" data-collapsible="expandable">
       <li>

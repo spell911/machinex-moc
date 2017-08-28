@@ -43,6 +43,18 @@ export class ItemViewComponent implements OnInit {
       itemImg: "/assets/img/machine-test.jpg",
       itemLink: "Link to Supplier",
       itemDesc: "this a goof machine for every factory!"
+    },
+    {
+      itemName: "MC-A-05",
+      itemImg: "/assets/img/machine-test.jpg",
+      itemLink: "Link to Supplier",
+      itemDesc: "this a goof machine for every factory!"
+    },
+    {
+      itemName: "MC-A-06",
+      itemImg: "/assets/img/machine-test.jpg",
+      itemLink: "Link to Supplier",
+      itemDesc: "this a goof machine for every factory!"
     }
   ];
 

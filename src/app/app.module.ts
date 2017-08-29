@@ -13,7 +13,6 @@ import { ItemViewComponent } from './item-view/item-view.component';
 import { SearchComponent } from './search/search.component';
 import { CategoriesViewComponent } from './categories-view/categories-view.component';
 import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
-import { ItemDetailComponent } from './item-detail/item-detail.component';
 
 @NgModule({
   declarations: [
@@ -26,13 +25,12 @@ import { ItemDetailComponent } from './item-detail/item-detail.component';
     SearchComponent,
     CategoriesViewComponent,
     BreadcrumbsComponent,
-    ItemDetailComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    APP_ROUTES_PROVIDER
+    APP_ROUTES_PROVIDER,
   ],
   providers: [],
   bootstrap: [AppComponent]

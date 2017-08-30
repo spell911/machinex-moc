@@ -1,4 +1,5 @@
 <div class="input-field col s12">
-  <input type="text" id="autocomplete-input" class="autocomplete">
-  <label for="autocomplete-input"><i class="material-icons prefix">search</i></label>
+  <!-- <input type="text" id="autocomplete-input" class="autocomplete"> -->
+  <ng2-completer id="autocomplete-input" [(ngModel)]="searchStr" [datasource]="dataService" [minSearchLength]="0"></ng2-completer>
+  <!-- <label for="autocomplete-input"><i class="material-icons prefix">search</i></label> -->
 </div>

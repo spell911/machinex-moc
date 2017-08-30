@@ -15,6 +15,8 @@ import { SearchComponent } from './search/search.component';
 import { CategoriesViewComponent } from './categories-view/categories-view.component';
 import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 
+import { Ng2CompleterModule } from "ng2-completer";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +34,8 @@ import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    APP_ROUTES_PROVIDER
+    APP_ROUTES_PROVIDER,
+    Ng2CompleterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

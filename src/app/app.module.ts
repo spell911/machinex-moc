@@ -10,6 +10,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { ItemViewComponent } from './item-view/item-view.component';
+import { ItemDetailComponent } from './item-detail/item-detail.component';
 import { SearchComponent } from './search/search.component';
 import { CategoriesViewComponent } from './categories-view/categories-view.component';
 import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
@@ -25,12 +26,13 @@ import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
     SearchComponent,
     CategoriesViewComponent,
     BreadcrumbsComponent,
+    ItemDetailComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    APP_ROUTES_PROVIDER,
+    APP_ROUTES_PROVIDER
   ],
   providers: [],
   bootstrap: [AppComponent]

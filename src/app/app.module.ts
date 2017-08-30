@@ -15,6 +15,8 @@ import { CategoriesViewComponent } from './categories-view/categories-view.compo
 import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 import { ItemDetailComponent } from './item-detail/item-detail.component';
 
+import { Ng2CompleterModule } from "ng2-completer";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +34,8 @@ import { ItemDetailComponent } from './item-detail/item-detail.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    APP_ROUTES_PROVIDER
+    APP_ROUTES_PROVIDER,
+    Ng2CompleterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

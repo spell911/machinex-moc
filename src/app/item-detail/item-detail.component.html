@@ -9,14 +9,59 @@
 </div>
 <!-- ==================================== -->
 
-<div class="col s12 m8 l12 ">
-  <div class="col s12 m7 l10">
+<div class="col s12 m12 l12 ">
+  <div class="col s12 m12 l12">
     <div class="card horizontal">
       <div class="card-image">
         <img class="materialboxed responsive-img" width="100%" src="/assets/img/machine-test.jpg">
       </div>
       <div class="card-stacked">
-        <!-- <ul id="tabs-swipe-demo" class="tabs tabs-fixed-width">
+        <div class="card-content">
+          <div class="row">
+            <div class="col s12 m3 l2">
+              <p>
+                <input type="checkbox" class="filled-in" id="filled-in-box" (click)="scaleBtOut()" />
+                <label for="filled-in-box">VERTICAL</label>
+              </p>
+              <br>
+              <p>
+                <input type="checkbox" class="filled-in" id="filled-in-box2" (click)="scaleBtOut()" />
+                <label for="filled-in-box2">HORIZONTAL</label>
+              </p>
+            </div>
+            <div class="col s12 m3 l2">
+              <div id="scale-bt" class="scale-transition scale-out">
+                <p>
+                  <input type="checkbox" class="filled-in" id="filled-in-box3" (click)="scaleLbOut()" />
+                  <label for="filled-in-box3">BT 40</label>
+                </p>
+                <br>
+                <p>
+                  <input type="checkbox" class="filled-in" id="filled-in-box4" (click)="scaleLbOut()" />
+                  <label for="filled-in-box4">BT 50</label>
+                </p>
+                <!-- <a (click)="scaleLbOut()" class="btn col l2">BT 40</a>
+         <a (click)="scaleLbOut()" class="btn col l2" style="margin-left:1%">BT 50</a> -->
+              </div>
+            </div>
+            <div class="col s12 m3 l2">
+              <div id="scale-Lb" class="scale-transition scale-out">
+                <p>
+                  <input type="checkbox" class="filled-in" id="filled-in-box5" (click)="scaleLbOut()" />
+                  <label for="filled-in-box5">Linear Type</label>
+                </p>
+                <br>
+                <p>
+                  <input type="checkbox" class="filled-in" id="filled-in-box6" (click)="scaleLbOut()" />
+                  <label for="filled-in-box6">Box Type</label>
+                </p>
+                <!-- <a (click)="scaleLbOut()" class="btn col l2">Linear Type</a>
+         <a (click)="scaleLbOut()" class="btn col l2" style="margin-left:1%">Box Type</a> -->
+              </div>
+            </div>
+            <div class="col s12 m3 l6"></div>
+          </div>
+          <!-- <ul id="tabs-swipe-demo" class="tabs tabs-fixed-width">
           <li class="tab col s3"><a class="active" href="#test-swipe-1">spindle</a></li>
           <li class="tab col s3"><a href="#test-swipe-2">axial freedrate</a></li>
           <li class="tab col s3"><a href="#test-swipe-3">max axial acceleration</a></li>
@@ -24,31 +69,8 @@
         <div id="test-swipe-1" class="col s12 ">12000rpm BT30</div>
         <div id="test-swipe-2" class="col s12 ">60/60/60 mm/min</div>
         <div id="test-swipe-3" class="col s12 ">1.2G</div> -->
-        <div class="col s12 m7 l12">
-          <a class=" waves-effect waves-light btn" (click)="scaleBtOut()">VERTICAL</a>
-          <a class="waves-effect waves-light btn" (click)="scaleBtOut()">HORIZONTAL</a>
+
         </div>
-        <br>
-        <!-- Scaled in -->
-        <div id="scale-bt" class="col s12 m7 l12 scale-transition scale-out">
-
-          <a (click)="scaleLbOut()" class="btn">
-        BT 40
-      </a>
-          <a (click)="scaleLbOut()" class="btn">
-        BT 50
-      </a>
-          <a (click)="scaleLbOut()" class="btn disabled">
-        BT 60
-      </a>
-        </div>
-
-        <div id="scale-Lb" class="collection scale-transition scale-out">
-          <a class="collection-item">Linear Type</a>
-          <a class="collection-item">Box Type</a>
-        </div>
-
-
         <div class="card-action">
           <h5>MC-G</h5>
         </div>
@@ -97,3 +119,4 @@
       </li>
     </ul>
   </div>
+</div>

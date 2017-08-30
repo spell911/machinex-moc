@@ -4,10 +4,7 @@ import { CompleterService, CompleterData } from 'ng2-completer';
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
-  styleUrls: ['./search.component.css'],
-  host: {
-    '(document:click)': 'handleClick($event)',
-  }
+  styleUrls: ['./search.component.css']
 })
 export class SearchComponent implements OnInit {
 

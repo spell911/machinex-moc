@@ -1,4 +1,6 @@
 <div class="input-field col s12">
-  <input type="text" id="autocomplete-input" class="autocomplete">
+  <!-- <input type="text" id="autocomplete-input" class="autocomplete"> -->
+  <input type="text" [(ngModel)]="createThreadLocation" name="createThreadLocation"
+          id="createThreadLocation" materialize="autocomplete" [materializeParams]="[{'data': locations}]">
   <label for="autocomplete-input"><i class="material-icons prefix">search</i></label>
 </div>

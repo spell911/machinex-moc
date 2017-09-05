@@ -1,14 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 nav{
-  background-color: #9E9E9E;
+  background-color: #424242;
 }
 
 .page-footer{
-  background-color: #9E9E9E;
+  background-color: #424242;
 }
 
 .collection a.collection-item {
     display: block;
     transition: .25;
-    color: #212121;
+    color: #0288d1;
 }

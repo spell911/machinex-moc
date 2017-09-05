@@ -20,12 +20,12 @@
           <div class="row">
             <div class="col s12 m3 l2">
               <p>
-                <input type="checkbox" class="filled-in" id="filled-in-box" (click)="scaleBtOut()" />
+                <input type="checkbox" class="filled-in" id="filled-in-box" (click)="scaleBtOut('VERTICAL')" />
                 <label for="filled-in-box">VERTICAL</label>
               </p>
               <br>
               <p>
-                <input type="checkbox" class="filled-in" id="filled-in-box2" (click)="scaleBtOut()" />
+                <input type="checkbox" class="filled-in" id="filled-in-box2" (click)="scaleBtOut('HORIZONTAL')" />
                 <label for="filled-in-box2">HORIZONTAL</label>
               </p>
             </div>
@@ -79,20 +79,13 @@
     </div>
 
     <div class="row s12 m7 l10 z-depth-1">
-
-      <div class="row s12 m7 l10">
-        <ul class="tabs z-depth-1">
-          <li class="tab"><a href="#test1" class="active">Product Detail</a></li>
-          <li class="tab"><a class="" href="#test2">Company Infomation</a></li>
-
-
-          <li class="indicator" style="right: 656px; left: 0px;"></li>
-        </ul>
-      </div>
-
-      <div id="test1" class="col s12">Vertical Model <br> Spindle : 12000rpm BT30 <br> Single pallet, Max axial acceleration: 1.2G </div>
-      <div id="test2" class="col s12">AKIRA SEIKI<br>Always keep moving to advance your future success.</div>
-
+      <ul class="tabs z-depth-1">
+        <li class="tab"><a href="#test1" class="active">Product Detail</a></li>
+        <li class="tab"><a class="" href="#test2">Company Infomation</a></li>
+        <li class="indicator" style="right: 656px; left: 0px;"></li>
+      </ul>
+      <p id="test1" class="col s12">Vertical Model <br> Spindle : 12000rpm BT30 <br> Single pallet, Max axial acceleration: 1.2G </p>
+      <p id="test2" class="col s12">AKIRA SEIKI<br>Always keep moving to advance your future success.</p>
     </div>
 
     <ul class="collapsible popout" data-collapsible="expandable">

@@ -8,7 +8,8 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class ItemDetailComponent implements OnInit {
 
-  itemName : String;
+  itemName: String;
+
 
   constructor(private route: ActivatedRoute) {
     this.itemName = route.snapshot.params['itemName'];
@@ -22,13 +23,13 @@ export class ItemDetailComponent implements OnInit {
     // console.log('hello there! '+ this.itemId);
   }
 
-  scaleBtOut() {
-   var btnScaleBt = document.getElementById('scale-bt');
-   btnScaleBt.classList.remove("scale-out");
+  scaleBtOut(btnVal) {
+    var btnScaleBt = document.getElementById('scale-bt');
 
-}
+    btnScaleBt.classList.remove("scale-out");
+  }
 
-  scaleLbOut(){
+  scaleLbOut() {
     var btnLb = document.getElementById('scale-Lb');
     btnLb.classList.remove("scale-out");
   }

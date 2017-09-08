@@ -18,12 +18,13 @@
     "prefix": "app",
     "styles": [
       "../node_modules/materialize-css/dist/css/materialize.min.css",
+      "../node_modules/materialize-social/materialize-social.css",
+      "../node_modules/font-awesome/css/font-awesome.css",
       "src/styles.css"
     ],
     "scripts": [
       "../node_modules/jquery/dist/jquery.min.js",
       "../node_modules/materialize-css/dist/js/materialize.min.js"
-
     ],
     "environmentSource": "environments/environment.ts",
     "environments": {

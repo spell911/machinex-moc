@@ -1,14 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
-nav{
+
+nav {
   background-color: #424242;
 }
 
-.page-footer{
+.page-footer {
   background-color: #424242;
+}
+
+.tabs .indicator {
+  background-color: #424242;
+}
+
+.tabs .tab a {
+  color: #000000;
+}
+.tabs .tab a:hover,.tabs .tab a.active {
+	background-color:transparent;
+	color:#000000;
 }
 
 .collection a.collection-item {
-    display: block;
-    transition: .25;
-    color: #0288d1;
+  display: block;
+  transition: .25;
+  color: #0288d1;
 }

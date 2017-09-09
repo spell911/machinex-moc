@@ -4,6 +4,10 @@ nav {
   background-color: #424242;
 }
 
+nav.subnav{
+  background-color: #424242;
+}
+
 .page-footer {
   background-color: #424242;
 }

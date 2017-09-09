@@ -26,7 +26,7 @@ export class SearchComponent implements OnInit {
   locations: any;
 
   ngOnInit(){
-      this.locations = {'apple': null, 'google': null};
+      this.locations = {'apple': null,'airplane': null ,'aurora': null ,'armingo': null ,'google': null};
   }
 
 

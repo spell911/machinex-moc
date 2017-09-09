@@ -1,5 +1,4 @@
 <nav class="z-depth-0">
-  <div class="col s12 m4 l12">
     <div class="nav-wrapper">
       <!-- <a routerLink="/" class="breadcrumb">Home</a> -->
       <!-- <a *ngFor="let breadList of breadList" routerLink="/CategoriesView/{{breadList}}" class="breadcrumb">{{breadList.cateName}}</a> -->
@@ -9,5 +8,4 @@
       <a *ngIf="itemNameCheck == true && cateNameCheck == false" href="/itemdetail/{{itemName}}" class="breadcrumb">{{itemName}}</a>
       <a *ngIf="itemNameCheck == true && cateNameCheck == true" href="/CategoriesView/{{cateName}}/itemdetail/{{itemName}}" class="breadcrumb">{{itemName}}</a>
     </div>
-  </div>
 </nav>

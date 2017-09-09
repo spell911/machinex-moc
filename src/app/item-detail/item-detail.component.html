@@ -18,72 +18,81 @@
       <div class="card-content">
         <h6>Specific</h6>
         <div class="row">
-          <div class="col s12 m3 l3">
-            <p>
-              <input type="checkbox" class="filled-in" id="filled-in-box" (click)="scaleBtOut('VERTICAL')" />
-              <label for="filled-in-box">Boxway</label>
-            </p>
-            <br>
-            <p>
-              <input type="checkbox" class="filled-in" id="filled-in-box2" (click)="scaleBtOut('HORIZONTAL')" />
-              <label for="filled-in-box2">Linear Guid</label>
-            </p>
-          </div>
-          <div class="col s12 m3 l3">
-            <div id="scale-bt" class="scale-transition">
+          <form id="specific_form">
+            <div class="col s12 m3 l3">
               <p>
-                <input type="checkbox" class="filled-in" id="filled-in-box3" (click)="scaleLbOut()" />
-                <label for="filled-in-box3">Fanuc NC</label>
+                <input type="checkbox" class="filled-in" id="filled-in-box" />
+                <label for="filled-in-box">Boxway</label>
               </p>
-              <br>
               <p>
-                <input type="checkbox" class="filled-in" id="filled-in-box4" (click)="scaleLbOut()" />
-                <label for="filled-in-box4">Fanuc NC</label>
+                <input type="checkbox" class="filled-in" id="filled-in-box2" />
+                <label for="filled-in-box2">Linear Guid</label>
+              </p>
+              <p>
+                <input type="checkbox" class="filled-in" id="filled-in-boxall" (click)="checkAll($event,'spec')" />
+                <label for="filled-in-boxall">ALL</label>
               </p>
             </div>
-          </div>
-          <div class="col s12 m3 l3">
-            <div id="scale-Lb" class="scale-transition">
-              <p>
-                <input type="checkbox" class="filled-in" id="filled-in-box5" (click)="scaleLbOut()" />
-                <label for="filled-in-box5">Pallet Changer</label>
-              </p>
-              <br>
-              <p>
-                <input type="checkbox" class="filled-in" id="filled-in-box6" (click)="scaleLbOut()" />
-                <label for="filled-in-box6">Turn key Systems</label>
-              </p>
+            <div class="col s12 m3 l3">
+              <div id="scale-bt" class="scale-transition">
+                <p>
+                  <input type="checkbox" class="filled-in" id="filled-in-box3" />
+                  <label for="filled-in-box3">Fanuc NC</label>
+                </p>
+                <p>
+                  <input type="checkbox" class="filled-in" id="filled-in-box4" />
+                  <label for="filled-in-box4">Fanuc NC</label>
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="col s12 m3 l3">
-          </div>
+            <div class="col s12 m3 l3">
+              <div id="scale-Lb" class="scale-transition">
+                <p>
+                  <input type="checkbox" class="filled-in" id="filled-in-box5" />
+                  <label for="filled-in-box5">Pallet Changer</label>
+                </p>
+                <p>
+                  <input type="checkbox" class="filled-in" id="filled-in-box6" />
+                  <label for="filled-in-box6">Turn key Systems</label>
+                </p>
+              </div>
+            </div>
+            <div class="col s12 m3 l3">
+            </div>
+          </form>
         </div>
-        <h6>Language</h6>
+        <h6>Contact Language</h6>
         <div class="row">
-          <div class="col s12 m3 l3">
-            <p>
-              <input type="checkbox" class="filled-in" id="lang-en" (click)="scaleLbOut()" />
-              <label for="filled-in-box6">EN</label>
-            </p>
-          </div>
-          <div class="col s12 m3 l3">
-            <p>
-              <input type="checkbox" class="filled-in" id="lang-th" (click)="scaleLbOut()" />
-              <label for="filled-in-box6">TH</label>
-            </p>
-          </div>
-          <div class="col s12 m3 l3">
-            <p>
-              <input type="checkbox" class="filled-in" id="lang-jp" (click)="scaleLbOut()" />
-              <label for="filled-in-box6">JP</label>
-            </p>
-          </div>
-          <div class="col s12 m3 l3">
-            <p>
-              <input type="checkbox" class="filled-in" id="lang-vn" (click)="scaleLbOut()" />
-              <label for="filled-in-box6">VN</label>
-            </p>
-          </div>
+          <form id="language_form">
+            <div class="col s12 m3 l3">
+              <p>
+                <input type="checkbox" class="filled-in" id="lang-en" />
+                <label for="lang-en">EN</label>
+              </p>
+              <p>
+                <input type="checkbox" class="filled-in" id="lang-all" (click)="checkAll($event,'lang')" />
+                <label for="lang-all">ALL</label>
+              </p>
+            </div>
+            <div class="col s12 m3 l3">
+              <p>
+                <input type="checkbox" class="filled-in" id="lang-jp" />
+                <label for="lang-jp">JP</label>
+              </p>
+            </div>
+            <div class="col s12 m3 l3">
+              <p>
+                <input type="checkbox" class="filled-in" id="lang-th" />
+                <label for="lang-th">TH</label>
+              </p>
+            </div>
+            <div class="col s12 m3 l3">
+              <p>
+                <input type="checkbox" class="filled-in" id="lang-vn" />
+                <label for="lang-vn">VN</label>
+              </p>
+            </div>
+          </form>
         </div>
       </div>
       <div class="card-action">
@@ -101,152 +110,20 @@
         AKIRA SEIKI CO., LTD.
       </div>
       <div class="collapsible-body">
-        <h5><u>Company Infomation</u></h5>
+        <h6><font size="4"><b><u>Company Infomation</u></b></font></h6>
         <i class="material-icons">business</i><span style="margin-left: 1%">AKIRA SEIKI CO., LTD.</span><br>
         <i class="material-icons">call</i><span style="margin-left: 1%">+886-4-2355-2495(Tel.)</span><br>
         <i class="material-icons">print</i><span style="margin-left: 1%">+886-4-2355-2496(Fax.)</span><br>
         <i class="material-icons">email</i><span style="margin-left: 1%">sales@akiraseiki.com, service@akiraseiki.com</span><br>
         <i class="material-icons">rss_feed</i><a href="http://www.akiraseiki.com"><span style="margin-left: 1%">http://www.akiraseiki.com</span></a><br>
-        <i class="material-icons">location_on</i><span style="margin-left: 1%">No.5, Jingke E. Rd., Nantun Dist., Taichung City 40852, Taiwan (R.O.C.)</span>
-        <h5><u>Product Categories of AKIRA SEIKI CO., LTD.</u></h5>
+        <i class="material-icons">location_on</i><span style="margin-left: 1%">No.5, Jingke E. Rd., Nantun Dist., Taichung City 40852, Taiwan (R.O.C.)</span><br>
+        <h6><font size="4"><b><u>Product Categories of AKIRA SEIKI CO., LTD.</u></b></font></h6>
         <p>Horizontal Machining Center</p>
         <p>Multitasking</p>
         <p>Mass Production</p>
         <p>Turning Center</p>
         <p>Vertical Machining Center</p>
-        <h5><u>Contact</u></h5>
-        <div class="collection z-depth-1">
-          <span class="badge">9</span>
-          <a href="#!" class="collection-item">Link</a>
-          <span class="badge">7</span>
-          <a href="#!" class="collection-item">Link</a>
-          <span class="badge">5</span>
-          <a href="#!" class="collection-item">Link</a>
-          <span class="badge">3</span>
-          <a href="#!" class="collection-item">Link</a>
-          <span class="badge">1</span>
-          <a href="#!" class="collection-item">Link</a>
-        </div>
-      </div>
-    </li>
-    <li>
-      <div class="collapsible-header">
-        AKIRA SEIKI CO., LTD.
-      </div>
-      <div class="collapsible-body">
-        <h5><u>Company Infomation</u></h5>
-        <i class="material-icons">business</i><span style="margin-left: 1%">AKIRA SEIKI CO., LTD.</span><br>
-        <i class="material-icons">call</i><span style="margin-left: 1%">+886-4-2355-2495(Tel.)</span><br>
-        <i class="material-icons">print</i><span style="margin-left: 1%">+886-4-2355-2496(Fax.)</span><br>
-        <i class="material-icons">email</i><span style="margin-left: 1%">sales@akiraseiki.com, service@akiraseiki.com</span><br>
-        <i class="material-icons">rss_feed</i><a href="http://www.akiraseiki.com"><span style="margin-left: 1%">http://www.akiraseiki.com</span></a><br>
-        <i class="material-icons">location_on</i><span style="margin-left: 1%">No.5, Jingke E. Rd., Nantun Dist., Taichung City 40852, Taiwan (R.O.C.)</span>
-        <h5><u>Product Categories of AKIRA SEIKI CO., LTD.</u></h5>
-        <p>Horizontal Machining Center</p>
-        <p>Multitasking</p>
-        <p>Mass Production</p>
-        <p>Turning Center</p>
-        <p>Vertical Machining Center</p>
-        <h5><u>Contact</u></h5>
-        <div class="collection z-depth-1">
-          <span class="badge">9</span>
-          <a href="#!" class="collection-item">Link</a>
-          <span class="badge">7</span>
-          <a href="#!" class="collection-item">Link</a>
-          <span class="badge">5</span>
-          <a href="#!" class="collection-item">Link</a>
-          <span class="badge">3</span>
-          <a href="#!" class="collection-item">Link</a>
-          <span class="badge">1</span>
-          <a href="#!" class="collection-item">Link</a>
-        </div>
-      </div>
-    </li>
-    <li>
-      <div class="collapsible-header">
-        AKIRA SEIKI CO., LTD.
-      </div>
-      <div class="collapsible-body">
-        <h5><u>Company Infomation</u></h5>
-        <i class="material-icons">business</i><span style="margin-left: 1%">AKIRA SEIKI CO., LTD.</span><br>
-        <i class="material-icons">call</i><span style="margin-left: 1%">+886-4-2355-2495(Tel.)</span><br>
-        <i class="material-icons">print</i><span style="margin-left: 1%">+886-4-2355-2496(Fax.)</span><br>
-        <i class="material-icons">email</i><span style="margin-left: 1%">sales@akiraseiki.com, service@akiraseiki.com</span><br>
-        <i class="material-icons">rss_feed</i><a href="http://www.akiraseiki.com"><span style="margin-left: 1%">http://www.akiraseiki.com</span></a><br>
-        <i class="material-icons">location_on</i><span style="margin-left: 1%">No.5, Jingke E. Rd., Nantun Dist., Taichung City 40852, Taiwan (R.O.C.)</span>
-        <h5><u>Product Categories of AKIRA SEIKI CO., LTD.</u></h5>
-        <p>Horizontal Machining Center</p>
-        <p>Multitasking</p>
-        <p>Mass Production</p>
-        <p>Turning Center</p>
-        <p>Vertical Machining Center</p>
-        <h5><u>Contact</u></h5>
-        <div class="collection z-depth-1">
-          <span class="badge">9</span>
-          <a href="#!" class="collection-item">Link</a>
-          <span class="badge">7</span>
-          <a href="#!" class="collection-item">Link</a>
-          <span class="badge">5</span>
-          <a href="#!" class="collection-item">Link</a>
-          <span class="badge">3</span>
-          <a href="#!" class="collection-item">Link</a>
-          <span class="badge">1</span>
-          <a href="#!" class="collection-item">Link</a>
-        </div>
-      </div>
-    </li>
-    <li>
-      <div class="collapsible-header">
-        AKIRA SEIKI CO., LTD.
-      </div>
-      <div class="collapsible-body">
-        <h5><u>Company Infomation</u></h5>
-        <i class="material-icons">business</i><span style="margin-left: 1%">AKIRA SEIKI CO., LTD.</span><br>
-        <i class="material-icons">call</i><span style="margin-left: 1%">+886-4-2355-2495(Tel.)</span><br>
-        <i class="material-icons">print</i><span style="margin-left: 1%">+886-4-2355-2496(Fax.)</span><br>
-        <i class="material-icons">email</i><span style="margin-left: 1%">sales@akiraseiki.com, service@akiraseiki.com</span><br>
-        <i class="material-icons">rss_feed</i><a href="http://www.akiraseiki.com"><span style="margin-left: 1%">http://www.akiraseiki.com</span></a><br>
-        <i class="material-icons">location_on</i><span style="margin-left: 1%">No.5, Jingke E. Rd., Nantun Dist., Taichung City 40852, Taiwan (R.O.C.)</span>
-        <h5><u>Product Categories of AKIRA SEIKI CO., LTD.</u></h5>
-        <p>Horizontal Machining Center</p>
-        <p>Multitasking</p>
-        <p>Mass Production</p>
-        <p>Turning Center</p>
-        <p>Vertical Machining Center</p>
-        <h5><u>Contact</u></h5>
-        <div class="collection z-depth-1">
-          <span class="badge">9</span>
-          <a href="#!" class="collection-item">Link</a>
-          <span class="badge">7</span>
-          <a href="#!" class="collection-item">Link</a>
-          <span class="badge">5</span>
-          <a href="#!" class="collection-item">Link</a>
-          <span class="badge">3</span>
-          <a href="#!" class="collection-item">Link</a>
-          <span class="badge">1</span>
-          <a href="#!" class="collection-item">Link</a>
-        </div>
-      </div>
-    </li>
-    <li>
-      <div class="collapsible-header">
-        AKIRA SEIKI CO., LTD.
-      </div>
-      <div class="collapsible-body">
-        <h5><u>Company Infomation</u></h5>
-        <i class="material-icons">business</i><span style="margin-left: 1%">AKIRA SEIKI CO., LTD.</span><br>
-        <i class="material-icons">call</i><span style="margin-left: 1%">+886-4-2355-2495(Tel.)</span><br>
-        <i class="material-icons">print</i><span style="margin-left: 1%">+886-4-2355-2496(Fax.)</span><br>
-        <i class="material-icons">email</i><span style="margin-left: 1%">sales@akiraseiki.com, service@akiraseiki.com</span><br>
-        <i class="material-icons">rss_feed</i><a href="http://www.akiraseiki.com"><span style="margin-left: 1%">http://www.akiraseiki.com</span></a><br>
-        <i class="material-icons">location_on</i><span style="margin-left: 1%">No.5, Jingke E. Rd., Nantun Dist., Taichung City 40852, Taiwan (R.O.C.)</span>
-        <h5><u>Product Categories of AKIRA SEIKI CO., LTD.</u></h5>
-        <p>Horizontal Machining Center</p>
-        <p>Multitasking</p>
-        <p>Mass Production</p>
-        <p>Turning Center</p>
-        <p>Vertical Machining Center</p>
-        <h5><u>Contact</u></h5>
+        <h6><font size="4"><b><u>Contact</u></b></font></h6>
         <div class="collection z-depth-1">
           <span class="badge">9</span>
           <a href="#!" class="collection-item">Link</a>

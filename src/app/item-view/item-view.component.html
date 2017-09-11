@@ -1,11 +1,11 @@
 <!-- cards view -->
 <div class="col s12 m2 l3" *ngFor="let item of items">
-  <div class="card lage">
-    <div class="card-image waves-effect waves-block waves-light">
+  <div class="card lage z-depth-2">
+    <!-- <div class="card-image waves-effect waves-block waves-light">
       <img class="activator" src="{{item.itemImg}}">
-    </div>
+    </div> -->
     <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">{{item.itemName}}<i class="material-icons right">more_vert</i></span>
+      <span class="card-title grey-text text-darken-4">{{item.itemName}}</span>
       <!-- <p><a routerLink="./itemdetail/{{item.itemName}}" replaceUrl=true>{{item.itemLink}}</a></p> -->
       <p><a href="CategoriesView/{{cateName}}/itemdetail/{{item.itemName}}" replaceUrl=true>Click for more Details</a></p>
     </div>

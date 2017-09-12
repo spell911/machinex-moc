@@ -1,76 +1,23 @@
 {
-		"Categories": [
-			{
-				"name": "Red"
-			},
-			{
-				"name": "Blue"
-			},
-			{
-				"name": "Yellow"
-			},
-			{
-				"name": "Green"
-			},
-			{
-				"name": "purple"
-			},
-			{
-				"name": "indigo"
-			},
-			{
-				"name": "light-blue"
-			},
-			{
-				"name": "cyan"
-			},
-			{
-				"name": "teal"
-			},
-			{
-				"name": "lime"
-			},
-			{
-				"name": "light-green"
-			},
-			{
-				"name": "amber"
-			},
-			{
-				"name": "orange"
-			},
-			{
-				"name": "brown"
-			},
-			{
-				"name": "deep-orange"
-			},
-			{
-				"name": "grey"
-			},
-			{
-				"name": "black"
-			},
-			{
-				"name": "white"
-			},
-			{
-				"name": "transparent"
-			},
-			{
-				"name": "blue-grey"
-			},
-			{
-				"name": "deep-purple"
-			},
-			{
-				"name": " blue accent"
-			},
-			{
-				"name": "red darken"
-			},
-			{
-				"name": "pink accent"
-			}
-		]
-	}
+  "categories": [{
+    "id": "MC",
+    "name": "Machining Center",
+    "img": "../assets/img/MC.jpg"
+  }, {
+    "id": "CNC-DTC",
+    "name": "CNC Drilling & Tapping Center",
+    "img": "../assets/img/CNC-DTC.jpg"
+  }, {
+    "id": "HSMC",
+    "name": "High Speed Machining Center",
+    "img": "../assets/img/HSMC.jpg"
+  }, {
+    "id": "CNC-DCMC",
+    "name": "CNC Double Column Machining Center",
+    "img": "../assets/img/CNC-DCMC.jpg"
+  }, {
+    "id": "CNC-MC",
+    "name": "CNC Machining Center",
+    "img": "../assets/img/CNC-MC.jpg"
+  }]
+}

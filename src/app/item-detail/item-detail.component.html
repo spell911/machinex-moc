@@ -1,5 +1,5 @@
 <div class="col s12 m7 l12">
-  <h4 class="header">MG-A</h4>
+  <h4 class="header">{{itemId}}</h4>
   <div class="card horizontal z-depth-2" style="height: 100%">
     <!-- <div class="card-image">
       <img class="materialboxed responsive-img" width="100%" src="/assets/img/machine-test.jpg">
@@ -91,36 +91,24 @@
   <!-- suplier collapes -->
   <h4 class="header">Suppliers</h4>
   <ul class="collapsible z-depth-2" data-collapsible="accordion">
-    <li>
+    <li *ngFor="let sup of arrSups">
       <div class="collapsible-header">
-        AKIRA SEIKI CO., LTD.
+        {{sup.name}}
       </div>
       <div class="collapsible-body">
         <h6><font size="4"><b><u>Company Infomation</u></b></font></h6>
-        <i class="material-icons">business</i><span style="margin-left: 1%">AKIRA SEIKI CO., LTD.</span><br>
-        <i class="material-icons">call</i><span style="margin-left: 1%">+886-4-2355-2495(Tel.)</span><br>
-        <i class="material-icons">print</i><span style="margin-left: 1%">+886-4-2355-2496(Fax.)</span><br>
-        <i class="material-icons">email</i><span style="margin-left: 1%">sales@akiraseiki.com, service@akiraseiki.com</span><br>
-        <i class="material-icons">rss_feed</i><a href="http://www.akiraseiki.com"><span style="margin-left: 1%">http://www.akiraseiki.com</span></a><br>
-        <i class="material-icons">location_on</i><span style="margin-left: 1%">No.5, Jingke E. Rd., Nantun Dist., Taichung City 40852, Taiwan (R.O.C.)</span><br>
-        <h6><font size="4"><b><u>Product Categories of AKIRA SEIKI CO., LTD.</u></b></font></h6>
-        <p>Horizontal Machining Center</p>
-        <p>Multitasking</p>
-        <p>Mass Production</p>
-        <p>Turning Center</p>
-        <p>Vertical Machining Center</p>
+        <i class="material-icons">business</i><span style="margin-left: 1%">{{sup.name}}</span><br>
+        <i class="material-icons">call</i><span style="margin-left: 1%">{{sup.tel}}(Tel.)</span><br>
+        <i class="material-icons">print</i><span style="margin-left: 1%">{{sup.fax}}(Fax.)</span><br>
+        <i class="material-icons">email</i><span style="margin-left: 1%">{{sup.email}}</span><br>
+        <i class="material-icons">rss_feed</i><a href="http://www.akiraseiki.com"><span style="margin-left: 1%">{{sup.web}}</span></a><br>
+        <i class="material-icons">location_on</i><span style="margin-left: 1%">{{sup.address}}</span><br>
+        <h6><font size="4"><b><u>Product Categories of {{sup.name}}</u></b></font></h6>
+        <p>{{sup.product}}</p>
         <h6><font size="4"><b><u>Contact</u></b></font></h6>
         <div class="collection z-depth-1">
           <span class="badge">9</span>
-          <a href="#!" class="collection-item">Link</a>
-          <span class="badge">7</span>
-          <a href="#!" class="collection-item">Link</a>
-          <span class="badge">5</span>
-          <a href="#!" class="collection-item">Link</a>
-          <span class="badge">3</span>
-          <a href="#!" class="collection-item">Link</a>
-          <span class="badge">1</span>
-          <a href="#!" class="collection-item">Link</a>
+          <a href="#!" class="collection-item">{{sup.link}}</a>
         </div>
       </div>
     </li>

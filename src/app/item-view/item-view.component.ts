@@ -7,55 +7,46 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./item-view.component.css']
 })
 export class ItemViewComponent implements OnInit {
-  cateName: String;
-
+  cateId: String;
   constructor(private route: ActivatedRoute) {
-    this.cateName = route.snapshot.params['cateName'];
+    this.cateId = route.snapshot.params['cateName'];
   }
 
   ngOnInit() {
+    var i;
+    var items = [
+      {
+        id: "BT40V",
+        cate_id: "MC",
+        name: "BT40 Vertical",
+        sup: ["KASUKA", "NUMEN"]
+      },
+      {
+        id: "BT50V",
+        cate_id: "MC",
+        name: "BT50 Vertical",
+        sup: ["KASUKA", "NUMEN"]
+      },
+      {
+        id: "BT40V5A",
+        cate_id: "MC",
+        name: "BT40 Vertical 5-A",
+        sup: ["KASUKA"]
+      }
+    ];
     this.route.params.subscribe(params => {
-      let cateNameR = params["cateName"];
-      this.cateName = cateNameR;
+      let cateIdR = params["cateId"];
+      this.cateId = cateIdR;
     });
-  }
-  items = [
-    {
-      itemName: "MC-A-01",
-      itemImg: "/assets/img/machine-test.jpg",
-      itemLink: "Link to Supplier",
-      itemDesc: "this a goof machine for every factory!"
-    },
-    {
-      itemName: "MC-A-02",
-      itemImg: "/assets/img/machine-test.jpg",
-      itemLink: "Link to Supplier",
-      itemDesc: "this a goof machine for every factory!"
-    },
-    {
-      itemName: "MC-A-03",
-      itemImg: "/assets/img/machine-test.jpg",
-      itemLink: "Link to Supplier",
-      itemDesc: "this a goof machine for every factory!"
-    },
-    {
-      itemName: "MC-A-04",
-      itemImg: "/assets/img/machine-test.jpg",
-      itemLink: "Link to Supplier",
-      itemDesc: "this a goof machine for every factory!"
-    },
-    {
-      itemName: "MC-A-05",
-      itemImg: "/assets/img/machine-test.jpg",
-      itemLink: "Link to Supplier",
-      itemDesc: "this a goof machine for every factory!"
-    },
-    {
-      itemName: "MC-A-06",
-      itemImg: "/assets/img/machine-test.jpg",
-      itemLink: "Link to Supplier",
-      itemDesc: "this a goof machine for every factory!"
+
+    for (i in items) {
+      if (this.cateId == items[i].cate_id) {
+        this.arrItems.push({ "id": items[i].id, "name": items[i].name });
+      }
     }
-  ];
+
+  }
+
+  arrItems = [];
 
 }

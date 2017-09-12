@@ -1,0 +1,80 @@
+{
+  "supplier": [{
+      "id": "KASUGA",
+      "name": "KASUGA Co., Ltd.",
+      "address": "NO.149, Sec. 1, Guofeng Rd., Shengang Dist., Taichung City 429, Taiwan",
+      "tel": "+886 4 252-529-95",
+      "email": "sale@kasuga.jp",
+      "fax": "+886 4 252-529-91",
+      "web": "http://www.kasuga.jp",
+      "link": ["http://www.kasuga.jp", "http://www.kasuga.jp"],
+      "language": ["EN", "JP"],
+      "items": [{
+          "id": "BT40V",
+          "cate_id": "MC",
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide"],
+          "control": ["Fanuc", "HEIDENHAIN"]
+        },
+        {
+          "id": "BT40V5A",
+          "cate_id": "MC",
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide"],
+          "control": ["Fanuc", "HEIDENHAIN"]
+        },
+        {
+          "id": "BT50",
+          "cate_id": "MC",
+          "name": "BT50",
+          "guide": ["Linear Guide"],
+          "control": ["Fanuc", "HEIDENHAIN"]
+        }
+      ]
+    },
+    {
+      "id": "NUMEN",
+      "name": "NUMEN Machinery Co., Ltd.",
+      "address": "30, Alley 28, Lane 230, Sec. 5 Da Feng Road, Feng Yuan Dist., Taichung City 420, Taiwan",
+      "tel": "+886-4-2533-0966",
+      "email": "sales@numenmachinery.com",
+      "fax": "+886-4-2533-0125",
+      "web": "www.numenmachinery.com",
+      "link": ["www.numenmachinery.com", "www.numenmachinery.com"],
+      "language": ["TH", "EN", "JP"],
+      "items": [{
+        "id": "MCBT40V",
+        "cate_id": "MC",
+        "name": "BT40 Vertical",
+        "guide": ["Linear Guide"],
+        "control": ["Fanuc", "HEIDENHAIN"]
+      }]
+    },
+    {
+      "id": "AKIRASEIKI",
+      "name": "AKIRA SEIKI CO., LTD.",
+      "address": "30, Alley 28, Lane 230, Sec. 5 Da Feng Road, Feng Yuan Dist., Taichung City 420, Taiwan",
+      "tel": "+886-4-2355-2495",
+      "email": "sales@akiraseiki.com",
+      "fax": "+886-4-2355-2496",
+      "web": "http://www.akiraseiki.com",
+      "link": ["http://www.akiraseiki.com", "http://www.akiraseiki.com"],
+      "language": ["TH", "EN", "JP"],
+      "items": [{
+          "id": "BT40V",
+          "cate_id": "CNCMC",
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide"],
+          "control": ["Fanuc", "HEIDENHAIN"]
+        },
+        {
+          "id": "BT40H",
+          "cate_id": "CNCMC",
+          "name": "BT40 Horizon",
+          "guide": ["Linear Guide"],
+          "control": ["Fanuc", "HEIDENHAIN"]
+        }
+      ]
+    }
+  ]
+}

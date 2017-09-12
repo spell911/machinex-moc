@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Http } from '@angular/http';
+import { HttpModule } from '@angular/http';
+
 
 @Component({
   selector: 'app-categories-view',
@@ -10,8 +13,9 @@ import { ActivatedRoute } from '@angular/router';
 export class CategoriesViewComponent implements OnInit {
 
   cateName: String;
+  results;
 
-  constructor(private route: ActivatedRoute) {
+  constructor(private route: ActivatedRoute,private http: Http) {
     this.cateName = route.snapshot.params['cateName'];
   }
 
@@ -20,136 +24,31 @@ export class CategoriesViewComponent implements OnInit {
       let cateNameR = params["cateName"];
       this.cateName = cateNameR;
     });
+
+    this.http.get('../assets/json/categories.json').subscribe(data => {
+      this.results = data.json()['Categories'];
+    });
   }
 
-  items = [
-    {
-      itemCateName: "Machine-A",
-      itemImg: "/assets/img/machine-test.jpg",
-      itemLink: "Click for more Details",
-      itemDesc: "this is a good machine for every factory!"
-    },
-    {
-      itemCateName: "Machine-B",
-      itemImg: "/assets/img/machine-test.jpg",
-      itemLink: "Click for more Details",
-      itemDesc: "this is a good machine for every factory!"
-    },{
-      itemCateName: "Machine-C",
-      itemImg: "/assets/img/machine-test.jpg",
-      itemLink: "Click for more Details",
-      itemDesc: "this is a good machine for every factory!"
-    },{
-      itemCateName: "Machine-D",
-      itemImg: "/assets/img/machine-test.jpg",
-      itemLink: "Click for more Details",
-      itemDesc: "this is a good machine for every factory!"
-    },{
-      itemCateName: "Machine-E",
-      itemImg: "/assets/img/machine-test.jpg",
-      itemLink: "Click for more Details",
-      itemDesc: "this is a good machine for every factory!"
-    },{
-      itemCateName: "Machine-F",
-      itemImg: "/assets/img/machine-test.jpg",
-      itemLink: "Click for more Details",
-      itemDesc: "this is a good machine for every factory!"
-    },{
-      itemCateName: "Machine-G",
-      itemImg: "/assets/img/machine-test.jpg",
-      itemLink: "Click for more Details",
-      itemDesc: "this is a good machine for every factory!"
-    },{
-      itemCateName: "Machine-H",
-      itemImg: "/assets/img/machine-test.jpg",
-      itemLink: "Click for more Details",
-      itemDesc: "this is a good machine for every factory!"
-    },{
-      itemCateName: "Machine-I",
-      itemImg: "/assets/img/machine-test.jpg",
-      itemLink: "Click for more Details",
-      itemDesc: "this is a good machine for every factory!"
-    },{
-      itemCateName: "Machine-J",
-      itemImg: "/assets/img/machine-test.jpg",
-      itemLink: "Click for more Details",
-      itemDesc: "this is a good machine for every factory!"
-    },{
-      itemCateName: "Machine-K",
-      itemImg: "/assets/img/machine-test.jpg",
-      itemLink: "Click for more Details",
-      itemDesc: "this is a good machine for every factory!"
-    },{
-      itemCateName: "Machine-L",
-      itemImg: "/assets/img/machine-test.jpg",
-      itemLink: "Click for more Details",
-      itemDesc: "this is a good machine for every factory!"
-    },{
-      itemCateName: "Machine-M",
-      itemImg: "/assets/img/machine-test.jpg",
-      itemLink: "Click for more Details",
-      itemDesc: "this is a good machine for every factory!"
-    },{
-      itemCateName: "Machine-N",
-      itemImg: "/assets/img/machine-test.jpg",
-      itemLink: "Click for more Details",
-      itemDesc: "this is a good machine for every factory!"
-    },{
-      itemCateName: "Machine-O",
-      itemImg: "/assets/img/machine-test.jpg",
-      itemLink: "Click for more Details",
-      itemDesc: "this is a good machine for every factory!"
-    },{
-      itemCateName: "Machine-P",
-      itemImg: "/assets/img/machine-test.jpg",
-      itemLink: "Click for more Details",
-      itemDesc: "this is a good machine for every factory!"
-    },{
-      itemCateName: "Machine-Q",
-      itemImg: "/assets/img/machine-test.jpg",
-      itemLink: "Click for more Details",
-      itemDesc: "this is a good machine for every factory!"
-    },{
-      itemCateName: "Machine-R",
-      itemImg: "/assets/img/machine-test.jpg",
-      itemLink: "Click for more Details",
-      itemDesc: "this is a good machine for every factory!"
-    },
-    {
-      itemCateName: "Machine-S",
-      itemImg: "/assets/img/machine-test.jpg",
-      itemLink: "Click for more Details",
-      itemDesc: "this is a good machine for every factory!"
-    },{
-      itemCateName: "Machine-T",
-      itemImg: "/assets/img/machine-test.jpg",
-      itemLink: "Click for more Details",
-      itemDesc: "this is a good machine for every factory!"
-    },{
-      itemCateName: "Machine-U",
-      itemImg: "/assets/img/machine-test.jpg",
-      itemLink: "Click for more Details",
-      itemDesc: "this is a good machine for every factory!"
-    },{
-      itemCateName: "Machine-V",
-      itemImg: "/assets/img/machine-test.jpg",
-      itemLink: "Click for more Details",
-      itemDesc: "this is a good machine for every factory!"
-    },{
-      itemCateName: "Machine-W",
-      itemImg: "/assets/img/machine-test.jpg",
-      itemLink: "Click for more Details",
-      itemDesc: "this is a good machine for every factory!"
-    },{
-      itemCateName: "Machine-X",
-      itemImg: "/assets/img/machine-test.jpg",
-      itemLink: "Click for more Details",
-      itemDesc: "this is a good machine for every factory!"
-    },{
-      itemCateName: "Machine-Y",
-      itemImg: "/assets/img/machine-test.jpg",
-      itemLink: "Click for more Details",
-      itemDesc: "this is a good machine for every factory!"
-    }
-  ];
+  categories = [{
+    id: "MC",
+    name: "Machining Center",
+    img: "../assets/img/MC.jpg"
+  }, {
+    id: "CNC-DTC",
+    name: "CNC Drilling & Tapping Center",
+    img: "../assets/img/CNC-DTC.jpg"
+  }, {
+    id: "HSMC",
+    name: "High Speed Machining Center",
+    img: "../assets/img/HSMC.jpg"
+  }, {
+    id: "CNC-DCMC",
+    name: "CNC Double Column MC",
+    img: "../assets/img/CNC-DCMC.jpg"
+  }, {
+    id: "CNC-MC",
+    name: "CNC Machining Center",
+    img: "../assets/img/CNC-MC.jpg"
+  }];
 }

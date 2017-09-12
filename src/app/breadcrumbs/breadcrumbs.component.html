@@ -1,20 +1,7 @@
-<nav class="nav-extended subnav">
-  <div class="container">
-    <nav class="z-depth-0">
-      <div class="nav-wrapper">
-        <div class="col l8">
-          <!-- <a routerLink="/" class="breadcrumb">Home</a> -->
-          <!-- <a *ngFor="let breadList of breadList" routerLink="/CategoriesView/{{breadList}}" class="breadcrumb">{{breadList.cateName}}</a> -->
-          <a *ngIf="cateName != ''" href="/" class="breadcrumb">Home</a>
-          <!-- <a *ngFor="let breadList of breadList" href="/CategoriesView/{{breadList}}" class="breadcrumb">{{breadList}}</a> -->
-          <a *ngIf="cateNameCheck == true" href="/CategoriesView/{{cateName}}" class="breadcrumb">{{cateName}}</a>
-          <a *ngIf="itemNameCheck == true && cateNameCheck == false" href="/itemdetail/{{itemName}}" class="breadcrumb">{{itemName}}</a>
-          <a *ngIf="itemNameCheck == true && cateNameCheck == true" href="/CategoriesView/{{cateName}}/itemdetail/{{itemName}}" class="breadcrumb">{{itemName}}</a>
-        </div>
-        <div class="col l4">
-          <app-search></app-search>
-        </div>
-      </div>
-    </nav>
-  </div>
-</nav>
+<div class="col s12">
+  <a *ngIf="cateName != ''" href="/" class="breadcrumb" style="color:#000000">Home</a>
+  <!-- <a *ngFor="let breadList of breadList" href="/CategoriesView/{{breadList}}" class="breadcrumb">{{breadList}}</a> -->
+  <a *ngIf="cateNameCheck == true" href="/CategoriesView/{{cateName}}" class="breadcrumb">{{cateName}}</a>
+  <a *ngIf="itemNameCheck == true && cateNameCheck == false" href="/itemdetail/{{itemName}}" class="breadcrumb">{{itemName}}</a>
+  <a *ngIf="itemNameCheck == true && cateNameCheck == true" href="/CategoriesView/{{cateName}}/itemdetail/{{itemName}}" class="breadcrumb">{{itemName}}</a>
+</div>

@@ -11,23 +11,23 @@ const APP_ROUTES: Routes = [
     data: { breadcrumb: 'Home'}
   },
   {
-    path: 'CategoriesView/:cateName',
+    path: 'CategoriesView/:cateId',
     component: ItemViewComponent
   },
   {
-    path: 'CategoriesView/:cateName',
+    path: 'CategoriesView/:cateId',
     component: BreadcrumbsComponent
   },
   {
-    path: 'CategoriesView/:cateName/itemdetail/:itemName',
+    path: 'CategoriesView/:cateId/itemdetail/:itemId',
     component: ItemDetailComponent
   },
   {
-    path: 'CategoriesView/:cateName/itemdetail/:itemName',
+    path: 'CategoriesView/:cateId/itemdetail/:itemId',
     component: BreadcrumbsComponent
   },
   {
-    path: 'itemdetail/:itemName',
+    path: 'itemdetail/:itemId',
     component: ItemDetailComponent
   }
 ];

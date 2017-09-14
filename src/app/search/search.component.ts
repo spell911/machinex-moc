@@ -20,13 +20,19 @@ export class SearchComponent implements OnInit {
 
 
   constructor() {
-
   }
 
   locations: any;
 
-  ngOnInit(){
-      this.locations = {'apple': null,'airplane': null ,'aurora': null ,'armingo': null ,'google': null};
+  ngOnInit() {
+    this.locations = {
+      'Machining Center BT30V': null,
+      'Machining Center BT40V': null,
+      'Machining Center BT50V': null,
+      'Machining Center BT40V5A': null,
+      'CNC Double Culumn Machining Center BT40V': null,
+      'CNC Drilling&Trapping Center': null
+    };
   }
 
 

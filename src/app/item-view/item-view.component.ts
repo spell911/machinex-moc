@@ -7,9 +7,13 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./item-view.component.css']
 })
 export class ItemViewComponent implements OnInit {
-  cateId: String;
+
+  cateId: string;
+  cateName: string;
+
   constructor(private route: ActivatedRoute) {
-    this.cateId = route.snapshot.params['cateName'];
+    this.cateId = route.snapshot.params['cateId'];
+    this.cateName = route.snapshot.params['cateName'];
   }
 
   ngOnInit() {
@@ -32,6 +36,24 @@ export class ItemViewComponent implements OnInit {
         cate_id: "MC",
         name: "BT40 Vertical 5-A",
         sup: ["KASUKA"]
+      },
+      {
+        id: "BT30V",
+        cate_id: "CNCMC",
+        name: "BT30 Vertical",
+        sup: ["AKIRA"]
+      },
+      {
+        id: "BT40V",
+        cate_id: "CNCMC",
+        name: "BT40 Vertical",
+        sup: ["AKIRA"]
+      },
+      {
+        id: "BT40H",
+        cate_id: "CNCMC",
+        name: "BT40 Horizontal",
+        sup: ["AKIRA"]
       }
     ];
     this.route.params.subscribe(params => {

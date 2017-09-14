@@ -7,11 +7,21 @@
       "email": "sale@kasuga.jp",
       "fax": "+886 4 252-529-91",
       "web": "http://www.kasuga.jp",
-      "link": ["http://www.kasuga.jp", "http://www.kasuga.jp"],
+      "link": [{
+          "name": "http://www.kasuga.jp",
+          "bage": 5
+        },
+        {
+          "name": "http://www.kasuga.en",
+          "bage": 7
+        }
+      ],
       "language": ["EN", "JP"],
+      "product": ["Machining Center", "CNC Drilling & Tapping Center", "High Speed Machining Center", "CNC Double Column MC"],
       "items": [{
           "id": "BT40V",
           "cate_id": "MC",
+          "cate_name": "Machining Center",
           "name": "BT40 Vertical",
           "guide": ["Linear Guide"],
           "control": ["Fanuc", "HEIDENHAIN"]
@@ -19,6 +29,7 @@
         {
           "id": "BT40V5A",
           "cate_id": "MC",
+          "cate_name": "Machining Center",
           "name": "BT40 Vertical 5-A",
           "guide": ["Linear Guide"],
           "control": ["Fanuc", "HEIDENHAIN"]
@@ -26,6 +37,7 @@
         {
           "id": "BT50",
           "cate_id": "MC",
+          "cate_name": "Machining Center",
           "name": "BT50",
           "guide": ["Linear Guide"],
           "control": ["Fanuc", "HEIDENHAIN"]
@@ -40,11 +52,21 @@
       "email": "sales@numenmachinery.com",
       "fax": "+886-4-2533-0125",
       "web": "www.numenmachinery.com",
-      "link": ["www.numenmachinery.com", "www.numenmachinery.com"],
+      "link": [{
+          "name": "http://www.numenmachinery.jp",
+          "bage": 5
+        },
+        {
+          "name": "http://www.numenmachinery.en",
+          "bage": 7
+        }
+      ],
       "language": ["TH", "EN", "JP"],
+      "product": ["Machining Center"],
       "items": [{
-        "id": "MCBT40V",
+        "id": "BT40V",
         "cate_id": "MC",
+        "cate_name": "Machining Center",
         "name": "BT40 Vertical",
         "guide": ["Linear Guide"],
         "control": ["Fanuc", "HEIDENHAIN"]
@@ -58,11 +80,29 @@
       "email": "sales@akiraseiki.com",
       "fax": "+886-4-2355-2496",
       "web": "http://www.akiraseiki.com",
-      "link": ["http://www.akiraseiki.com", "http://www.akiraseiki.com"],
+      "link": [{
+          "name": "http://www.akiraseiki.jp",
+          "bage": 5
+        },
+        {
+          "name": "http://www.akiraseiki.en",
+          "bage": 7
+        }
+      ],
       "language": ["TH", "EN", "JP"],
+      "product": ["CNC Machining Center"],
       "items": [{
+          "id": "BT30V",
+          "cate_id": "CNCMC",
+          "cate_name": "CNC Machining Center",
+          "name": "BT30 Vertical",
+          "guide": ["Linear Guide"],
+          "control": ["Fanuc", "HEIDENHAIN"]
+        },
+        {
           "id": "BT40V",
           "cate_id": "CNCMC",
+          "cate_name": "CNC Machining Center",
           "name": "BT40 Vertical",
           "guide": ["Linear Guide"],
           "control": ["Fanuc", "HEIDENHAIN"]
@@ -70,6 +110,7 @@
         {
           "id": "BT40H",
           "cate_id": "CNCMC",
+          "cate_name": "CNC Machining Center",
           "name": "BT40 Horizon",
           "guide": ["Linear Guide"],
           "control": ["Fanuc", "HEIDENHAIN"]

@@ -1,7 +1,18 @@
-<div class="col s12">
-  <a *ngIf="cateName != ''" href="/" class="breadcrumb" style="color:#000000">Home</a>
-  <!-- <a *ngFor="let breadList of breadList" href="/CategoriesView/{{breadList}}" class="breadcrumb">{{breadList}}</a> -->
-  <a *ngIf="cateNameCheck == true" href="/CategoriesView/{{cateName}}" class="breadcrumb">{{cateName}}</a>
-  <a *ngIf="itemNameCheck == true && cateNameCheck == false" href="/itemdetail/{{itemName}}" class="breadcrumb">{{itemName}}</a>
-  <a *ngIf="itemNameCheck == true && cateNameCheck == true" href="/CategoriesView/{{cateName}}/itemdetail/{{itemName}}" class="breadcrumb">{{itemName}}</a>
-</div>
+<nav class="white z-depth-0">
+  <div class="nav-wrapper">
+    <div class="col s12 l12">
+      <a *ngIf="cateId != ''" href="/" class="breadcrumb">
+        <font size="4" color="black">Home</font>
+      </a>
+      <a *ngIf="cateIdCheck == true" href="ItemView/{{cateId}}/{{cateName}}" class="breadcrumb">
+        <font size="4" color="black">{{cateName}}</font>
+      </a>
+      <!-- <a *ngIf="itemIdCheck == true && cateIdCheck == false" href="ItemView/{{cateId}}/{{cateName}}/{{itemId}}/{{itemName}}" class="breadcrumb">
+        <font size="4" color="black"> {{itemName}}</font>
+      </a> -->
+      <a *ngIf="itemIdCheck == true && cateIdCheck == true" href="ItemView/{{cateId}}/{{cateName}}/itemdetail/{{itemId}}/{{itemName}}" class="breadcrumb">
+        <font size="4" color="black"> {{itemName}}</font>
+      </a>
+    </div>
+  </div>
+</nav>

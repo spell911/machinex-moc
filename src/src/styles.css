@@ -47,3 +47,8 @@ body {
 main {
   flex: 1 0 auto;
 }
+.autocomplete-content {
+   position: absolute;
+   margin-left: 4em;
+   width: 520px;
+}

@@ -15,7 +15,7 @@ export class CategoriesViewComponent implements OnInit {
   cateName: String;
   results;
 
-  constructor(private route: ActivatedRoute,private http: Http) {
+  constructor(private route: ActivatedRoute, private http: Http) {
     this.cateName = route.snapshot.params['cateName'];
   }
 
@@ -30,25 +30,132 @@ export class CategoriesViewComponent implements OnInit {
     });
   }
 
-  categories = [{
-    id: "MC",
-    name: "Machining Center",
-    img: "../assets/img/MC.jpg"
-  }, {
-    id: "CNC-DTC",
-    name: "CNC Drilling & Tapping Center",
-    img: "../assets/img/CNC-DTC.jpg"
-  }, {
-    id: "HSMC",
-    name: "High Speed Machining Center",
-    img: "../assets/img/HSMC.jpg"
-  }, {
-    id: "CNC-DCMC",
-    name: "CNC Double Column MC",
-    img: "../assets/img/CNC-DCMC.jpg"
-  }, {
-    id: "CNC-MC",
-    name: "CNC Machining Center",
-    img: "../assets/img/CNC-MC.jpg"
-  }];
+  categories = [
+    {
+      id: "MC",
+      name: "Machining Center",
+      img: "../assets/img/MC.jpg"
+    },
+    {
+      id: "CNC-DTC",
+      name: "CNC Drilling & Tapping Center",
+      img: "../assets/img/CNC-DTC.jpg"
+    },
+    {
+      id: "HSMC",
+      name: "High Speed Machining Center",
+      img: "../assets/img/HSMC.jpg"
+    },
+    {
+      id: "CNC-DCMC",
+      name: "CNC Double Column MC",
+      img: "../assets/img/CNC-DCMC.jpg"
+    },
+    {
+      id: "CNC-MC",
+      name: "CNC Machining Center",
+      img: "../assets/img/CNC-MC.jpg"
+    },
+    {
+      id: "MC",
+      name: "Machining Center",
+      img: "../assets/img/MC.jpg"
+    },
+    {
+      id: "CNC-DTC",
+      name: "CNC Drilling & Tapping Center",
+      img: "../assets/img/CNC-DTC.jpg"
+    },
+    {
+      id: "HSMC",
+      name: "High Speed Machining Center",
+      img: "../assets/img/HSMC.jpg"
+    },
+    {
+      id: "CNC-DCMC",
+      name: "CNC Double Column MC",
+      img: "../assets/img/CNC-DCMC.jpg"
+    },
+    {
+      id: "CNC-MC",
+      name: "CNC Machining Center",
+      img: "../assets/img/CNC-MC.jpg"
+    },
+    {
+      id: "MC",
+      name: "Machining Center",
+      img: "../assets/img/MC.jpg"
+    },
+    {
+      id: "CNC-DTC",
+      name: "CNC Drilling & Tapping Center",
+      img: "../assets/img/CNC-DTC.jpg"
+    },
+    {
+      id: "HSMC",
+      name: "High Speed Machining Center",
+      img: "../assets/img/HSMC.jpg"
+    },
+    {
+      id: "CNC-DCMC",
+      name: "CNC Double Column MC",
+      img: "../assets/img/CNC-DCMC.jpg"
+    },
+    {
+      id: "CNC-MC",
+      name: "CNC Machining Center",
+      img: "../assets/img/CNC-MC.jpg"
+    },
+    {
+      id: "MC",
+      name: "Machining Center",
+      img: "../assets/img/MC.jpg"
+    },
+    {
+      id: "CNC-DTC",
+      name: "CNC Drilling & Tapping Center",
+      img: "../assets/img/CNC-DTC.jpg"
+    },
+    {
+      id: "HSMC",
+      name: "High Speed Machining Center",
+      img: "../assets/img/HSMC.jpg"
+    },
+    {
+      id: "CNC-DCMC",
+      name: "CNC Double Column MC",
+      img: "../assets/img/CNC-DCMC.jpg"
+    },
+    {
+      id: "CNC-MC",
+      name: "CNC Machining Center",
+      img: "../assets/img/CNC-MC.jpg"
+    },
+    {
+      id: "MC",
+      name: "Machining Center",
+      img: "../assets/img/MC.jpg"
+    },
+    {
+      id: "CNC-DTC",
+      name: "CNC Drilling & Tapping Center",
+      img: "../assets/img/CNC-DTC.jpg"
+    },
+    {
+      id: "HSMC",
+      name: "High Speed Machining Center",
+      img: "../assets/img/HSMC.jpg"
+    },
+    {
+      id: "CNC-DCMC",
+      name: "CNC Double Column MC",
+      img: "../assets/img/CNC-DCMC.jpg"
+    },
+    {
+      id: "CNC-MC",
+      name: "CNC Machining Center",
+      img: "../assets/img/CNC-MC.jpg"
+    }
+
+  ];
 }

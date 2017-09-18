@@ -1,14 +1,15 @@
+<app-breadcrumbs></app-breadcrumbs>
 <div class="col s12 m7 l12">
-  <h4 class="header">{{itemId}}</h4>
+  <h4 class="header">{{itemName}}</h4>
   <div class="card horizontal z-depth-2" style="height: 100%">
     <!-- <div class="card-image">
       <img class="materialboxed responsive-img" width="100%" src="/assets/img/machine-test.jpg">
     </div> -->
     <div class="card-content col l12">
-      <h6>Specific</h6>
       <div class="row">
-        <form id="specific_form">
-          <div class="col s12 m3 l3">
+        <div class="col s12 m3 l4">
+          <h5>Guide</h5>
+          <form id="guide_form">
             <p>
               <input type="checkbox" class="filled-in" id="filled-in-box" />
               <label for="filled-in-box">Boxway</label>
@@ -18,72 +19,59 @@
               <label for="filled-in-box2">Linear Guid</label>
             </p>
             <p>
-              <input type="checkbox" class="filled-in" id="filled-in-boxall" (click)="checkAll($event,'spec')" />
+              <input type="checkbox" class="filled-in" id="filled-in-boxall" (click)="checkAll($event,'guide')" />
               <label for="filled-in-boxall">ALL</label>
             </p>
-          </div>
-          <div class="col s12 m3 l3">
-            <div id="scale-bt" class="scale-transition">
-              <p>
-                <input type="checkbox" class="filled-in" id="filled-in-box3" />
-                <label for="filled-in-box3">Fanuc NC</label>
-              </p>
-              <p>
-                <input type="checkbox" class="filled-in" id="filled-in-box4" />
-                <label for="filled-in-box4">Fanuc NC</label>
-              </p>
-            </div>
-          </div>
-          <div class="col s12 m3 l3">
-            <div id="scale-Lb" class="scale-transition">
-              <p>
-                <input type="checkbox" class="filled-in" id="filled-in-box5" />
-                <label for="filled-in-box5">Pallet Changer</label>
-              </p>
-              <p>
-                <input type="checkbox" class="filled-in" id="filled-in-box6" />
-                <label for="filled-in-box6">Turn key Systems</label>
-              </p>
-            </div>
-          </div>
-          <div class="col s12 m3 l3">
-          </div>
-        </form>
-      </div>
-      <h6>Contact Language</h6>
-      <div class="row">
-        <form id="language_form">
-          <div class="col s12 m3 l3">
+          </form>
+        </div>
+        <div class="col s12 m3 l4">
+          <h5>Control</h5>
+          <form id="control_form">
             <p>
-              <input type="checkbox" class="filled-in" id="lang-en" />
+              <input type="checkbox" class="filled-in" id="Fanuc" />
+              <label for="Fanuc">Fanuc</label>
+            </p>
+            <p>
+              <input type="checkbox" class="filled-in" id="Mitsubishi" />
+              <label for="Mitsubishi">Mitsubishi</label>
+            </p>
+            <p>
+              <input type="checkbox" class="filled-in" id="Heidenhain" />
+              <label for="Heidenhain">Heidenhain</label>
+            </p>
+            <p>
+              <input type="checkbox" class="filled-in" id="allControl" (click)="checkAll($event,'control')" />
+              <label for="allControl">ALL</label>
+            </p>
+          </form>
+        </div>
+        <div class="col s12 m3 l4">
+          <h5>Contact Language</h5>
+          <form id="language_form">
+            <p>
+              <input type="checkbox" class="filled-in" name="langCheck" value="EN" id="lang-en" />
               <label for="lang-en">EN</label>
+            </p>
+            <p>
+              <input type="checkbox" class="filled-in" name="langCheck" value="JP" id="lang-jp" />
+              <label for="lang-jp">JP</label>
+            </p>
+            <p>
+              <input type="checkbox" class="filled-in" name="langCheck" value="TH" id="lang-th" />
+              <label for="lang-th">TH</label>
+            </p>
+            <p>
+              <input type="checkbox" class="filled-in" name="langCheck" value="VN" id="lang-vn" />
+              <label for="lang-vn">VN</label>
             </p>
             <p>
               <input type="checkbox" class="filled-in" id="lang-all" (click)="checkAll($event,'lang')" />
               <label for="lang-all">ALL</label>
             </p>
-          </div>
-          <div class="col s12 m3 l3">
-            <p>
-              <input type="checkbox" class="filled-in" id="lang-jp" />
-              <label for="lang-jp">JP</label>
-            </p>
-          </div>
-          <div class="col s12 m3 l3">
-            <p>
-              <input type="checkbox" class="filled-in" id="lang-th" />
-              <label for="lang-th">TH</label>
-            </p>
-          </div>
-          <div class="col s12 m3 l3">
-            <p>
-              <input type="checkbox" class="filled-in" id="lang-vn" />
-              <label for="lang-vn">VN</label>
-            </p>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
-      <a class="waves-effect waves-light btn" style="background-color:#424242;color: #9ccc65"><i class="material-icons left">search</i>Search</a>
+      <a class="waves-effect waves-light btn" (click)="searchSup()" style="background-color:#424242;color: #9ccc65"><i class="material-icons left">search</i>Search</a>
     </div>
   </div>
 </div>
@@ -104,12 +92,18 @@
         <i class="material-icons">rss_feed</i><a href="http://www.akiraseiki.com"><span style="margin-left: 1%">{{sup.web}}</span></a><br>
         <i class="material-icons">location_on</i><span style="margin-left: 1%">{{sup.address}}</span><br>
         <h6><font size="4"><b><u>Product Categories of {{sup.name}}</u></b></font></h6>
-        <p>{{sup.product}}</p>
+        <ul>
+          <li *ngFor="let product of sup.product">{{product}}</li>
+        </ul>
         <h6><font size="4"><b><u>Contact</u></b></font></h6>
         <div class="collection z-depth-1">
           <span class="badge" style="margin-top:10px">9</span>
           <a href="#!" class="collection-item">{{sup.link}}</a>
         </div>
+        <ul class="collection z-depth-1" *ngFor="let link of sup.link">
+          <span class="badge" style="margin-top:10px">{{link.bage}}</span>
+          <li class="collection-item"> <a href="{{link.name}}">{{link.name}}</a></li>
+        </ul>
       </div>
     </li>
   </ul>

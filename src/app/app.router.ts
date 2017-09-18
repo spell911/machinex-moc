@@ -8,26 +8,14 @@ const APP_ROUTES: Routes = [
   {
     path: '',
     component: CategoriesViewComponent,
-    data: { breadcrumb: 'Home'}
+    data: { breadcrumb: 'Home' }
   },
   {
-    path: 'CategoriesView/:cateId',
+    path: 'ItemView/:cateId/:cateName',
     component: ItemViewComponent
   },
   {
-    path: 'CategoriesView/:cateId',
-    component: BreadcrumbsComponent
-  },
-  {
-    path: 'CategoriesView/:cateId/itemdetail/:itemId',
-    component: ItemDetailComponent
-  },
-  {
-    path: 'CategoriesView/:cateId/itemdetail/:itemId',
-    component: BreadcrumbsComponent
-  },
-  {
-    path: 'itemdetail/:itemId',
+    path: 'ItemView/:cateId/:cateName/itemdetail/:itemId/:itemName',
     component: ItemDetailComponent
   }
 ];

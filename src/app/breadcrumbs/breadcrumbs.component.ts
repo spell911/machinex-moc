@@ -9,37 +9,40 @@ import { ActivatedRoute } from '@angular/router';
 
 export class BreadcrumbsComponent implements OnInit {
 
-  cateName: String;
-  itemName: String;
+  cateId: string;
+  cateName: string;
+  itemId: string;
+  itemName: string;
   breadList = [];
-  cateNameCheck:boolean;
-  itemNameCheck:boolean;
+  cateIdCheck:boolean;
+  itemIdCheck:boolean;
+
   constructor(private route: ActivatedRoute) {
-
-    if(route.snapshot.params['cateName'] === undefined){
-      this.cateNameCheck = false;
-    }else{
-      this.cateNameCheck = true;
-    }
-
-    if(route.snapshot.params['itemName'] === undefined){
-      this.itemNameCheck = false;
-    }else{
-      this.itemNameCheck = true;
-    }
-
+    this.cateId = route.snapshot.params['cateId'];
     this.cateName = route.snapshot.params['cateName'];
+    this.itemId = route.snapshot.params['itemId'];
     this.itemName = route.snapshot.params['itemName'];
 
+    if(this.cateId === undefined){
+      this.cateIdCheck = false;
+    }else{
+      this.cateIdCheck = true;
+    }
+
+    if(this.itemId === undefined){
+      this.itemIdCheck = false;
+    }else{
+      this.itemIdCheck = true;
+    }
     // alert(this.cateNameCheck + "," + this.itemNameCheck);
   }
 
   ngOnInit() {
     this.route.params.subscribe(params => {
-      let cateNameR = params["cateName"];
-      let itemNameR = params["itemName"];
-      this.cateName = cateNameR;
-      this.itemName = itemNameR;
+      let cateIdR = params['cateId'];
+      let itemIdR = params['itemId'];
+      this.cateId = cateIdR;
+      this.itemId = itemIdR;
     });
   }
 

@@ -16,7 +16,7 @@ export class CategoriesViewComponent implements OnInit {
   results;
 
   constructor(private route: ActivatedRoute, private http: Http) {
-    this.cateName = route.snapshot.params['cateName'];
+    this.cateName = route.snapshot.params['cateId'];
   }
 
   ngOnInit() {
@@ -37,7 +37,7 @@ export class CategoriesViewComponent implements OnInit {
       img: "../assets/img/MC.jpg"
     },
     {
-      id: "CNC-DTC",
+      id: "CNCDTC",
       name: "CNC Drilling & Tapping Center",
       img: "../assets/img/CNC-DTC.jpg"
     },
@@ -47,12 +47,12 @@ export class CategoriesViewComponent implements OnInit {
       img: "../assets/img/HSMC.jpg"
     },
     {
-      id: "CNC-DCMC",
+      id: "CNCDCMC",
       name: "CNC Double Column MC",
       img: "../assets/img/CNC-DCMC.jpg"
     },
     {
-      id: "CNC-MC",
+      id: "CNCMC",
       name: "CNC Machining Center",
       img: "../assets/img/CNC-MC.jpg"
     },
@@ -62,7 +62,7 @@ export class CategoriesViewComponent implements OnInit {
       img: "../assets/img/MC.jpg"
     },
     {
-      id: "CNC-DTC",
+      id: "CNCDTC",
       name: "CNC Drilling & Tapping Center",
       img: "../assets/img/CNC-DTC.jpg"
     },
@@ -72,12 +72,12 @@ export class CategoriesViewComponent implements OnInit {
       img: "../assets/img/HSMC.jpg"
     },
     {
-      id: "CNC-DCMC",
+      id: "CNCDCMC",
       name: "CNC Double Column MC",
       img: "../assets/img/CNC-DCMC.jpg"
     },
     {
-      id: "CNC-MC",
+      id: "CNCMC",
       name: "CNC Machining Center",
       img: "../assets/img/CNC-MC.jpg"
     },
@@ -87,7 +87,7 @@ export class CategoriesViewComponent implements OnInit {
       img: "../assets/img/MC.jpg"
     },
     {
-      id: "CNC-DTC",
+      id: "CNCDTC",
       name: "CNC Drilling & Tapping Center",
       img: "../assets/img/CNC-DTC.jpg"
     },
@@ -97,12 +97,12 @@ export class CategoriesViewComponent implements OnInit {
       img: "../assets/img/HSMC.jpg"
     },
     {
-      id: "CNC-DCMC",
+      id: "CNCDCMC",
       name: "CNC Double Column MC",
       img: "../assets/img/CNC-DCMC.jpg"
     },
     {
-      id: "CNC-MC",
+      id: "CNCMC",
       name: "CNC Machining Center",
       img: "../assets/img/CNC-MC.jpg"
     },
@@ -112,7 +112,7 @@ export class CategoriesViewComponent implements OnInit {
       img: "../assets/img/MC.jpg"
     },
     {
-      id: "CNC-DTC",
+      id: "CNCDTC",
       name: "CNC Drilling & Tapping Center",
       img: "../assets/img/CNC-DTC.jpg"
     },
@@ -122,12 +122,12 @@ export class CategoriesViewComponent implements OnInit {
       img: "../assets/img/HSMC.jpg"
     },
     {
-      id: "CNC-DCMC",
+      id: "CNCDCMC",
       name: "CNC Double Column MC",
       img: "../assets/img/CNC-DCMC.jpg"
     },
     {
-      id: "CNC-MC",
+      id: "CNCMC",
       name: "CNC Machining Center",
       img: "../assets/img/CNC-MC.jpg"
     },
@@ -137,7 +137,7 @@ export class CategoriesViewComponent implements OnInit {
       img: "../assets/img/MC.jpg"
     },
     {
-      id: "CNC-DTC",
+      id: "CNCDTC",
       name: "CNC Drilling & Tapping Center",
       img: "../assets/img/CNC-DTC.jpg"
     },
@@ -147,12 +147,12 @@ export class CategoriesViewComponent implements OnInit {
       img: "../assets/img/HSMC.jpg"
     },
     {
-      id: "CNC-DCMC",
+      id: "CNCDCMC",
       name: "CNC Double Column MC",
       img: "../assets/img/CNC-DCMC.jpg"
     },
     {
-      id: "CNC-MC",
+      id: "CNCMC",
       name: "CNC Machining Center",
       img: "../assets/img/CNC-MC.jpg"
     }

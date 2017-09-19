@@ -1,13 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, NgModule } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Http } from '@angular/http';
 import { DataService } from '../data/data.service';
+import { FilterPipe } from '../filter.pipe';
 
 @Component({
   selector: 'app-item-detail',
   templateUrl: './item-detail.component.html',
   styleUrls: ['./item-detail.component.css'],
   providers: [DataService]
+})
+@NgModule({
+  declarations: [FilterPipe]
 })
 export class ItemDetailComponent implements OnInit {
 
@@ -16,6 +20,7 @@ export class ItemDetailComponent implements OnInit {
   cateId: string;
   cateName: string;
   checkData: boolean;
+  dataFilter = {};
   arrSups = [];
   supplier = [];
   constructor(private http: Http, private route: ActivatedRoute, private dataservice: DataService) {
@@ -23,45 +28,13 @@ export class ItemDetailComponent implements OnInit {
     this.cateId = route.snapshot.params['cateId'];
     this.itemName = route.snapshot.params['itemName'];
     this.cateName = route.snapshot.params['cateName'];
+    this.dataFilter = { "cateId": this.cateId, "itemId": this.itemId, "page": "itemDetail" }
   }
-
-  fetchData() {
-    return this.http.get('../assets/json/supplier.json')
-      .map(
-      (res) => res.json()['supplier']
-      );
-  }
-
-  selectData(supplier, itemId, cateId) {
-    var i, j, k;
-    for (i in supplier) {
-      for (j in supplier[i].items) {
-        if ((itemId == supplier[i].items[j].id) && (cateId == supplier[i].items[j].cate_id)) {
-          this.arrSups.push({
-            "id": supplier[i].id,
-            "name": supplier[i].name,
-            "address": supplier[i].address,
-            "tel": supplier[i].tel,
-            "email": supplier[i].email,
-            "fax": supplier[i].fax,
-            "web": supplier[i].web,
-            "link": supplier[i].link,
-            "language": supplier[i].language,
-            "product": supplier[i].product
-          });
-        }
-      }
-    }
-  }
-
   ngOnInit() {
 
-    // var supplier = this.dataservice.loadItem().subscribe();
-    // var supplier = [];
+    this.dataservice.fetchSupplierData().subscribe(
 
-    this.dataservice.fetchData().subscribe(
-
-      (data) => this.supplier = data.sort(function(name1, name2) {
+      (data) => this.arrSups = data.sort(function(name1, name2) {
         if (name1.name < name2.name) {
           return -1;
         } else if (name1.name > name2.name) {
@@ -71,43 +44,11 @@ export class ItemDetailComponent implements OnInit {
         }
       })
     );
-    var i, j, k;
-    // supplier.sort(function(name1, name2) {
-    //   if (name1.name < name2.name) {
-    //     return -1;
-    //   } else if (name1.name > name2.name) {
-    //     return 1;
-    //   } else {
-    //     return 0;
-    //   }
-    // });
+
     this.route.params.subscribe(params => {
       let itemIdR = params["itemId"];
       this.itemId = itemIdR;
     });
-    this.selectData(this.supplier, this.itemId, this.cateId);
-
-    // function selectData(supplier, itemId, cateId) {
-    //   for (i in supplier) {
-    //     for (j in supplier[i].items) {
-    //       if ((itemId == supplier[i].items[j].id) && (cateId == supplier[i].items[j].cate_id)) {
-    //         supplier.push({
-    //           "id": supplier[i].id,
-    //           "name": supplier[i].name,
-    //           "address": supplier[i].address,
-    //           "tel": supplier[i].tel,
-    //           "email": supplier[i].email,
-    //           "fax": supplier[i].fax,
-    //           "web": supplier[i].web,
-    //           "link": supplier[i].link,
-    //           "language": supplier[i].language,
-    //           "product": supplier[i].product
-    //         });
-    //       }
-    //     }
-    //   }
-    // }
-
 
   }
 

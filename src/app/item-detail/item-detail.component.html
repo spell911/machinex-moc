@@ -79,7 +79,7 @@
   <!-- suplier collapes -->
   <h4 class="header">Suppliers</h4>
   <ul class="collapsible z-depth-2" data-collapsible="accordion">
-    <li *ngFor="let sup of arrSups">
+    <li *ngFor="let sup of arrSups | filter:dataFilter">
       <div class="collapsible-header">
         {{sup.name}}
       </div>

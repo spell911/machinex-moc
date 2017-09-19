@@ -8,15 +8,12 @@ export class DataService {
 
   constructor(private http: Http) { }
 
-  fetchData() {
+  fetchSupplierData() {
     return this.http.get('../assets/json/supplier.json').map((res) => res.json()['supplier'])
   }
 
-  loadItem(): Observable<any[]> {
-    return this.http.get('../assets/json/supplier.json')
-      .map((res) => {
-        res.json()
-      }).catch((error: any) => Observable.throw(error.json().error || 'Server error'));
-}
+  fetchCategoriesData() {
+    return this.http.get('../assets/json/categories.json').map((res) => res.json()['categories'])
+  }
 
 }

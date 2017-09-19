@@ -15,6 +15,7 @@ import { ItemDetailComponent } from './item-detail/item-detail.component';
 import { SearchComponent } from './search/search.component';
 import { CategoriesViewComponent } from './categories-view/categories-view.component';
 import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
+import { FilterPipe } from './filter.pipe';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
     SearchComponent,
     CategoriesViewComponent,
     BreadcrumbsComponent,
-    ItemDetailComponent
+    ItemDetailComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,6 @@
 <!-- cards view -->
 <app-breadcrumbs></app-breadcrumbs>
-<div class="col s12 m2 l3" *ngFor="let item of arrItems">
+<div class="col s12 m2 l3" *ngFor="let item of arrItems | filter:dataFilter">
   <div class="card lage z-depth-2">
     <!-- <div class="card-image waves-effect waves-block waves-light">
       <img class="activator" src="{{item.itemImg}}">

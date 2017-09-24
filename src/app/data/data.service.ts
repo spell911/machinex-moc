@@ -16,4 +16,8 @@ export class DataService {
     return this.http.get('../assets/json/categories.json').map((res) => res.json()['categories'])
   }
 
+  fetchSearchData() {
+    return this.http.get('../assets/json/categories.json').map((res) => res.json()['categories'])
+  }
+
 }

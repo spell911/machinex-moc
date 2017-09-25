@@ -96,10 +96,6 @@
           <li *ngFor="let product of sup.product">{{product}}</li>
         </ul>
         <h6><font size="4"><b><u>Contact</u></b></font></h6>
-        <div class="collection z-depth-1">
-          <span class="badge" style="margin-top:10px">9</span>
-          <a href="#!" class="collection-item">{{sup.link}}</a>
-        </div>
         <ul class="collection z-depth-1" *ngFor="let link of sup.link">
           <span class="badge" style="margin-top:10px">{{link.bage}}</span>
           <li class="collection-item"> <a href="{{link.name}}">{{link.name}}</a></li>

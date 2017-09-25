@@ -111,14 +111,15 @@ export class ItemDetailComponent implements OnInit {
         email: "sales@akiraseiki.com",
         fax: "+886-4-2355-2496",
         web: "http://www.akiraseiki.com",
-        link: [{
-          name: "http://www.akiraseiki.jp",
-          bage: 5
-        },
-        {
-          name: "http://www.akiraseiki.en",
-          bage: 7
-        }
+        link: [
+          {
+            name: "http://www.akiraseiki.jp",
+            bage: 5
+          },
+          {
+            name: "http://www.akiraseiki.en",
+            bage: 7
+          }
         ],
         language: ["TH", "EN", "JP"],
         product: ["CNC Machining Center"],

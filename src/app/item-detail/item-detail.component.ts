@@ -2,7 +2,6 @@ import { Component, OnInit, NgModule } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Http } from '@angular/http';
 import { DataService } from '../data/data.service';
-import { FilterPipe } from '../filter.pipe';
 import { FormControl, FormGroup, FormArray, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
@@ -10,9 +9,6 @@ import { FormControl, FormGroup, FormArray, FormBuilder, Validators } from '@ang
   templateUrl: './item-detail.component.html',
   styleUrls: ['./item-detail.component.css'],
   providers: [DataService]
-})
-@NgModule({
-  declarations: [FilterPipe]
 })
 export class ItemDetailComponent implements OnInit {
   /*data*/

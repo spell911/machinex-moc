@@ -1,6 +1,6 @@
 <div class="nav-search-wrapper">
   <input type="text" class="nav-search z-depth-2" [(ngModel)]="createThreadLocation"
-  name="createThreadLocation" id="createThreadLocation" materialize="autocomplete"
+  name="createThreadLocation" id="createThreadLocation" materialize="autocomplete" (change)="searchData(createThreadLocation)"
   for="autocomplete-input" placeholder="Let me search it!" [materializeParams]="[{'data': locations}]">
   <label class="label-icon" for="autocomplete-input"><i class="material-icons prefix" style="margin-top:10px">search</i></label>
 </div>

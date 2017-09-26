@@ -1,12 +1,14 @@
 <!-- cards view -->
 <app-breadcrumbs></app-breadcrumbs>
-<div class="col s12 m2 l3" *ngFor="let item of arrItems">
+<div class="col s12 m2 l3" *ngFor="let item of arrItems | filter:dataFilter">
   <div class="card lage z-depth-2">
     <!-- <div class="card-image waves-effect waves-block waves-light">
       <img class="activator" src="{{item.itemImg}}">
     </div> -->
     <div class="card-content">
-      <span class="card-title grey-text text-darken-4">{{item.name}}</span>
+      <p id="div2" materialize="tooltip" class="tooltipped" data-position="right" data-delay="30" [attr.data-tooltip]="item.name">
+        <span class="card-title"><a class="black-text text-darken-2" href="/ItemView/{{cateId}}/{{cateName}}/itemdetail/{{item.id}}/{{item.name}}">{{item.name}}</a></span>
+      </p>
       <!-- <p><a routerLink="./itemdetail/{{item.itemName}}" replaceUrl=true>{{item.itemLink}}</a></p> -->
       <p><a href="/ItemView/{{cateId}}/{{cateName}}/itemdetail/{{item.id}}/{{item.name}}" replaceUrl=true>Click for more Details</a></p>
     </div>

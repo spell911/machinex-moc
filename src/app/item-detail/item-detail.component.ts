@@ -1,194 +1,94 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, NgModule } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Http } from '@angular/http';
-
+import { DataService } from '../data/data.service';
+import { FormControl, FormGroup, FormArray, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-item-detail',
   templateUrl: './item-detail.component.html',
-  styleUrls: ['./item-detail.component.css']
+  styleUrls: ['./item-detail.component.css'],
+  providers: [DataService]
 })
 export class ItemDetailComponent implements OnInit {
-
+  /*data*/
   itemId: string;
   itemName: string;
   cateId: string;
   cateName: string;
-  // supplier;
-  constructor(private http: Http, private route: ActivatedRoute) {
+  checkData: boolean;
+  dataFilter = {};
+  arrSups = [];
+  supplier = [];
+  /*checkbox*/
+  controlForm: FormGroup;
+  guideForm: FormGroup;
+  languageForm: FormGroup;
+
+
+
+  constructor(private http: Http, private route: ActivatedRoute, private dataservice: DataService, private fb: FormBuilder) {
     this.itemId = route.snapshot.params['itemId'];
     this.cateId = route.snapshot.params['cateId'];
     this.itemName = route.snapshot.params['itemName'];
     this.cateName = route.snapshot.params['cateName'];
-    // this.http.get('../assets/json/supplier.json')
-    //   .subscribe(res => supplier = res.json()['supplier']);
-
+    this.dataFilter = {
+      "cateId": this.cateId,
+      "itemId": this.itemId,
+      "guide": {"guide":[]},
+      "control": {"control":[]},
+      "language": {"language":[]},
+      "page": "itemDetail"
+    }
   }
-
-  arrSups = [];
-
   ngOnInit() {
-    var i, j, k;
-    var supplier = [
-      {
-        id: "KASUGA",
-        name: "KASUGA Co., Ltd.",
-        address: "NO.149, Sec. 1, Guofeng Rd., Shengang Dist., Taichung City 429, Taiwan",
-        tel: "+886 4 252-529-95",
-        email: "sale@kasuga.jp",
-        fax: "+886 4 252-529-91",
-        web: "http://www.kasuga.jp",
-        link: [{
-          name: "http://www.kasuga.jp",
-          bage: 5
-        },
-        {
-          name: "http://www.kasuga.en",
-          bage: 7
-        }
-        ],
-        language: ["EN", "JP"],
-        product: ["Machining Center", "CNC Drilling & Tapping Center", "High Speed Machining Center", "CNC Double Column MC"],
-        items: [{
-          id: "BT40V",
-          cate_id: "MC",
-          cate_name: "Machining Center",
-          name: "BT40 Vertical",
-          guide: ["Linear Guide"],
-          control: ["Fanuc", "HEIDENHAIN"]
-        },
-        {
-          id: "BT40V5A",
-          cate_id: "MC",
-          cate_name: "Machining Center",
-          name: "BT40 Vertical 5-A",
-          guide: ["Linear Guide"],
-          control: ["Fanuc", "HEIDENHAIN"]
-        },
-        {
-          id: "BT50V",
-          cate_id: "MC",
-          cate_name: "Machining Center",
-          name: "BT50 Vertical",
-          guide: ["Linear Guide"],
-          control: ["Fanuc", "HEIDENHAIN"]
-        }
-        ]
-      },
-      {
-        id: "NUMEN",
-        name: "NUMEN Machinery Co., Ltd.",
-        address: "30, Alley 28, Lane 230, Sec. 5 Da Feng Road, Feng Yuan Dist., Taichung City 420, Taiwan",
-        tel: "+886-4-2533-0966",
-        email: "sales@numenmachinery.com",
-        fax: "+886-4-2533-0125",
-        web: "www.numenmachinery.com",
-        link: [{
-          name: "http://www.numenmachinery.jp",
-          bage: 5
-        },
-        {
-          name: "http://www.numenmachinery.en",
-          bage: 7
-        }
-        ],
-        language: ["TH", "EN", "JP"],
-        product: ["Machining Center"],
-        items: [{
-          id: "BT40V",
-          cate_id: "MC",
-          cate_name: "Machining Center",
-          name: "BT40 Vertical",
-          guide: ["Linear Guide"],
-          control: ["Fanuc", "HEIDENHAIN"]
-        }]
-      },
-      {
-        id: "AKIRASEIKI",
-        name: "AKIRA SEIKI CO., LTD.",
-        address: "30, Alley 28, Lane 230, Sec. 5 Da Feng Road, Feng Yuan Dist., Taichung City 420, Taiwan",
-        tel: "+886-4-2355-2495",
-        email: "sales@akiraseiki.com",
-        fax: "+886-4-2355-2496",
-        web: "http://www.akiraseiki.com",
-        link: [
-          {
-            name: "http://www.akiraseiki.jp",
-            bage: 5
-          },
-          {
-            name: "http://www.akiraseiki.en",
-            bage: 7
-          }
-        ],
-        language: ["TH", "EN", "JP"],
-        product: ["CNC Machining Center"],
-        items: [{
-          id: "BT30V",
-          cate_id: "CNCMC",
-          cate_name: "CNC Machining Center",
-          name: "BT30 Vertical",
-          guide: ["Linear Guide"],
-          control: ["Fanuc", "HEIDENHAIN"]
-        },
-        {
-          id: "BT40V",
-          cate_id: "CNCMC",
-          cate_name: "CNC Machining Center",
-          name: "BT40 Vertical",
-          guide: ["Linear Guide"],
-          control: ["Fanuc", "HEIDENHAIN"]
-        },
-        {
-          id: "BT40H",
-          cate_id: "CNCMC",
-          cate_name: "CNC Machining Center",
-          name: "BT40 Horizon",
-          guide: ["Linear Guide"],
-          control: ["Fanuc", "HEIDENHAIN"]
-        }
-        ]
-      }
-    ];
 
-    supplier.sort(function(name1, name2) {
-      if (name1.name < name2.name) {
-        return -1;
-      } else if (name1.name > name2.name) {
-        return 1;
-      } else {
-        return 0;
-      }
-    });
+    this.dataservice.fetchSupplierData().subscribe(
+      (data) => this.arrSups = data.sort(function(name1, name2) {
+        if (name1.name < name2.name) {
+          return -1;
+        } else if (name1.name > name2.name) {
+          return 1;
+        } else {
+          return 0;
+        }
+      })
+    );
 
     this.route.params.subscribe(params => {
       let itemIdR = params["itemId"];
       this.itemId = itemIdR;
     });
-    for (i in supplier) {
-      for (j in supplier[i].items) {
-        if ((this.itemId == supplier[i].items[j].id) && (this.cateId == supplier[i].items[j].cate_id)) {
-          this.arrSups.push({
-            "id": supplier[i].id,
-            "name": supplier[i].name,
-            "address": supplier[i].address,
-            "tel": supplier[i].tel,
-            "email": supplier[i].email,
-            "fax": supplier[i].fax,
-            "web": supplier[i].web,
-            "link": supplier[i].link,
-            "language": supplier[i].language,
-            "product": supplier[i].product
-          });
-        }
-      }
+
+    /*checkbox*/
+    this.controlForm = this.fb.group({ control: this.fb.array([]) });
+    this.guideForm = this.fb.group({ guide: this.fb.array([]) });
+    this.languageForm = this.fb.group({ language: this.fb.array([]) });
+
+  }
+
+  /*checkbox*/
+  onChange(data: string, isChecked: boolean, byForm: string) {
+    var FormArray;
+    var i;
+    if (byForm == "guideForm") {
+      FormArray = <FormArray>this.guideForm.get('guide');
+    } else if (byForm == "controlForm") {
+      FormArray = <FormArray>this.controlForm.get('control');
+    } else {
+      FormArray = <FormArray>this.languageForm.get('language');
+    }
+
+    if (isChecked) {
+      FormArray.push(new FormControl(data));
+    } else {
+      let index = FormArray.controls.findIndex(x => x.value == data)
+      FormArray.removeAt(index);
     }
   }
 
-
   scaleBtOut(btnVal) {
     var btnScaleBt = document.getElementById('scale-bt');
-
     btnScaleBt.classList.remove("scale-out");
   }
 
@@ -197,58 +97,74 @@ export class ItemDetailComponent implements OnInit {
     btnLb.classList.remove("scale-out");
   }
 
-  searchSup() {
-
-  }
-
-  checkAll(ele, type) {
+  checkAll(ele, type, btn) {
     console.log(ele);
     console.log(type);
     var checkboxes_guide_form = document.forms["guide_form"].getElementsByTagName('input');
     var checkboxes_control_form = document.forms["control_form"].getElementsByTagName('input');
     var checkboxes_language_form = document.forms["language_form"].getElementsByTagName('input');
-    if (ele.target.checked && type == 'guide') {
+    if (ele.target.checked && type == 'guideForm') {
+      this.guideForm = this.fb.group({ guide: this.fb.array([]) });
       for (var i = 0; i < checkboxes_guide_form.length; i++) {
         if (checkboxes_guide_form[i].type == 'checkbox') {
           checkboxes_guide_form[i].checked = true;
+          this.onChange(checkboxes_guide_form[i].value, checkboxes_guide_form[i].checked, type);
         }
       }
-    } else if (ele.target.checked && type == 'control') {
+    } else if (ele.target.checked && type == 'controlForm') {
+      this.controlForm = this.fb.group({ control: this.fb.array([]) });
       for (var i = 0; i < checkboxes_control_form.length; i++) {
         if (checkboxes_control_form[i].type == 'checkbox') {
           checkboxes_control_form[i].checked = true;
+          this.onChange(checkboxes_control_form[i].value, checkboxes_control_form[i].checked, type);
         }
       }
-    } else if (ele.target.checked && type == 'lang') {
+    } else if (ele.target.checked && type == 'languageForm') {
+      this.languageForm = this.fb.group({ language: this.fb.array([]) });
       for (var i = 0; i < checkboxes_language_form.length; i++) {
         if (checkboxes_language_form[i].type == 'checkbox') {
           checkboxes_language_form[i].checked = true;
+          this.onChange(checkboxes_language_form[i].value, checkboxes_language_form[i].checked, type);
         }
       }
-    } else if (type == 'guide') {
+    } else if (type == 'guideForm') {
+      this.guideForm = this.fb.group({ guide: this.fb.array([]) });
       for (var i = 0; i < checkboxes_guide_form.length; i++) {
-        console.log(i)
         if (checkboxes_guide_form[i].type == 'checkbox') {
           checkboxes_guide_form[i].checked = false;
+          this.onChange(checkboxes_guide_form[i].value, checkboxes_guide_form[i].checked, type);
         }
       }
-    } else if (type == 'control') {
+    } else if (type == 'controlForm') {
+      this.controlForm = this.fb.group({ control: this.fb.array([]) });
       for (var i = 0; i < checkboxes_control_form.length; i++) {
         console.log(i)
         if (checkboxes_control_form[i].type == 'checkbox') {
           checkboxes_control_form[i].checked = false;
+          this.onChange(checkboxes_control_form[i].value, checkboxes_control_form[i].checked, type);
         }
       }
     } else {
+      this.languageForm = this.fb.group({ language: this.fb.array([]) });
       for (var i = 0; i < checkboxes_language_form.length; i++) {
         console.log(i)
         if (checkboxes_language_form[i].type == 'checkbox') {
           checkboxes_language_form[i].checked = false;
+          this.onChange(checkboxes_language_form[i].value, checkboxes_language_form[i].checked, type);
         }
       }
     }
   }
 
-
+  searchData() {
+    this.dataFilter = {
+      "cateId": this.cateId,
+      "itemId": this.itemId,
+      "guide": this.guideForm.value,
+      "control": this.controlForm.value,
+      "language": this.languageForm.value,
+      "page": "itemDetail"
+    }
+  }
 
 }

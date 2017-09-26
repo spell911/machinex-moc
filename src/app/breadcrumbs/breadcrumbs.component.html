@@ -1,18 +1,16 @@
 <nav class="white z-depth-0">
-  <div class="nav-wrapper">
-    <div class="col s12 l12">
-      <a *ngIf="cateId != ''" href="/" class="breadcrumb">
-        <font size="4" color="black">Home</font>
-      </a>
-      <a *ngIf="cateIdCheck == true" href="ItemView/{{cateId}}/{{cateName}}" class="breadcrumb">
-        <font size="4" color="black">{{cateName}}</font>
-      </a>
-      <!-- <a *ngIf="itemIdCheck == true && cateIdCheck == false" href="ItemView/{{cateId}}/{{cateName}}/{{itemId}}/{{itemName}}" class="breadcrumb">
+  <div class="col s12 l12">
+    <a *ngIf="cateId != ''" href="/" class="breadcrumb">
+      <font size="3" color="black">Home</font>
+    </a>
+    <a *ngIf="cateIdCheck == true" href="ItemView/{{cateId}}/{{cateName}}" class="breadcrumb">
+      <font size="3" color="black">{{cateName}}</font>
+    </a>
+    <!-- <a *ngIf="itemIdCheck == true && cateIdCheck == false" href="ItemView/{{cateId}}/{{cateName}}/{{itemId}}/{{itemName}}" class="breadcrumb">
         <font size="4" color="black"> {{itemName}}</font>
       </a> -->
-      <a *ngIf="itemIdCheck == true && cateIdCheck == true" href="ItemView/{{cateId}}/{{cateName}}/itemdetail/{{itemId}}/{{itemName}}" class="breadcrumb">
-        <font size="4" color="black"> {{itemName}}</font>
-      </a>
-    </div>
+    <a *ngIf="itemIdCheck == true && cateIdCheck == true" href="ItemView/{{cateId}}/{{cateName}}/itemdetail/{{itemId}}/{{itemName}}" class="breadcrumb">
+      <font size="3" color="black"> {{itemName}}</font>
+    </a>
   </div>
 </nav>

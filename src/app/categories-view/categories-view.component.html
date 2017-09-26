@@ -1,11 +1,27 @@
 <!-- cards view -->
-<div class="col s12 m2 l3" *ngFor="let categorie of categories">
-  <div class="card lage z-depth-2">
+<!-- <div class="col s12 m4 l3" *ngFor="let categorie of categories">
+  <div class="card medium z-depth-2">
     <div class="card-image waves-effect waves-block waves-light">
-      <a href="CategoriesView/{{categorie.id}}"><img class="activator" src="{{categorie.img}}"></a>
+      <a href="ItemView/{{categorie.id}}/{{categorie.name}}"><img class="activator" src="{{categorie.img}}"></a>
     </div>
     <div class="card-content">
-      <font size="4"><a class="activator black-text text-darken-2" href="ItemView/{{categorie.id}}/{{categorie.name}}" replaceUrl=true>{{categorie.name}}</a></font>
+      <font size="3"><a class="activator black-text text-darken-2" href="ItemView/{{categorie.id}}/{{categorie.name}}" replaceUrl=true>{{categorie.name}}</a></font>
+    </div>
+  </div>
+</div> -->
+
+<div class="row">
+  <div class="col s12 m4 l3" *ngFor="let categorie of categories">
+    <div class="card">
+      <div class="card-image">
+        <a href="ItemView/{{categorie.id}}/{{categorie.name}}"><img class="activator" src="{{categorie.img}}"></a>
+      </div>
+      <div class="card-content">
+        <p materialize="tooltip" class="tooltipped" data-position="right" data-delay="30" [attr.data-tooltip]="categorie.name">
+          <span id="div2" class="card-title"><a class="activator black-text text-darken-2" href="ItemView/{{categorie.id}}/{{categorie.name}}" replaceUrl=true>{{categorie.name}}</a></span>
+        </p>
+        <p><a class="activator blue-text text-darken-2" href="ItemView/{{categorie.id}}/{{categorie.name}}" replaceUrl=true>Click for more Details</a></p>
+      </div>
     </div>
   </div>
 </div>

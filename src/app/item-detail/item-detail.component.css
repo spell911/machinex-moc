@@ -1,17 +1,42 @@
-div.col.s12.m7{
+div.col.s12.m7 {
   width: 100%;
-      margin-left: auto;
-      left: auto;
-      right: auto;
-
+  margin-left: auto;
+  left: auto;
+  right: auto;
 }
 
-div.card-action{
-position: absolute;
-bottom: 0;
-left: 0;
+div.card-action {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.card-title {
+  font-size: 140%
 }
 
 h5 {
   color: #000000;
+  font-size: 120%;
+}
+
+h4 {
+  color: #000000;
+  font-size: 150%;
+}
+
+label {
+  font-size: 90%;
+}
+
+span {
+  font-size: 80%;
+}
+
+i {
+  font-size: 110%;
+}
+
+a {
+  font-size: 90%;
 }

@@ -1,5 +1,7 @@
 nav.white {
   color: #FFFFFF;
+  height: 0px;
+  margin-top: 0px
 }
 
 nav a:hover {
@@ -9,4 +11,8 @@ nav a:hover {
 
 .breadcrumb:before {
   color: #9E9E9E;
+}
+
+.divh{
+  height: 100px;
 }

@@ -35,14 +35,14 @@ export class ItemDetailComponent implements OnInit {
     this.dataFilter = {
       "cateId": this.cateId,
       "itemId": this.itemId,
-      "guide": {"guide":[]},
-      "control": {"control":[]},
-      "language": {"language":[]},
+      "guide": { "guide": [] },
+      "control": { "control": [] },
+      "language": { "language": [] },
       "page": "itemDetail"
     }
+
   }
   ngOnInit() {
-
     this.dataservice.fetchSupplierData().subscribe(
       (data) => this.arrSups = data.sort(function(name1, name2) {
         if (name1.name < name2.name) {

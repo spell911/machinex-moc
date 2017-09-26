@@ -9,15 +9,15 @@
     </div>
   </div>
 </div> -->
-
 <div class="row">
+  <app-breadcrumbs></app-breadcrumbs>
   <div class="col s12 m4 l3" *ngFor="let categorie of categories">
     <div class="card">
       <div class="card-image">
         <a href="ItemView/{{categorie.id}}/{{categorie.name}}"><img class="activator" src="{{categorie.img}}"></a>
       </div>
       <div class="card-content">
-        <p materialize="tooltip" class="tooltipped" data-position="right" data-delay="30" [attr.data-tooltip]="categorie.name">
+        <p materialize="tooltip" class="tooltipped" data-position="top" data-delay="30" [attr.data-tooltip]="categorie.name">
           <span id="div2" class="card-title"><a class="activator black-text text-darken-2" href="ItemView/{{categorie.id}}/{{categorie.name}}" replaceUrl=true>{{categorie.name}}</a></span>
         </p>
         <p><a class="activator blue-text text-darken-2" href="ItemView/{{categorie.id}}/{{categorie.name}}" replaceUrl=true>Click for more Details</a></p>

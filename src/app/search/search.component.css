@@ -1,4 +1,4 @@
-.nav-search-wrapper {
+/*.nav-search-wrapper {
   width: calc(100% - 600px);
   height: 40px;
   display: inline-block;
@@ -19,7 +19,7 @@
 input.nav-search{
   display: inline-block;
   padding: 8px 8px 8px 72px;
-  width: 500px;
+  width: 100%;
   background: #757575;
   height: 15px;
   -webkit-transition: all 200ms ease;
@@ -56,4 +56,23 @@ input.nav-search:focus{
   color: #fff;
   font-size: 16px;
   font-weight: 400
+}*/
+
+
+/* label focus color */
+
+.input-field input[type=text]:focus+label {
+  color: #000;
+}
+
+.input-field {
+  color: #000;
+}
+
+
+/* label underline focus color */
+
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
 }

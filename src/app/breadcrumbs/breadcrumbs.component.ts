@@ -4,7 +4,7 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-breadcrumbs',
   templateUrl: './breadcrumbs.component.html',
-  styleUrls: ['./breadcrumbs.component.css']
+  styleUrls: ['./breadcrumbsclean.sass']
 })
 
 export class BreadcrumbsComponent implements OnInit {

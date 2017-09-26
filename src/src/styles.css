@@ -50,5 +50,5 @@ main {
 .autocomplete-content {
    position: absolute;
    margin-left: 4em;
-   width: 520px;
+   width: auto;
 }

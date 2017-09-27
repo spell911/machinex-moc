@@ -10,6 +10,7 @@ export class FilterPipe implements PipeTransform {
     var countToPush = [];
     var cateId = filter.cateId;
     var itemId = filter.itemId;
+    var supId = filter.supId;
     var page = filter.page;
     var i, j, k, l, m, n, o, r, p;
     var controlCheck;
@@ -76,6 +77,13 @@ export class FilterPipe implements PipeTransform {
           if (cateId == arrSups[i].id) {
             arr.push(arrSups[i].items[j]);
           }
+        }
+      }
+      return arr;
+    } else if (cateId != "" && itemId != "" && supId !="" && page == "SupplierDetail") {
+      for (i in arrSups) {
+        if (supId == arrSups[i].id) {
+          arr.push(arrSups[i]);
         }
       }
       return arr;

@@ -40,7 +40,6 @@ export class ItemDetailComponent implements OnInit {
       "language": { "language": [] },
       "page": "itemDetail"
     }
-
   }
   ngOnInit() {
     this.dataservice.fetchSupplierData().subscribe(
@@ -66,6 +65,8 @@ export class ItemDetailComponent implements OnInit {
     this.languageForm = this.fb.group({ language: this.fb.array([]) });
 
   }
+
+
 
   /*checkbox*/
   onChange(data: string, isChecked: boolean, byForm: string) {
@@ -157,6 +158,7 @@ export class ItemDetailComponent implements OnInit {
   }
 
   searchData() {
+    this.preLoader();
     this.dataFilter = {
       "cateId": this.cateId,
       "itemId": this.itemId,
@@ -164,6 +166,19 @@ export class ItemDetailComponent implements OnInit {
       "control": this.controlForm.value,
       "language": this.languageForm.value,
       "page": "itemDetail"
+    }
+    setTimeout(() => {
+      this.preLoader();
+    }, 1000);
+
+  }
+
+  preLoader() {
+    var preloaderDOM = document.getElementById('preLoader');
+    if (preloaderDOM.className == "hide") {
+      preloaderDOM.className = "show";
+    } else {
+      preloaderDOM.className = 'hide';
     }
   }
 

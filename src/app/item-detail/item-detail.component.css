@@ -34,9 +34,23 @@ span {
 }
 
 i {
-  font-size: 110%;
+  font-size: 150%;
 }
 
-a {
-  font-size: 90%;
+a:hover {
+  text-decoration: underline;
+}
+
+.show {
+  display: inherit;
+}
+
+.hide {
+  display: none;
+}
+
+.center {
+  margin: auto;
+  width: 100%;
+  padding: 10px;
 }

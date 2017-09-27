@@ -3,6 +3,7 @@ import { CategoriesViewComponent } from "./categories-view/categories-view.compo
 import { BreadcrumbsComponent } from "./breadcrumbs/breadcrumbs.component";
 import { ItemViewComponent } from "./item-view/item-view.component";
 import { ItemDetailComponent } from "./item-detail/item-detail.component";
+import { SupplierDetailComponent } from "./supplier-detail/supplier-detail.component";
 
 const APP_ROUTES: Routes = [
   {
@@ -17,6 +18,10 @@ const APP_ROUTES: Routes = [
   {
     path: 'ItemView/:cateId/:cateName/itemdetail/:itemId/:itemName',
     component: ItemDetailComponent
+  },
+  {
+    path: 'ItemView/:cateId/:cateName/itemdetail/:itemId/:itemName/supdetail/:supId/:supName',
+    component: SupplierDetailComponent
   }
 ];
 

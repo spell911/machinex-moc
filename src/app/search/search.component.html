@@ -3,8 +3,8 @@
     [materializeParams]="[{'data': locations}]">
   <label class="label-icon" for="autocomplete-input"><i class="material-icons prefix" style="margin-top:10px">search</i></label>
 </div> -->
-<div class="input-field col s12" style="color:#000000">
-  <i class="material-icons prefix" style="color:#000000">search</i>
+<div class="input-field col s12 l4" style="color:#000000">
+  <i class="material-icons prefix" style="color:#000000;margin-top: 2%">search</i>
   <input style="color:#000000" type="text" [(ngModel)]="createThreadLocation" name="createThreadLocation" id="createThreadLocation" materialize="autocomplete" (change)="searchData(createThreadLocation)" for="autocomplete-input" placeholder="Let me search it!" [materializeParams]="[{'data': locations}]">
   <label style="color:#000000" class="label-icon" for="autocomplete-input"></label>
 </div>

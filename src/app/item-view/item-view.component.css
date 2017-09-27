@@ -1,12 +1,7 @@
 p {
   font-size: 85%;
 }
-#div2 {
-    white-space: nowrap;
-    width: auto;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
+
 .card-title {
   font-size: 140%
 }

@@ -4,11 +4,11 @@ nav {
   background-color: #424242;
 }
 
-nav.subnav{
+nav.subnav {
   background-color: #424242;
 }
 
-nav.bread{
+nav.bread {
   background-color: #FFFFFF;
 }
 
@@ -23,9 +23,10 @@ nav.bread{
 .tabs .tab a {
   color: #000000;
 }
-.tabs .tab a:hover,.tabs .tab a.active {
-	background-color:transparent;
-	color:#000000;
+
+.tabs .tab a:hover, .tabs .tab a.active {
+  background-color: transparent;
+  color: #000000;
 }
 
 .collection a.collection-item {
@@ -34,7 +35,7 @@ nav.bread{
   color: #0288d1;
 }
 
-h5{
+h5 {
   color: #9ccc65;
 }
 
@@ -47,8 +48,16 @@ body {
 main {
   flex: 1 0 auto;
 }
+
 .autocomplete-content {
-   position: absolute;
-   margin-left: 4em;
-   width: auto;
+  position: absolute;
+  margin-left: 4em;
+  width: auto;
+}
+
+#div2 {
+  white-space: nowrap;
+  width: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

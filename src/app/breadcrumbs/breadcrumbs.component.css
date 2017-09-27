@@ -4,6 +4,10 @@ div.white {
   margin-top: 0px
 }
 
+nav a{
+  font-size: 110%;
+}
+
 nav a:hover {
   color: #000000;
   text-decoration: underline;

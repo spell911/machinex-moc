@@ -1,22 +1,20 @@
-<nav class="clean">
+<nav class="clean col l8">
   <div class="nav-wrapper">
-    <div class="col s12 l8">
-      <a *ngIf="cateIdCheck == true" href="/" class="breadcrumb">
-        <font size="3" color="black">Home</font>
-      </a>
-      <a *ngIf="cateIdCheck == false" href="/" class="breadcrumb">
-        <font size="5" color="black">Search by category</font>
-      </a>
-      <a *ngIf="cateIdCheck == true" href="ItemView/{{cateId}}/{{cateName}}" class="breadcrumb">
-        <font size="3" color="black">{{cateName}}</font>
-      </a>
-      <a *ngIf="itemIdCheck == true && cateIdCheck == true" href="ItemView/{{cateId}}/{{cateName}}/itemdetail/{{itemId}}/{{itemName}}" class="breadcrumb">
-        <font size="3" color="black"> {{itemName}}</font>
-      </a>
-    </div>
-    <div class="col s12 l4">
-      <app-search></app-search>
-    </div>
+    <a *ngIf="cateIdCheck == true" [routerLink]="['/']" class="breadcrumb">
+      Home
+    </a>
+    <a *ngIf="cateIdCheck == false" [routerLink]="['/']" class="breadcrumb">
+      Search by category
+    </a>
+    <a *ngIf="cateIdCheck == true" [routerLink]="['/ItemView/',cateId,cateName]" class="breadcrumb" replaceUrl=true>
+      {{cateName}}
+    </a>
+    <a *ngIf="itemIdCheck == true && cateIdCheck == true" [routerLink]="['/ItemView/',cateId,cateName,'itemdetail',itemId,itemName]" class="breadcrumb" replaceUrl=true>
+      {{itemName}}
+    </a>
+    <a *ngIf="itemIdCheck == true && cateIdCheck == true && supIdCheck == true" [routerLink]="['/ItemView/',cateId,cateName,'itemdetail',itemId,itemName,'supdetail',supId]" class="breadcrumb" replaceUrl=true>
+      {{supName}}
+    </a>
   </div>
 </nav>
 

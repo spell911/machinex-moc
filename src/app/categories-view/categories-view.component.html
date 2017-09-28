@@ -1,18 +1,8 @@
 <!-- cards view -->
-<!-- <div class="col s12 m4 l3" *ngFor="let categorie of categories">
-  <div class="card medium z-depth-2">
-    <div class="card-image waves-effect waves-block waves-light">
-      <a href="ItemView/{{categorie.id}}/{{categorie.name}}"><img class="activator" src="{{categorie.img}}"></a>
-    </div>
-    <div class="card-content">
-      <font size="3"><a class="activator black-text text-darken-2" href="ItemView/{{categorie.id}}/{{categorie.name}}" replaceUrl=true>{{categorie.name}}</a></font>
-    </div>
-  </div>
-</div> -->
 <app-breadcrumbs></app-breadcrumbs>
 <app-search></app-search>
-<div class="col s12 m4 l3" *ngFor="let categorie of categories">
-  <div class="card">
+<div class="col s12 m3 l3" *ngFor="let categorie of categories">
+  <div class="card lage z-depth-1 hoverable">
     <div class="card-image">
       <a [routerLink]="['ItemView/',categorie.id,categorie.name]"><img class="activator" src="{{categorie.img}}"></a>
     </div>

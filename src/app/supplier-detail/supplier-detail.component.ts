@@ -42,4 +42,5 @@ export class SupplierDetailComponent implements OnInit {
     );
   }
 
+
 }

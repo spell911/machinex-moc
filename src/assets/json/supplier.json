@@ -7,6 +7,7 @@
       "email": "sale@kasuga.jp",
       "fax": "+886 4 252-529-91",
       "web": "http://www.kasuga.jp",
+      "sugg": 1,
       "link": [{
           "name": "http://www.kasuga.jp",
           "bage": 5
@@ -51,13 +52,14 @@
       "tel": "+886-4-2533-0966",
       "email": "sales@numenmachinery.com",
       "fax": "+886-4-2533-0125",
-      "web": "www.numenmachinery.com",
+      "web": "http://www.numenmachinery.com.tw/index.asp?lang=2",
+      "sugg": 0,
       "link": [{
-          "name": "http://www.numenmachinery.jp",
+          "name": "http://www.numenmachinery.com.tw/index.asp?lang=2",
           "bage": 5
         },
         {
-          "name": "http://www.numenmachinery.en",
+          "name": "http://www.numenmachinery.com.tw/index.asp?lang=2",
           "bage": 7
         }
       ],
@@ -80,6 +82,7 @@
       "email": "sales@akiraseiki.com",
       "fax": "+886-4-2355-2496",
       "web": "http://www.akiraseiki.com",
+      "sugg": 0,
       "link": [{
           "name": "http://www.akiraseiki.jp",
           "bage": 5

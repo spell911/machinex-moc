@@ -4,13 +4,13 @@
   <span class="card-title">Company Details</span>
   <div class="card horizontal z-depth-2" style="height: 100%">
     <div class="card-content col s12 m12 l12">
-      {{sup.name}}
+      <!-- {{sup.name}} -->
       <h6><b><u>Company Infomation</u></b></h6>
       <i class="material-icons">business</i><span style="margin-left: 1%">{{sup.name}}</span><br>
       <i class="material-icons">call</i><span style="margin-left: 1%">{{sup.tel}}(Tel.)</span><br>
       <i class="material-icons">print</i><span style="margin-left: 1%">{{sup.fax}}(Fax.)</span><br>
       <i class="material-icons">email</i><span style="margin-left: 1%">{{sup.email}}</span><br>
-      <i class="material-icons">rss_feed</i><a href="http://www.akiraseiki.com"><span style="margin-left: 1%">{{sup.web}}</span></a><br>
+      <i class="material-icons">rss_feed</i><a target="_blank" href="{{sup.web}}"><span style="margin-left: 1%">{{sup.web}}</span></a><br>
       <i class="material-icons">location_on</i><span style="margin-left: 1%">{{sup.address}}</span>
       <h6><b><u>Product Categories of {{sup.name}}</u></b></h6>
       <ul>
@@ -18,7 +18,7 @@
       </ul>
       <h6><b><u>Connect</u></b></h6>
       <div class="collection z-depth-1" >
-        <a *ngFor="let link of sup.link" href="{{link.name}}" class="collection-item"><span class="badge">{{link.bage}}</span>{{link.name}}</a>
+        <a *ngFor="let link of sup.link" target="_blank" href="{{link.name}}" class="collection-item"><span class="badge">{{link.bage}}</span>{{link.name}}</a>
       </div>
     </div>
   </div>

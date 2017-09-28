@@ -82,7 +82,14 @@
     </div>
   </div>
   <ul class="collection z-depth-1">
-    <li class="collection-item" *ngFor="let sup of arrSups | filter:dataFilter"><a id="supnameAtag" style="color:#000;font-size:90%" [routerLink]="['/ItemView/',cateId,cateName,'itemdetail',itemId,itemName,'supdetail',sup.id,sup.name]" replaceUrl=true>{{sup.name}}</a></li>
+    <li class="collection-item" *ngFor="let sup of arrSups | filter:dataFilter">
+      <a id="supnameAtag" [routerLink]="['/ItemView/',cateId,cateName,'itemdetail',itemId,itemName,'supdetail',sup.id,sup.name]" replaceUrl=true>
+        {{sup.name}}
+      </a>
+      <a style="color:#0091ea" *ngIf="sup.sugg == 1" href="#" materialize="tooltip" class="tooltipped right" data-position="bottom" data-delay="30" data-tooltip="Suggest!">
+          <i class="material-icons">grade</i>
+      </a>
+    </li>
   </ul>
 
 

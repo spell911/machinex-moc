@@ -37,6 +37,11 @@ i {
   font-size: 150%;
 }
 
+a {
+  font-size: 90%;
+  color: #000
+}
+
 a:hover {
   text-decoration: underline;
 }
@@ -53,4 +58,8 @@ a:hover {
   margin: auto;
   width: 100%;
   padding: 10px;
+}
+
+.right {
+  float: right;
 }

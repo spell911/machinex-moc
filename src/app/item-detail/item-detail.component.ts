@@ -158,7 +158,6 @@ export class ItemDetailComponent implements OnInit {
   }
 
   searchData() {
-    this.preLoader();
     this.dataFilter = {
       "cateId": this.cateId,
       "itemId": this.itemId,
@@ -167,16 +166,13 @@ export class ItemDetailComponent implements OnInit {
       "language": this.languageForm.value,
       "page": "itemDetail"
     }
-    setTimeout(() => {
-      this.preLoader();
-    }, 1000);
-
   }
 
   preLoader() {
     var preloaderDOM = document.getElementById('preLoader');
     if (preloaderDOM.className == "hide") {
       preloaderDOM.className = "show";
+      preloaderDOM.className = "center";
     } else {
       preloaderDOM.className = 'hide';
     }

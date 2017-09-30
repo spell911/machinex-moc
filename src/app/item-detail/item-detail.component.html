@@ -76,23 +76,31 @@
 <div class="col s12 m12 l12" style="margin-top : 1%">
   <!-- suplier collapes -->
   <span class="card-title">Suppliers</span>
-  <div id="preLoader" class="hide">
-    <div class="progress">
-      <div class="indeterminate"></div>
+  <!-- <div id="preLoader" class="hide">
+    <div class="preloader-wrapper active">
+      <div class="spinner-layer">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div>
+        <div class="gap-patch">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
     </div>
-  </div>
+  </div> -->
   <ul class="collection z-depth-1">
     <li class="collection-item" *ngFor="let sup of arrSups | filter:dataFilter">
       <a id="supnameAtag" [routerLink]="['/ItemView/',cateId,cateName,'itemdetail',itemId,itemName,'supdetail',sup.id,sup.name]" replaceUrl=true>
         {{sup.name}}
       </a>
-      <a style="color:#0091ea" *ngIf="sup.sugg == 1" href="#" materialize="tooltip" class="tooltipped right" data-position="bottom" data-delay="30" data-tooltip="Suggest!">
+      <a style="color:#4db6ac" *ngIf="sup.sugg == 1" href="#" materialize="tooltip" class="tooltipped right" data-position="bottom" data-delay="30" data-tooltip="Suggest!">
           <i class="material-icons">grade</i>
       </a>
     </li>
   </ul>
-
-
   <!-- <ul class="collapsible z-depth-2" data-collapsible="accordion">
       <li *ngFor="let sup of arrSups | filter:dataFilter">
         <div class="collapsible-header">

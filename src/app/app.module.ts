@@ -18,6 +18,7 @@ import { CategoriesViewComponent } from './categories-view/categories-view.compo
 import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 import { FilterPipe } from './filter.pipe';
 import { SupplierDetailComponent } from './supplier-detail/supplier-detail.component';
+import { PreloaderComponent } from './preloader/preloader.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { SupplierDetailComponent } from './supplier-detail/supplier-detail.compo
     BreadcrumbsComponent,
     ItemDetailComponent,
     FilterPipe,
-    SupplierDetailComponent
+    SupplierDetailComponent,
+    PreloaderComponent
   ],
   imports: [
     BrowserModule,

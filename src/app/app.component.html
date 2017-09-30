@@ -8,6 +8,9 @@
   <!-- navbar section -->
   <section id="navbarSection">
     <app-navbar></app-navbar>
+    <div class="progress" *ngIf="loading">
+      <div class="indeterminate"></div>
+    </div>
   </section>
   <main id="mainSection">
     <section id="item-viewSection">

@@ -32,6 +32,8 @@ export class ItemDetailComponent implements OnInit {
     this.cateId = route.snapshot.params['cateId'];
     this.itemName = route.snapshot.params['itemName'];
     this.cateName = route.snapshot.params['cateName'];
+
+
     this.dataFilter = {
       "cateId": this.cateId,
       "itemId": this.itemId,
@@ -40,6 +42,7 @@ export class ItemDetailComponent implements OnInit {
       "language": { "language": [] },
       "page": "itemDetail"
     }
+
   }
   ngOnInit() {
     this.dataservice.fetchSupplierData().subscribe(

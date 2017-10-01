@@ -2,16 +2,14 @@
 <app-breadcrumbs></app-breadcrumbs>
 <app-search></app-search>
 <div class="col s12 m6 l3" *ngFor="let item of arrItems | filter:dataFilter">
-  <div class="card z-depth-1 hoverable">
-    <!-- <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src="{{item.itemImg}}">
-    </div> -->
-    <div class="card-content">
-      <p id="div2" materialize="tooltip" class="tooltipped" data-position="bottom" data-delay="30" [attr.data-tooltip]="item.name">
-      <span class="card-title"><a class="black-text text-darken-2" [routerLink]="['/ItemView/',cateId,cateName,'itemdetail',item.id,item.name]">{{item.name}}</a></span>
-      </p>
-      <!-- <p><a routerLink="./itemdetail/{{item.itemName}}" replaceUrl=true>{{item.itemLink}}</a></p> -->
-      <p id="div2"><a [routerLink]="['/ItemView/',cateId,cateName,'itemdetail',item.id,item.name]" replaceUrl=true>Click for more Details</a></p>
-    </div>
+  <div class="card z-depth-2 hoverable">
+    <p id="div2" materialize="tooltip" class="tooltipped" data-position="bottom" data-delay="30" [attr.data-tooltip]="item.name">
+      <a [routerLink]="['/ItemView/',cateId,cateName,'itemdetail',item.id,item.name]" replaceUrl=true>
+        <div class="card-content">
+          <span class="card-title black-text text-darken-2"><a class="black-text text-darken-2" [routerLink]="['/ItemView/',cateId,cateName,'itemdetail',item.id,item.name]">{{item.name}}</a></span>
+          <p id="div2"><a>Click for more Details</a></p>
+        </div>
+      </a>
+    </p>
   </div>
 </div>

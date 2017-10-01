@@ -2,15 +2,17 @@
 <app-breadcrumbs></app-breadcrumbs>
 <app-search></app-search>
 <div class="col s12 m3 l3" *ngFor="let categorie of categories">
-  <div class="card lage z-depth-1 hoverable">
-    <div class="card-image">
-      <a [routerLink]="['ItemView/',categorie.id,categorie.name]"><img class="activator" src="{{categorie.img}}"></a>
-    </div>
-    <div class="card-content">
-      <p materialize="tooltip" class="tooltipped" data-position="bottom" data-delay="30" [attr.data-tooltip]="categorie.name">
-        <span id="div2" class="card-title"><a class="activator black-text text-darken-2" [routerLink]="['ItemView/',categorie.id,categorie.name]" replaceUrl=true>{{categorie.name}}</a></span>
-      </p>
-      <p id="div2"><a class="activator blue-text text-darken-2" [routerLink]="['ItemView/',categorie.id,categorie.name]" replaceUrl=true>Click for more Details</a></p>
-    </div>
-  </div>
+  <p materialize="tooltip" class="tooltipped" data-position="bottom" data-delay="30" [attr.data-tooltip]="categorie.name">
+    <a [routerLink]="['ItemView/',categorie.id,categorie.name]" replaceUrl=true>
+      <div class="card lage z-depth-2 hoverable">
+        <div class="card-image">
+          <a [routerLink]="['ItemView/',categorie.id,categorie.name]"><img class="activator" src="{{categorie.img}}"></a>
+        </div>
+        <div class="card-content">
+          <span id="div2" class="card-title black-text text-darken-2">{{categorie.name}}</span>
+          <p id="div2"><a href="#">Click for more Details</a></p>
+        </div>
+      </div>
+    </a>
+  </p>
 </div>

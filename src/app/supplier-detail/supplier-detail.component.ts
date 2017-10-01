@@ -34,7 +34,7 @@ export class SupplierDetailComponent implements OnInit {
       "language": { "language": [] },
       "page": "SupplierDetail"
     }
-    console.log(this.supId)
+    // console.log(this.supId)
   }
   ngOnInit() {
     this.dataservice.fetchSupplierData().subscribe(

@@ -21,25 +21,73 @@
       "id": "CNCDTC",
       "name": "CNC Drilling & Tapping Center",
       "img": "../assets/img/CNC-DTC.jpg",
-      "items": []
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
     },
     {
       "id": "HSMC",
       "name": "High Speed Machining Center",
       "img": "../assets/img/HSMC.jpg",
-      "items": []
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
     },
     {
       "id": "CNCDCMC",
       "name": "CNC Double Column MC",
       "img": "../assets/img/CNC-DCMC.jpg",
-      "items": []
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
     },
     {
       "id": "CNCMC",
       "name": "CNC Machining Center",
       "img": "../assets/img/CNC-MC.jpg",
-      "items": []
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
     },
     {
       "id": "MC",
@@ -63,25 +111,73 @@
       "id": "CNCDTC",
       "name": "CNC Drilling & Tapping Center",
       "img": "../assets/img/CNC-DTC.jpg",
-      "items": []
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
     },
     {
       "id": "HSMC",
       "name": "High Speed Machining Center",
       "img": "../assets/img/HSMC.jpg",
-      "items": []
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
     },
     {
       "id": "CNCDCMC",
       "name": "CNC Double Column MC",
       "img": "../assets/img/CNC-DCMC.jpg",
-      "items": []
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
     },
     {
       "id": "CNCMC",
       "name": "CNC Machining Center",
       "img": "../assets/img/CNC-MC.jpg",
-      "items": []
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
     },
     {
       "id": "MC",
@@ -105,25 +201,73 @@
       "id": "CNCDTC",
       "name": "CNC Drilling & Tapping Center",
       "img": "../assets/img/CNC-DTC.jpg",
-      "items": []
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
     },
     {
       "id": "HSMC",
       "name": "High Speed Machining Center",
       "img": "../assets/img/HSMC.jpg",
-      "items": []
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
     },
     {
       "id": "CNCDCMC",
       "name": "CNC Double Column MC",
       "img": "../assets/img/CNC-DCMC.jpg",
-      "items": []
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
     },
     {
       "id": "CNCMC",
       "name": "CNC Machining Center",
       "img": "../assets/img/CNC-MC.jpg",
-      "items": []
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
     },
     {
       "id": "MC",
@@ -147,25 +291,73 @@
       "id": "CNCDTC",
       "name": "CNC Drilling & Tapping Center",
       "img": "../assets/img/CNC-DTC.jpg",
-      "items": []
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
     },
     {
       "id": "HSMC",
       "name": "High Speed Machining Center",
       "img": "../assets/img/HSMC.jpg",
-      "items": []
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
     },
     {
       "id": "CNCDCMC",
       "name": "CNC Double Column MC",
       "img": "../assets/img/CNC-DCMC.jpg",
-      "items": []
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
     },
     {
       "id": "CNCMC",
       "name": "CNC Machining Center",
       "img": "../assets/img/CNC-MC.jpg",
-      "items": []
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
     },
     {
       "id": "MC",
@@ -189,25 +381,73 @@
       "id": "CNCDTC",
       "name": "CNC Drilling & Tapping Center",
       "img": "../assets/img/CNC-DTC.jpg",
-      "items": []
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
     },
     {
       "id": "HSMC",
       "name": "High Speed Machining Center",
       "img": "../assets/img/HSMC.jpg",
-      "items": []
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
     },
     {
       "id": "CNCDCMC",
       "name": "CNC Double Column MC",
       "img": "../assets/img/CNC-DCMC.jpg",
-      "items": []
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
     },
     {
       "id": "CNCMC",
       "name": "CNC Machining Center",
       "img": "../assets/img/CNC-MC.jpg",
-      "items": []
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
     }
   ]
 }

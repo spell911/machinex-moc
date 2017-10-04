@@ -39,7 +39,7 @@ export class PreloaderComponent implements OnInit {
         this.loading = false
       }, 1000);
     }
-    console.log(this.loading)
+    // console.log(this.loading)
   }
   ngOnInit() {
 

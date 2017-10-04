@@ -1,9 +1,9 @@
 <nav class="clean col l8 m12 s12">
   <div class="nav-wrapper" id="div2">
-    <a *ngIf="cateIdCheck == true" [routerLink]="['/']" class="breadcrumb">
+    <a *ngIf="cateIdCheck == true" [routerLink]="['/']" class="breadcrumb" replaceUrl=true>
       Home
     </a>
-    <a *ngIf="cateIdCheck == false" [routerLink]="['/']" class="breadcrumb">
+    <a *ngIf="cateIdCheck == false" [routerLink]="['/']" class="breadcrumb" replaceUrl=true>
       Search by category
     </a>
     <a *ngIf="cateIdCheck == true" [routerLink]="['/ItemView/',cateId,cateName]" class="breadcrumb" replaceUrl=true>

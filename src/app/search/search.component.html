@@ -5,7 +5,7 @@
 </div> -->
 <div class="input-field col s12 m12 l4 hide-on-small-only">
   <i class="material-icons prefix" style="color:#000000;margin-top: 2%">search</i>
-  <input type="text" [(ngModel)]="createThreadLocation" name="createThreadLocation" id="createThreadLocation" materialize="autocomplete" (change)="searchData(createThreadLocation)" for="autocomplete-input" placeholder="Let me search it!" [materializeParams]="[{'data': locations}]">
+  <input type="text" [(ngModel)]="createThreadLocation" name="createThreadLocation" id="createThreadLocation" materialize="autocomplete" (change)="searchData(createThreadLocation)" for="autocomplete-input" placeholder="Let me search it!" [materializeParams]="[{'data':locations}]">
   <label class="label-icon" for="autocomplete-input"></label>
 </div>
 <div class="input-field col s12 show-on-small hide-on-large-only hide-on-med-and-up">

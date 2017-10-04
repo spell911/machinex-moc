@@ -13,10 +13,10 @@
 <nav>
   <div class="nav-search-wrapper">
     <div class="container">
-      <a href="#" class="brand-logo" style="color: #9ccc65">MACHINEX</a>
+      <a href="#" class="brand-logo" style="color: #9ccc65" [routerLink]="['/']" replaceUrl=true>MACHINEX</a>
       <a href="#" data-activates="mobile-demo" class="button-collapse" data-sidenav="left" data-menuwidth="500" data-closeonclick="false"><i class="material-icons">menu</i></a>
       <ul class="hide-on-med-and-down right">
-        <li><a href="#">Categories</a></li>
+        <li><a [routerLink]="['/']" replaceUrl=true>Categories</a></li>
         <li><a href="#">Suppliers</a></li>
         <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Language Web<i class="material-icons right">arrow_drop_down</i></a></li>
       </ul>

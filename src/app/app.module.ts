@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { MaterializeModule } from 'angular2-materialize';
-
+import { Ng2CompleterModule } from "ng2-completer";
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -42,7 +42,8 @@ import { PreloaderComponent } from './preloader/preloader.component';
     ReactiveFormsModule,
     HttpModule,
     APP_ROUTES_PROVIDER,
-    MaterializeModule
+    MaterializeModule,
+    Ng2CompleterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -2,71 +2,59 @@
 <app-search></app-search>
 <div class="col s12 m12 l12">
   <span class="card-title">{{itemName}}</span>
-  <div class="card horizontal z-depth-1" style="height: 100%">
+  <div class="card horizontal z-depth-2" style="height: 100%">
     <div class="card-content col s12 m12 l12">
       <div class="row">
         <div class="col s12 m4 l4">
           <h5>Guide</h5>
-          <form id="guide_form" [formGroup]="guideForm">
-            <p>
-              <input type="checkbox" class="filled-in" value="Boxway" (change)="onChange('Boxway', $event.target.checked, 'guideForm', 'single')" id="filled-in-box" />
-              <label for="filled-in-box">Boxway</label>
-            </p>
-            <p>
-              <input type="checkbox" class="filled-in" value="Linear Guide" (change)="onChange('Linear Guide', $event.target.checked, 'guideForm', 'single')" id="filled-in-box2" />
-              <label for="filled-in-box2">Linear Guide</label>
-            </p>
+          <form id="guide_form" [formGroup]="guideForm" *ngFor="let item of arrItem | filter:specFilter">
+            <div *ngFor="let guide of item.guide" class="col l6 m12 s12">
+              <input type="checkbox" class="filled-in" value="{{guide}}" (change)="onChange(guide, $event.target.checked, 'guideForm', 'single')" id="{{guide}}" />
+              <label for="{{guide}}">{{guide}}</label>
+            </div>
           </form>
-          <p>
+          <div class="col l6 m12 s12">
             <input type="checkbox" class="filled-in" id="filled-in-boxall" (click)="checkAll($event,'guideForm')" />
             <label for="filled-in-boxall">ALL</label>
-          </p>
+          </div>
         </div>
         <div class="col s12 m4 l4">
           <h5>Control</h5>
-          <form id="control_form" [formGroup]="controlForm">
-            <p>
-              <input type="checkbox" class="filled-in" value="Fanuc" id="Fanuc" (change)="onChange('Fanuc', $event.target.checked, 'controlForm')" />
-              <label for="Fanuc">Fanuc</label>
-            </p>
-            <p>
-              <input type="checkbox" class="filled-in" value="Mitsubishi" id="Mitsubishi" (change)="onChange('Mitsubishi', $event.target.checked, 'controlForm')" />
-              <label for="Mitsubishi">Mitsubishi</label>
-            </p>
-            <p>
-              <input type="checkbox" class="filled-in" value="HEIDENHAIN" id="Heidenhain" (change)="onChange('HEIDENHAIN', $event.target.checked, 'controlForm')" />
-              <label for="Heidenhain">HEIDENHAIN</label>
-            </p>
+          <form id="control_form" [formGroup]="controlForm" *ngFor="let item of arrItem | filter:specFilter">
+            <div *ngFor="let control of item.control" class="col l6 m12 s12">
+              <input type="checkbox" class="filled-in" value="{{control}}" id="{{control}}" (change)="onChange(control, $event.target.checked, 'controlForm')" />
+              <label for="{{control}}">{{control}}</label>
+            </div>
           </form>
-          <p>
+          <div class="col l6 m12 s12">
             <input type="checkbox" class="filled-in" id="allControl" (click)="checkAll($event,'controlForm')" />
             <label for="allControl">ALL</label>
-          </p>
+          </div>
         </div>
         <div class="col s12 m4 l4">
           <h5>Contact Language</h5>
           <form id="language_form" [formGroup]="languageForm">
-            <p>
+            <div class="col l6 m12 s12">
               <input type="checkbox" class="filled-in" name="langCheck" value="EN" id="lang-en" (change)="onChange('EN', $event.target.checked, 'languageForm')" />
               <label for="lang-en">EN</label>
-            </p>
-            <p>
+            </div>
+            <div class="col l6 m12 s12">
               <input type="checkbox" class="filled-in" name="langCheck" value="JP" id="lang-jp" (change)="onChange('JP', $event.target.checked, 'languageForm')" />
-              <label for="lang-jp">JP</label>
-            </p>
-            <p>
+              <label style="margin-left: 5%" for="lang-jp">JP</label>
+            </div>
+            <div class="col l6 m12 s12">
               <input type="checkbox" class="filled-in" name="langCheck" value="TH" id="lang-th" (change)="onChange('TH', $event.target.checked, 'languageForm')" />
               <label for="lang-th">TH</label>
-            </p>
-            <p>
+            </div>
+            <div class="col l6 m12 s12">
               <input type="checkbox" class="filled-in" name="langCheck" value="VN" id="lang-vn" (change)="onChange('VN', $event.target.checked, 'languageForm')" />
-              <label for="lang-vn">VN</label>
-            </p>
+              <label style="margin-left: 5%" for="lang-vn">VN</label>
+            </div>
           </form>
-          <p>
+          <div class="col l6 m12 s12">
             <input type="checkbox" class="filled-in" id="lang-all" (click)="checkAll($event,'languageForm')" />
             <label for="lang-all">ALL</label>
-          </p>
+          </div>
         </div>
       </div>
       <a class="waves-effect waves-light btn" (click)="searchData()" style="background-color:#424242;color: #9ccc65"><i class="material-icons left">search</i>Search</a>
@@ -74,25 +62,9 @@
   </div>
 </div>
 <div class="col s12 m12 l12" style="margin-top : 1%">
-  <!-- suplier collapes -->
   <span class="card-title">Suppliers</span>
-  <!-- <div id="preLoader" class="hide">
-    <div class="preloader-wrapper active">
-      <div class="spinner-layer">
-        <div class="circle-clipper left">
-          <div class="circle"></div>
-        </div>
-        <div class="gap-patch">
-          <div class="circle"></div>
-        </div>
-        <div class="circle-clipper right">
-          <div class="circle"></div>
-        </div>
-      </div>
-    </div>
-  </div> -->
-  <ul class="collection z-depth-1">
-    <li class="collection-item" *ngFor="let sup of arrSups | filter:dataFilter">
+  <ul class="collection z-depth-2">
+    <li class="collection-item" *ngFor="let sup of arrSups | filter:supFilter">
       <a id="supnameAtag" [routerLink]="['/ItemView/',cateId,cateName,'itemdetail',itemId,itemName,'supdetail',sup.id,sup.name]" replaceUrl=true>
         {{sup.name}}
       </a>
@@ -101,29 +73,4 @@
       </a>
     </li>
   </ul>
-  <!-- <ul class="collapsible z-depth-2" data-collapsible="accordion">
-      <li *ngFor="let sup of arrSups | filter:dataFilter">
-        <div class="collapsible-header">
-          <font size="2">{{sup.name}}</font>
-        </div>
-        <div class="collapsible-body">
-          <h6><font size="2"><b><u>Company Infomation</u></b></font></h6>
-          <i class="material-icons">business</i><span style="margin-left: 1%">{{sup.name}}</span><br>
-          <i class="material-icons">call</i><span style="margin-left: 1%">{{sup.tel}}(Tel.)</span><br>
-          <i class="material-icons">print</i><span style="margin-left: 1%">{{sup.fax}}(Fax.)</span><br>
-          <i class="material-icons">email</i><span style="margin-left: 1%">{{sup.email}}</span><br>
-          <i class="material-icons">rss_feed</i><a href="http://www.akiraseiki.com"><span style="margin-left: 1%">{{sup.web}}</span></a><br>
-          <i class="material-icons">location_on</i><span style="margin-left: 1%">{{sup.address}}</span><br>
-          <h6><font size="2"><b><u>Product Categories of {{sup.name}}</u></b></font></h6>
-          <ul>
-            <li *ngFor="let product of sup.product"><span>{{product}}</span></li>
-          </ul>
-          <h6><font size="2"><b><u>Contact</u></b></font></h6>
-          <ul class="collection z-depth-1" *ngFor="let link of sup.link">
-            <span class="badge" style="margin-top:10px">{{link.bage}}</span>
-            <li class="collection-item"><a href="{{link.name}}">{{link.name}}</a></li>
-          </ul>
-        </div>
-      </li>
-    </ul> -->
 </div>

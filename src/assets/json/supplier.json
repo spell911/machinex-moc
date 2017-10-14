@@ -1,124 +1,102 @@
 {
   "supplier": [{
-      "id": "KASUGA",
-      "name": "KASUGA Co., Ltd.",
-      "address": "NO.149, Sec. 1, Guofeng Rd., Shengang Dist., Taichung City 429, Taiwan",
-      "tel": "+886 4 252-529-95",
-      "email": "sale@kasuga.jp",
-      "fax": "+886 4 252-529-91",
-      "web": "http://www.kasuga.jp",
-      "sugg": 1,
-      "link": [{
-          "name": "http://www.kasuga.jp",
-          "bage": 5
-        },
-        {
-          "name": "http://www.kasuga.en",
-          "bage": 7
-        }
-      ],
-      "language": ["EN", "JP"],
-      "product": ["Machining Center", "CNC Drilling & Tapping Center", "High Speed Machining Center", "CNC Double Column MC"],
+    "id": "KASUGA",
+    "name": "KASUGA Co., Ltd.",
+    "address": "NO.149, Sec. 1, Guofeng Rd., Shengang Dist., Taichung City 429, Taiwan",
+    "tel": "+886 4 252-529-95",
+    "email": "sale@kasuga.jp",
+    "fax": "+886 4 252-529-91",
+    "web": "http://www.kasuga.jp",
+    "sugg": 1,
+    "language": ["EN", "JP"],
+    "product": ["Machining Center", "CNC Drilling & Tapping Center", "High Speed Machining Center", "CNC Double Column MC"],
+    "categories": [{
+      "id": "MC",
+      "name": "Machining Center",
       "items": [{
           "id": "BT40V",
-          "cate_id": "MC",
-          "cate_name": "Machining Center",
           "name": "BT40 Vertical",
           "guide": ["Linear Guide"],
           "control": ["Fanuc", "HEIDENHAIN"]
         },
         {
           "id": "BT40V5A",
-          "cate_id": "MC",
-          "cate_name": "Machining Center",
           "name": "BT40 Vertical 5-A",
           "guide": ["Linear Guide"],
           "control": ["Fanuc", "HEIDENHAIN"]
         },
         {
           "id": "BT50",
-          "cate_id": "MC",
-          "cate_name": "Machining Center",
           "name": "BT50",
           "guide": ["Linear Guide"],
           "control": ["Fanuc", "HEIDENHAIN"]
         }
       ]
-    },
-    {
-      "id": "NUMEN",
-      "name": "NUMEN Machinery Co., Ltd.",
-      "address": "30, Alley 28, Lane 230, Sec. 5 Da Feng Road, Feng Yuan Dist., Taichung City 420, Taiwan",
-      "tel": "+886-4-2533-0966",
-      "email": "sales@numenmachinery.com",
-      "fax": "+886-4-2533-0125",
-      "web": "http://www.numenmachinery.com.tw/index.asp?lang=2",
-      "sugg": 0,
-      "link": [{
-          "name": "http://www.numenmachinery.com.tw/index.asp?lang=2",
-          "bage": 5
-        },
-        {
-          "name": "http://www.numenmachinery.com.tw/index.asp?lang=2",
-          "bage": 7
-        }
-      ],
-      "language": ["TH", "EN", "JP"],
-      "product": ["Machining Center"],
+    }],
+    "agent": ["A001", "A002"]
+  }, {
+    "id": "NUMEN",
+    "name": "NUMEN Machinery Co., Ltd.",
+    "address": "30, Alley 28, Lane 230, Sec. 5 Da Feng Road, Feng Yuan Dist., Taichung City 420, Taiwan",
+    "tel": "+886-4-2533-0966",
+    "email": "sales@numenmachinery.com",
+    "fax": "+886-4-2533-0125",
+    "web": "http://www.numenmachinery.com.tw/index.asp?lang=2",
+    "sugg": 0,
+    "language": ["TH", "EN", "JP"],
+    "product": ["Machining Center"],
+    "categories": [{
+      "id": "MC",
+      "name": "Machining Center",
       "items": [{
-        "id": "BT40V",
-        "cate_id": "MC",
-        "cate_name": "Machining Center",
-        "name": "BT40 Vertical",
-        "guide": ["Linear Guide"],
-        "control": ["Fanuc", "HEIDENHAIN"]
-      }]
-    },
-    {
-      "id": "AKIRASEIKI",
-      "name": "AKIRA SEIKI CO., LTD.",
-      "address": "30, Alley 28, Lane 230, Sec. 5 Da Feng Road, Feng Yuan Dist., Taichung City 420, Taiwan",
-      "tel": "+886-4-2355-2495",
-      "email": "sales@akiraseiki.com",
-      "fax": "+886-4-2355-2496",
-      "web": "http://www.akiraseiki.com",
-      "sugg": 0,
-      "link": [{
-          "name": "http://www.akiraseiki.jp",
-          "bage": 5
-        },
-        {
-          "name": "http://www.akiraseiki.en",
-          "bage": 7
-        }
-      ],
-      "language": ["TH", "EN", "JP"],
-      "product": ["CNC Machining Center"],
-      "items": [{
-          "id": "BT30V",
-          "cate_id": "CNCMC",
-          "cate_name": "CNC Machining Center",
-          "name": "BT30 Vertical",
-          "guide": ["Linear Guide"],
-          "control": ["Fanuc", "HEIDENHAIN"]
-        },
-        {
           "id": "BT40V",
-          "cate_id": "CNCMC",
-          "cate_name": "CNC Machining Center",
           "name": "BT40 Vertical",
           "guide": ["Linear Guide"],
           "control": ["Fanuc", "HEIDENHAIN"]
         },
         {
-          "id": "BT40H",
-          "cate_id": "CNCMC",
-          "cate_name": "CNC Machining Center",
-          "name": "BT40 Horizon",
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide"],
+          "control": ["Fanuc", "HEIDENHAIN"]
+        },
+        {
+          "id": "BT50",
+          "name": "BT50",
           "guide": ["Linear Guide"],
           "control": ["Fanuc", "HEIDENHAIN"]
         }
       ]
-    }
-  ]
+    }],
+    "agent": ["A001", "A002"]
+  }, {
+    "id": "AKIRASEIKI",
+    "name": "AKIRA SEIKI CO., LTD.",
+    "address": "30, Alley 28, Lane 230, Sec. 5 Da Feng Road, Feng Yuan Dist., Taichung City 420, Taiwan",
+    "tel": "+886-4-2355-2495",
+    "email": "sales@akiraseiki.com",
+    "fax": "+886-4-2355-2496",
+    "web": "http://www.akiraseiki.com",
+    "sugg": 0,
+    "language": ["TH", "EN", "JP"],
+    "product": ["CNC Machining Center"],
+    "categories": [{
+      "id": "MC",
+      "name": "Machining Center",
+      "items": [{
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide"],
+          "control": ["Fanuc", "HEIDENHAIN"]
+        },
+        {
+          "id": "BT50",
+          "name": "BT50",
+          "guide": ["Linear Guide"],
+          "control": ["Fanuc", "HEIDENHAIN"]
+        }
+      ]
+    }],
+    "agent": ["A001", "A002"]
+  }]
 }

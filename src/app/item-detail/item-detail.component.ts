@@ -17,8 +17,10 @@ export class ItemDetailComponent implements OnInit {
   cateId: string;
   cateName: string;
   checkData: boolean;
-  dataFilter = {};
+  supFilter = {};
+  specFilter = {};
   arrSups = [];
+  arrItem = [];
   supplier = [];
   /*checkbox*/
   controlForm: FormGroup;
@@ -34,17 +36,27 @@ export class ItemDetailComponent implements OnInit {
     this.cateName = route.snapshot.params['cateName'];
 
 
-    this.dataFilter = {
+    this.supFilter = {
       "cateId": this.cateId,
       "itemId": this.itemId,
       "guide": { "guide": [] },
       "control": { "control": [] },
       "language": { "language": [] },
-      "page": "itemDetail"
+      "page": "itemDetail",
+      "section": "supFilter"
     }
+
+    this.specFilter = {
+      "cateId": this.cateId,
+      "itemId": this.itemId,
+      "page": "itemDetail",
+      "section": "specFilter"
+    }
+
 
   }
   ngOnInit() {
+
     this.dataservice.fetchSupplierData().subscribe(
       (data) => this.arrSups = data.sort(function(name1, name2) {
         if (name1.name < name2.name) {
@@ -56,6 +68,12 @@ export class ItemDetailComponent implements OnInit {
         }
       })
     );
+
+    this.dataservice.fetchCategoriesData().subscribe(
+      (data) => this.arrItem = data
+    );
+
+
 
     this.route.params.subscribe(params => {
       let itemIdR = params["itemId"];
@@ -161,13 +179,14 @@ export class ItemDetailComponent implements OnInit {
   }
 
   searchData() {
-    this.dataFilter = {
+    this.supFilter = {
       "cateId": this.cateId,
       "itemId": this.itemId,
       "guide": this.guideForm.value,
       "control": this.controlForm.value,
       "language": this.languageForm.value,
-      "page": "itemDetail"
+      "page": "itemDetail",
+      "section": "supFilter"
     }
   }
 

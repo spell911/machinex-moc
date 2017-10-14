@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NgModule } from '@angular/core';
 import { MaterializeModule } from "angular2-materialize";
 import { DataService } from '../data/data.service';
+import { CompleterService, CompleterData } from 'ng2-completer';
 
 @Component({
   selector: 'app-search',
@@ -18,43 +19,49 @@ import { DataService } from '../data/data.service';
 
 export class SearchComponent implements OnInit {
 
+  protected locations: any;
+  protected searchStr: string;
+  protected captain: string;
+  protected dataService: CompleterData;
+  protected searchDatas = [
+    { color: 'red', value: '#f00' },
+    { color: 'green', value: '#0f0' },
+    { color: 'blue', value: '#00f' },
+    { color: 'cyan', value: '#0ff' },
+    { color: 'magenta', value: '#f0f' },
+    { color: 'yellow', value: '#ff0' },
+    { color: 'black', value: '#000' }
+  ];
 
-  constructor(private dataservice: DataService) {
-  }
-
-  locations: any;
-  locationsNest: any;
-  locations2: any;
-  ngOnInit() {
+  constructor(private dataservice: DataService, private completerService: CompleterService) {
     this.dataservice.fetchSearchData().subscribe(
-      (res) => {
-      this.locationsNest = res;
-        // console.log(this.locationsNest);
-      });
-    this.locations = {
-      'Machining Center': '../assets/img/MC.jpg',
-      'Machining Center BT30 Vertical': '../assets/img/MC.jpg',
-      'Machining Center BT40 Vertical': '../assets/img/MC.jpg',
-      'Machining Center BT50 Vertical': '../assets/img/MC.jpg',
-      'Machining Center BT40 Vertical 5-A': '../assets/img/MC.jpg',
-      'CNC Double Culumn Machining Center': '../assets/img/CNC-DCMC.jpg',
-      'CNC Drilling&Trapping Center': '../assets/img/CNC-DCMC.jpg'
-    }
-    // console.log(this.locations);
-    // console.log(this.locationsNest);
-    // console.log(this.locations);
-    // this.dataservice.fetchSearchData().subscribe(
-    //   data => {
-    //     this.locationsNest = data;
-    //     var name;
-    //     for(var i in data){
-    //       this.locations2 = {[data[i].name] : data[i].img};
-    //     }
-    //     // console.log(JSON.stringify(this.locations2));
-    //     console.log(this.locationsNest);
-    //   }
-    // );
+      (data) => {
+        this.dataService = completerService.local(this.filterData(data), 'name', 'name');
+      }
+    );
   }
+  ngOnInit() {
+  }
+
+  filterData(data: any) {
+    var arr = [];
+    var obj = {};
+    var name, img;
+    for (var i in data) {
+      img = data[i].img
+      name = data[i].name
+      obj = { "name": name, "img": img }
+      arr.push(obj);
+      for (var j in data[i].items) {
+        name = data[i].name + " - " + data[i].items[j].name
+        obj = { "name": name, "img": img }
+        arr.push(obj);
+      }
+    }
+    // console.log(arr);
+    return arr
+  }
+
   searchData(val: string) {
     var cateId, cateName, itemId, itemName;
     var i;
@@ -74,28 +81,28 @@ export class SearchComponent implements OnInit {
       cateName = "Machining Center"
       window.location.href = 'ItemView/' + cateId + '/' + cateName;
     }
-    if (val.indexOf('Machining Center BT30 Vertical') > -1) {
+    if (val.indexOf('Machining Center BT30 - Vertical') > -1) {
       cateId = "MC";
       cateName = "Machining Center"
       itemId = "BT30V"
       itemName = "BT30 Vertical"
       window.location.href = 'ItemView/' + cateId + '/' + cateName + '/itemdetail/' + itemId + '/' + itemName
     }
-    if (val.indexOf('Machining Center BT40 Vertical') > -1) {
+    if (val.indexOf('Machining Center - BT40 Vertical') > -1) {
       cateId = "MC";
       cateName = "Machining Center"
       itemId = "BT40V"
       itemName = "BT40 Vertical"
       window.location.href = 'ItemView/' + cateId + '/' + cateName + '/itemdetail/' + itemId + '/' + itemName
     }
-    if (val.indexOf('Machining Center BT50 Vertical') > -1) {
+    if (val.indexOf('Machining Center - BT50 Vertical') > -1) {
       cateId = "MC";
       cateName = "Machining Center"
       itemId = "BT50V"
       itemName = "BT50 Vertical"
       window.location.href = 'ItemView/' + cateId + '/' + cateName + '/itemdetail/' + itemId + '/' + itemName;
     }
-    if (val.indexOf('Machining Center BT40 Vertical 5-A') > -1) {
+    if (val.indexOf('Machining Center  - BT40 Vertical 5-A') > -1) {
       cateId = "MC";
       cateName = "Machining Center"
       itemId = "BT50V5A"

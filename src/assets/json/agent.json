@@ -16,7 +16,7 @@
           "link": "www.BBB.com",
           "language": ["EN", "TH"]
         }
-      ],
+      ]
     },
     {
       "id": "A002",
@@ -35,7 +35,7 @@
           "link": "www.BBB.com",
           "language": ["EN", "TH"]
         }
-      ],
+      ]
     }
   ]
 }

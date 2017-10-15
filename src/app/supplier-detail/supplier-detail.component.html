@@ -13,13 +13,93 @@
       <i class="material-icons">rss_feed</i><a target="_blank" href="{{sup.web}}"><span style="margin-left: 1%">{{sup.web}}</span></a><br>
       <i class="material-icons">location_on</i><span style="margin-left: 1%">{{sup.address}}</span>
       <h6><b><u>Product Categories of {{sup.name}}</u></b></h6>
+
+
       <ul>
         <li *ngFor="let product of sup.product"><span>{{product}}</span></li>
       </ul>
-      <h6><b><u>Connect</u></b></h6>
-      <div class="collection z-depth-1" >
-        <a *ngFor="let link of sup.link" target="_blank" href="{{link.name}}" class="collection-item"><span class="badge">{{link.bage}}</span>{{link.name}}</a>
+
+      <h6><b><u>About {{sup.name}}</u></b></h6>
+      <ul>
+        {{sup.pr}}
+      </ul>
+
+
+
+      <div class="card horizontal z-depth-2">
+        <div class="card-content col s12 m12 l12 hoverable">
+            <h6><b><u>Contact : Direct to {{sup.name}}</u></b></h6>
+
+          <div class="s12 m12 l12 card-action">
+          <div class="col s6 m6 l6">
+            <p>Telephone Number : {{sup.tel}}</p>
+            <p>E-Mail : {{sup.email}}</p>
+          </div>
+
+          <div class="col s6 m6 l6 ">
+
+            <p>Language : {{sup.language}}</p>
+          </div>
+            </div>
+        </div>
       </div>
+
+      <div *ngFor="let agentid of sup.agent;let index of agentid">
+        <div class="card horizontal z-depth-2 hoverable" *ngFor="let agent of arrAgent">
+          <div class="col s12 m12 l12" *ngIf="(agent.id == index)">
+            <div class="card-content col s12 m12 l12" style="padding-top: 10px;padding-bottom: 10px;">
+              <h6><b><i class="material-icons">face</i><span style="margin-left: 1%">Contract : {{agent.name}}</span></b></h6>
+            </div>
+            <div class="card-action col s12 m12 l12"style="padding-top: 0px;padding-bottom: 0px;padding-left: 0px;">
+              <div class="card-content col s6 m6 l6">
+                <i class="material-icons">business</i><span style="margin-left: 1%">Company : </span>
+
+                <div *ngFor="let comagent of agent.company;">
+                  <a target="_blank" href="{{comagent.link}}">{{comagent.name}} <span style="margin-left: 1%"> &nbsp; &nbsp; &nbsp; [{{comagent.language}}]</span></a>
+                </div>
+
+
+              </div>
+
+              <div class="card-content col s6 m6 l6">
+                <br>
+                <i class="material-icons">call</i> <span style="margin-left: 1%"> {{agent.tel}}</span><br>
+                <i class="material-icons">email</i> <span style="margin-left: 1%"> {{agent.email}}</span><br>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="card horizontal z-depth-2">
+        <div class="card-content col s12 m12 l12 hoverable">
+            <h6><b><u>Contact : Access Point For Muilti-Language in Machinex</u></b></h6>
+
+          <div class="s12 m12 l12 card-action">
+          <div class="col s6 m6 l6">
+            <p>Telephone Number : -</p>
+            <p>E-Mail : sales@machinex.co.th</p>
+          </div>
+
+          <div class="col s6 m6 l6 ">
+
+            <p>Language : JP, EN, TH, CH, VN</p>
+          </div>
+            </div>
+        </div>
+      </div>
+
+
+
+
+
+
+      <!-- <div class="collection z-depth-1">
+        <a *ngFor="let link of sup.link" target="_blank" href="{{link.name}}" class="collection-item"><span class="badge">{{link.bage}}</span>{{link.name}}</a>
+      </div> -->
     </div>
   </div>
 </div>

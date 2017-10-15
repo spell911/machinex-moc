@@ -18,6 +18,7 @@ export class SupplierDetailComponent implements OnInit {
   checkData: boolean;
   dataFilter = {};
   arrSups = [];
+  arrAgent = [];
   constructor(private http: Http, private route: ActivatedRoute, private dataservice: DataService) {
     this.itemId = route.snapshot.params['itemId'];
     this.cateId = route.snapshot.params['cateId'];
@@ -39,6 +40,10 @@ export class SupplierDetailComponent implements OnInit {
   ngOnInit() {
     this.dataservice.fetchSupplierData().subscribe(
       (data) => this.arrSups = data
+    );
+
+    this.dataservice.fetchAgentData().subscribe(
+      (a_data)  => this.arrAgent = a_data
     );
   }
 

@@ -16,19 +16,27 @@
       <ul>
         <li *ngFor="let product of sup.product"><span>{{product}}</span></li>
       </ul>
+      <h5><b><u>Line-up</u></b></h5>
+      <div class="row">
+        <ul *ngFor="let supcategories of sup.categories">
+          <li><b><i class="material-icons" style="font-size: 8%">lens</i> {{supcategories.name}}</b></li>
+          <ul *ngFor="let categoriesitem of supcategories.items">
+            <li class="col l6 m12 s12"> {{categoriesitem.name}} - {{categoriesitem.guide}}</li>
+            <li class="col l6 m12 s12">{{categoriesitem.control}}</li>
+          </ul>
+        </ul>
+      </div>
       <h5><b><u>About {{sup.name}}</u></b></h5>
       <ul>
         {{sup.pr}}
       </ul>
-      <h5><b><u>Line-up</u></b></h5>
-      <ul *ngFor="let supcategories of sup.categories">
-        <li><b><i class="material-icons" style="font-size: 5%">lens</i> {{supcategories.name}}</b></li>
-        <ul *ngFor="let categoriesitem of supcategories.items">
-          <li class="col l6 m12 s12"> {{categoriesitem.name}} - {{categoriesitem.guide}}</li>
-          <li>{{categoriesitem.control}}</li>
+      <div class="row">
+        <ul *ngFor="let supimg of sup.img">
+          <li class="col l2 m12 s12"></li>
+          <li class="col l4 m12 s12"><img src="{{supimg}}" width=" 300 " height="300 "></li>
+          <li class="col l2 m12 s12"></li>
         </ul>
-      </ul>
-
+      </div>
       <div class="card horizontal z-depth-2 hoverable">
         <div class="col s12 m12 l12">
           <div class="col s12 m12 l12" style="padding-top: 0px;padding-bottom: 0px;padding-left: 0px;">

@@ -10,8 +10,9 @@
     "web": "http://www.kasuga.com",
     "sugg": 1,
     "language": ["EN", "JP"],
+    "img": ["../assets/img/supimg/kasuka_img01.jpg", "../assets/img/supimg/kasuka_img02.jpg"],
     "product": ["Machining Center", "CNC Drilling & Tapping Center", "High Speed Machining Center", "CNC Double Column MC"],
-    "pr": "PATLITE is a diversified, global company and highly-technology engineering and manufacturing company. Founded in 1947, PATLITE is a leading provider of innovative LED status indicating lights, sound alarms, visual and audible communication network system and solutions which enhance the safety, security and comfort of workplaces and communities. With more than 600 employees and the wholly-owned sales subsidiaries in the USA, Germany, Singapore, Korea, and China, PATLITE is widely recognized as the world top brand in the industry around the world.",
+    "pr": "Founded in 1949, Japan KASUGA has over 60 years of history. KASUGA machines have been renowned in Japan, Asia, Europe and the United States with an international recognition. In particular, KASUGA is well known in the mold-making industry in both Japan and Taiwan. Regarding the parts manufacturing industry in the U.S., there are over 200 KASUGA machines in operation, including 3-axis large-sized vertical machining center and 4-axis/5-axis large-sized machining centers. With an aim to meet the increasing market demands, KASUGA established KASUGA SEIKI LTD. in Taiwan in 2012. KASUGA’s wide range of products includes CNC drilling tapping centers, vertical high speed machining centers and 5-axis machining centers. KASUGA machines’ reputation starts from Japanese meticulous design and Japan’s rigorous quality control level combined with Taiwan’s excellent manufacturing technique. These enable us to build high performance machines that customers have come to expect.",
     "categories": [{
       "id": "MC",
       "name": "Machining Center",
@@ -48,6 +49,7 @@
     "sugg": 0,
     "language": ["TH", "EN", "JP"],
     "product": ["Machining Center"],
+    "img": ["../assets/img/supimg/kasuka_img01.jpg", "../assets/img/supimg/kasuka_img02.jpg"],
     "pr": "NUMEN is a manufacturer specialized in producing CNC high speed machining center. To achieve the utmost productive efficiency in mold industrial and parts machining, we always hold a steadfast belief in developing and researching for the better quality of our products. Through everlasting computerization and upgrading, we bear the best capability to satisfy our customers' needs and offer the highest class of service.",
     "categories": [{
       "id": "MC",
@@ -85,6 +87,7 @@
     "sugg": 0,
     "language": ["TH", "EN", "JP"],
     "product": ["CNC Machining Center"],
+    "img": ["../assets/img/supimg/kasuka_img01.jpg", "../assets/img/supimg/kasuka_img02.jpg"],
     "pr": "Instituted technical centers for high speed spindle development. Cooperated with Mitsubishi to generate own AKIRA Mi controller for high cutting performance and friendly operator interface. High resolution servo stabilize precise axis positioning for high complex and accuracy jobs. Absolute industrial control components ensure reliable longevity and instant technical support in worldwide service centers.",
     "categories": [{
       "id": "MC",

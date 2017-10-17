@@ -1,19 +1,19 @@
 <app-breadcrumbs></app-breadcrumbs>
 <app-search></app-search>
 <div class="col s12 m12 l12">
-  <span class="card-title">{{itemName}}</span>
+  <span class="card-title"><b>{{itemName}}</b></span>
   <div class="card horizontal z-depth-2" style="height: 100%">
     <div class="card-content col s12 m12 l12">
       <div class="row">
         <div class="col s12 m4 l4">
           <h5>Guide</h5>
           <form id="guide_form" [formGroup]="guideForm" *ngFor="let item of arrItem | filter:specFilter">
-            <div *ngFor="let guide of item.guide" class="col l6 m12 s12">
+            <div *ngFor="let guide of item.guide" class="col l6 m12 s6">
               <input type="checkbox" class="filled-in" value="{{guide}}" (change)="onChange(guide, $event.target.checked, 'guideForm', 'single')" id="{{guide}}" />
               <label for="{{guide}}">{{guide}}</label>
             </div>
           </form>
-          <div class="col l6 m12 s12">
+          <div class="col l6 m12">
             <input type="checkbox" class="filled-in" id="filled-in-boxall" (click)="checkAll($event,'guideForm')" />
             <label for="filled-in-boxall">ALL</label>
           </div>
@@ -21,7 +21,7 @@
         <div class="col s12 m4 l4">
           <h5>Control</h5>
           <form id="control_form" [formGroup]="controlForm" *ngFor="let item of arrItem | filter:specFilter">
-            <div *ngFor="let control of item.control" class="col l6 m12 s12">
+            <div *ngFor="let control of item.control" class="col l6 m12 s6">
               <input type="checkbox" class="filled-in" value="{{control}}" id="{{control}}" (change)="onChange(control, $event.target.checked, 'controlForm')" />
               <label for="{{control}}">{{control}}</label>
             </div>
@@ -34,19 +34,19 @@
         <div class="col s12 m4 l4">
           <h5>Contact Language</h5>
           <form id="language_form" [formGroup]="languageForm">
-            <div class="col l6 m12 s12">
+            <div class="col l6 m6 s6">
               <input type="checkbox" class="filled-in" name="langCheck" value="EN" id="lang-en" (change)="onChange('EN', $event.target.checked, 'languageForm')" />
               <label for="lang-en">EN</label>
             </div>
-            <div class="col l6 m12 s12">
+            <div class="col l6 m6 s6">
               <input type="checkbox" class="filled-in" name="langCheck" value="JP" id="lang-jp" (change)="onChange('JP', $event.target.checked, 'languageForm')" />
               <label style="margin-left: 5%" for="lang-jp">JP</label>
             </div>
-            <div class="col l6 m12 s12">
+            <div class="col l6 m6 s6">
               <input type="checkbox" class="filled-in" name="langCheck" value="TH" id="lang-th" (change)="onChange('TH', $event.target.checked, 'languageForm')" />
               <label for="lang-th">TH</label>
             </div>
-            <div class="col l6 m12 s12">
+            <div class="col l6 m6 s6">
               <input type="checkbox" class="filled-in" name="langCheck" value="VN" id="lang-vn" (change)="onChange('VN', $event.target.checked, 'languageForm')" />
               <label style="margin-left: 5%" for="lang-vn">VN</label>
             </div>

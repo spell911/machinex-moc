@@ -18,6 +18,7 @@ export class FilterPipe implements PipeTransform {
     var controlCheck;
     var guideCheck;
     var languageCheck;
+
     if (!arrData || !filter) {
       return arrData;
     }
@@ -35,7 +36,6 @@ export class FilterPipe implements PipeTransform {
             }
           }
         }
-        console.log(arr)
         return arr;
       } else {
         var guide = filter.guide;
@@ -44,53 +44,56 @@ export class FilterPipe implements PipeTransform {
         if (guide.guide[0] == undefined && control.control[0] == undefined && language.language[0] == undefined) {
           for (i in arrData) {
             for (j in arrData[i].categories) {
-              for (k in arrData[i].categories[j].id) {
-                if ((cateId == arrData[i].categories[j].id) && (itemId == arrData[i].categories[j].items[k].id)) {
-                  arr.push(arrData[i]);
+              if (cateId == arrData[i].categories[j].id) {
+                for (k in arrData[i].categories[j].items) {
+                  if (itemId == arrData[i].categories[j].items[k].id) {
+                    arr.push(arrData[i]);
+                  }
                 }
               }
             }
           }
-          console.log(arr)
           return arr;
         } else {
+          // console.log(arrData);
           for (i in arrData) {
             for (j in arrData[i].categories) {
-              for (k in arrData[i].categories[j].id) {
+              if (cateId == arrData[i].categories[j].id) {
+                for (k in arrData[i].categories[j].items) {
 
-                if ((cateId == arrData[i].categories[j].id) && (itemId == arrData[i].categories[j].items[k].id)) {
-                  for (l = 0; l < guide.guide.length; l++) {
-                    if (arrData[i].categories[j].items[k].guide.indexOf(guide.guide[l]) > -1) {
-                      guideCheck = 1;
+                  if (itemId == arrData[i].categories[j].items[k].id) {
+                    for (l = 0; l < guide.guide.length; l++) {
+                      if (arrData[i].categories[j].items[k].guide.indexOf(guide.guide[l]) > -1) {
+                        guideCheck = 1;
+                      }
                     }
-                  }
-                  for (l = 0; l < control.control.length; l++) {
-                    if (arrData[i].categories[j].items[k].control.indexOf(control.control[l]) > -1) {
-                      controlCheck = 1;
+                    for (l = 0; l < control.control.length; l++) {
+                      if (arrData[i].categories[j].items[k].control.indexOf(control.control[l]) > -1) {
+                        controlCheck = 1;
+                      }
                     }
-                  }
-                  for (m = 0; m < language.language.length; m++) {
-                    if (arrData[i].language.indexOf(language.language[m]) > -1) {
-                      languageCheck = 1;
+                    for (m = 0; m < language.language.length; m++) {
+                      if (arrData[i].language.indexOf(language.language[m]) > -1) {
+                        languageCheck = 1;
+                      }
+                    }
+                    if (guideCheck == 1 && controlCheck == 1 && languageCheck == 1) {
+                      arr.push(arrData[i]);
+                    } else if ((guideCheck == 1 && controlCheck == 1) && language.language[0] == undefined) {
+                      arr.push(arrData[i]);
+                    } else if ((guideCheck == 1 && languageCheck == 1) && control.control[0] == undefined) {
+                      arr.push(arrData[i]);
+                    } else if ((controlCheck == 1 && languageCheck == 1) && guide.guide[0] == undefined) {
+                      arr.push(arrData[i]);
+                    } else if (guideCheck == 1 && (control.control[0] == undefined && language.language[0] == undefined)) {
+                      arr.push(arrData[i]);
+                    } else if (controlCheck == 1 && (guide.guide[0] == undefined && language.language[0] == undefined)) {
+                      arr.push(arrData[i]);
+                    } else if (languageCheck == 1 && (guide.guide[0] == undefined && control.control[0] == undefined)) {
+                      arr.push(arrData[i]);
                     }
                   }
                 }
-              }
-
-              if (guideCheck == 1 && controlCheck == 1 && languageCheck == 1) {
-                arr.push(arrData[i]);
-              } else if ((guideCheck == 1 && controlCheck == 1) && language.language[0] == undefined) {
-                arr.push(arrData[i]);
-              } else if ((guideCheck == 1 && languageCheck == 1) && control.control[0] == undefined) {
-                arr.push(arrData[i]);
-              } else if ((controlCheck == 1 && languageCheck == 1) && guide.guide[0] == undefined) {
-                arr.push(arrData[i]);
-              } else if (guideCheck == 1 && (control.control[0] == undefined && language.language[0] == undefined)) {
-                arr.push(arrData[i]);
-              } else if (controlCheck == 1 && (guide.guide[0] == undefined && language.language[0] == undefined)) {
-                arr.push(arrData[i]);
-              } else if (languageCheck == 1 && (guide.guide[0] == undefined && control.control[0] == undefined)) {
-                arr.push(arrData[i]);
               }
             }
           }

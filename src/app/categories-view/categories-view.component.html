@@ -1,12 +1,12 @@
 <!-- cards view -->
 <app-breadcrumbs></app-breadcrumbs>
 <app-search></app-search>
-<div class="col s12 m3 l3" *ngFor="let categorie of categories">
-  <p materialize="tooltip" class="tooltipped" data-position="bottom" data-delay="30" [attr.data-tooltip]="categorie.name">
+<div class="col s12 m3 l3" *ngFor="let categorie of categories; let idx = index">
+  <p *ngIf="idx <= 24" materialize="tooltip" class="tooltipped" data-position="bottom" data-delay="30" [attr.data-tooltip]="categorie.name">
     <a [routerLink]="['ItemView/',categorie.id,categorie.name]" replaceUrl=true>
       <div class="card lage z-depth-2 hoverable">
         <div class="card-image">
-          <a [routerLink]="['ItemView/',categorie.id,categorie.name]"><img class="activator" src="{{categorie.img}}"></a>
+          <a [routerLink]="['ItemView/',categorie.id,categorie.name]"><img class="activator" src="{{categorie.img}}" width=" 300 " height="300 "></a>
         </div>
         <div class="card-content">
           <span id="div2" class="card-title black-text text-darken-2">{{categorie.name}}</span>

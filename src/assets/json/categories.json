@@ -2,49 +2,53 @@
   "categories": [{
       "id": "MC",
       "name": "Machining Center",
-      "img": "../assets/img/MC.jpg",
+      "img": "../assets/img/catimg/MC.jpg",
       "items": [{
           "id": "BT40V",
           "name": "BT40 Vertical",
-          "guide": ["Linear Guide", "BoxWay"],
-          "control": ["Fanuc", "HEIDENHAIN", "Mitshubishi"]
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
           "name": "BT50 Vertical",
           "guide": ["Linear Guide"],
-          "control": ["Fanuc", "HEIDENHAIN", "Mitshubishi"]
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
           "name": "BT40 Vertical 5-A",
-          "guide": ["Linear Guide", "BoxWay"],
-          "control": ["Fanuc", "HEIDENHAIN", "Mitshubishi"]
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
     {
       "id": "CNCDTC",
-      "name": "CNC Drilling & Tapping Center",
-      "img": "../assets/img/CNC-DTC.jpg",
+      "name": "CNC Drilling And Tapping Center",
+      "img": "../assets/img/catimg/CNC-DTC.jpg",
       "items": [{
-          "id": "BT40V",
-          "name": "BT40 Vertical"
+          "id": "C6INCH",
+          "name": "Chuck 6 Inch"
         },
         {
-          "id": "BT50V",
-          "name": "BT50 Vertical"
+          "id": "C8INCH",
+          "name": "Chuck 8 Inch"
         },
         {
-          "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "id": "C10INCH",
+          "name": "Chuck 10 Inch"
+        },
+        {
+          "id": "C12INCH",
+          "name": "Chuck 12 Inch"
         }
       ]
     },
     {
       "id": "HSMC",
       "name": "High Speed Machining Center",
-      "img": "../assets/img/HSMC.jpg",
+      "img": "../assets/img/catimg/HSMC.jpg",
       "items": [{
           "id": "BT40V",
           "name": "BT40 Vertical"
@@ -62,7 +66,221 @@
     {
       "id": "CNCDCMC",
       "name": "CNC Double Column MC",
-      "img": "../assets/img/CNC-DCMC.jpg",
+      "img": "../assets/img/catimg/CNC-DCMC.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "CNCL",
+      "name": "CNC Lathe",
+      "img": "../assets/img/catimg/CNCL.jpg",
+      "items": [{
+          "id": "C6INCH",
+          "name": "Chuck 6 Inch"
+        },
+        {
+          "id": "C8INCH",
+          "name": "Chuck 8 Inch"
+        },
+        {
+          "id": "C10INCH",
+          "name": "Chuck 10 Inch"
+        },
+        {
+          "id": "C12INCH",
+          "name": "Chuck 12 Inch"
+        }
+      ]
+    },
+    {
+      "id": "SBCL",
+      "name": "Slant Bed, Cnc Lathes",
+      "img": "../assets/img/catimg/SBCL.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "CNCVL",
+      "name": "Cnc Vertical Lathes",
+      "img": "../assets/img/catimg/CNCVL.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "VM",
+      "name": "Vertical Machine",
+      "img": "../assets/img/catimg/VM.jpg",
+      "items": [{
+          "id": "BT30V",
+          "name": "BT30 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
+        }, {
+          "id": "BT40V",
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
+
+        }
+      ]
+    },
+    {
+      "id": "CNCCB",
+      "name": "Cnc Cutting Both Ends Lathe",
+      "img": "../assets/img/catimg/CNCCB.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "CNCL4A",
+      "name": "Cnc Lathes, 4 Axis Type",
+      "img": "../assets/img/catimg/CNCL4A.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "CNCTC",
+      "name": "Cnc Turning Centers",
+      "img": "../assets/img/catimg/CNCTC.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "HSPTC",
+      "name": "High Speed Precision Turning Center",
+      "img": "../assets/img/catimg/HSPTC.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "CLVB",
+      "name": "Cnc Lathes, Vertical Bed Type",
+      "img": "../assets/img/catimg/CLVB.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "CPL",
+      "name": "Cnc Polygon Lathe",
+      "img": "../assets/img/catimg/CPL.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "CNC5AMC",
+      "name": "Cnc 5 Axis Machine Center ",
+      "img": "../assets/img/catimg/CNC5AMC.jpg",
       "items": [{
           "id": "BT40V",
           "name": "BT40 Vertical"
@@ -80,7 +298,1339 @@
     {
       "id": "CNCMC",
       "name": "CNC Machining Center",
-      "img": "../assets/img/CNC-MC.jpg",
+      "img": "../assets/img/catimg/CNCMC.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "CNCAL",
+      "name": "Cnc Automatic Lathes",
+      "img": "../assets/img/catimg/CNCAL.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "CNCOTM",
+      "name": "Cnc Oval Turning Machine",
+      "img": "../assets/img/catimg/CNCOTM.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "SPCNCL",
+      "name": "Super Precision Compact Cnc Lathe",
+      "img": "../assets/img/catimg/SPCNCL.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "TICNCL",
+      "name": "Teach-In Cnc Lathes",
+      "img": "../assets/img/catimg/TICNCL.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "GTCNCL",
+      "name": "Gang Type Cnc Lathe",
+      "img": "../assets/img/catimg/GTCNCL.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "TSCNCL",
+      "name": "Twin Spindle Cnc Lathe",
+      "img": "../assets/img/catimg/TSCNCL.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "CNCPMTF",
+      "name": "Cnc Polygon Machine With Turning Function",
+      "img": "../assets/img/catimg/CNCPMTF.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "TC",
+      "name": "Turning Center",
+      "img": "../assets/img/catimg/TC.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "GB",
+      "name": "Gear Hobber",
+      "img": "../assets/img/catimg/GB.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "CNCCDMFP",
+      "name": "Cnc Copy Drilling Machines For Pcboard",
+      "img": "../assets/img/catimg/CNCCDMFP.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "CNCDMC",
+      "name": "Cnc Drilling And Milling Center",
+      "img": "../assets/img/catimg/CNCDMC.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "CNCDM",
+      "name": "Cnc Drilling Machines",
+      "img": "../assets/img/catimg/CNCDM.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "CNCTGHM",
+      "name": "Cnc Turn And Grinder Hybrid Machine",
+      "img": "../assets/img/catimg/CNCTGHM.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "CNCTSD",
+      "name": "Cnc Two Spindle Driling Machine For Joint-plate",
+      "img": "../assets/img/catimg/CNCTSD.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "CNCJPD",
+      "name": "Cnc Joint-plate Driling Machine",
+      "img": "../assets/img/catimg/CNCJPD.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "CNCTDM",
+      "name": "Cnc Turret Drilling Machines",
+      "img": "../assets/img/catimg/CNCTDM.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "CNCDTM",
+      "name": "Cnc Drilling And Tapping Machines",
+      "img": "../assets/img/catimg/CNCDTM.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "CNCDDC",
+      "name": "Cnc Drilling Machines, Double Column Type",
+      "img": "../assets/img/catimg/CNCDDC.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "CNCGD",
+      "name": "Cnc Gun Drilling Machine",
+      "img": "../assets/img/catimg/CNCGD.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "CNCMM",
+      "name": "Cnc Milling Machines",
+      "img": "../assets/img/catimg/CNCMM.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "CMMB",
+      "name": "Cnc Milling Machines, Bed Type",
+      "img": "../assets/img/catimg/CMMB.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "CNCCMM",
+      "name": "Cnc Copying Milling Machines",
+      "img": "../assets/img/catimg/CNCCMM.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "CNCPMM",
+      "name": "Cnc Plano Milling Machines",
+      "img": "../assets/img/catimg/CNCPMM.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "CNCVMM",
+      "name": "Cnc Vertical Milling Machines",
+      "img": "../assets/img/catimg/CNCVMM.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "CNCMSM",
+      "name": "Cnc Multi-spindle Milling Machines",
+      "img": "../assets/img/catimg/CNCMSM.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "CP",
+      "name": "Cnc Planers",
+      "img": "../assets/img/catimg/CP.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "CNCENM",
+      "name": "Cnc Engraving Machine",
+      "img": "../assets/img/catimg/CNCENM.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "CNCGMM",
+      "name": "Cnc Glass Grinding Machine",
+      "img": "../assets/img/catimg/CNCGMM.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "CNGM",
+      "name": "Cnc Grinding Machines",
+      "img": "../assets/img/catimg/CNGM.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "CNCSG",
+      "name": "Cnc Surface Grinding Machines",
+      "img": "../assets/img/catimg/CNCSG.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "CNCVG",
+      "name": "Cnc Vertical Grinder",
+      "img": "../assets/img/catimg/CNCVG.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "CNCVT",
+      "name": "Cnc Vertical Turing Center",
+      "img": "../assets/img/catimg/CNCVT.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "CNCCIG",
+      "name": "Cnc Cylindrical-internal Grinding Machines",
+      "img": "../assets/img/catimg/CNCCIG.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "CNCCEG",
+      "name": "Cnc Cylindrical-external Grinding Machines",
+      "img": "../assets/img/catimg/CNCCEG.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "CNCCGM",
+      "name": "Cnc Centerless Grinding Machines",
+      "img": "../assets/img/catimg/CNCCGM.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "CNCPG",
+      "name": "Cnc Profilers Grinding Machine",
+      "img": "../assets/img/catimg/CNCPG.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "CNCTCG",
+      "name": "Cnc Tool And Cutter Grinding Machine",
+      "img": "../assets/img/catimg/CNCTCG.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "CNCGM",
+      "name": "Cnc Crankshaft Grinding Machine",
+      "img": "../assets/img/catimg/CNCGM.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "CNCCS",
+      "name": "Cnc Cam Shaft Grinding Machine",
+      "img": "../assets/img/catimg/CNCCS.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "CNCSGFL",
+      "name": "Cnc Surface Grinder For Linear Guide Way",
+      "img": "../assets/img/catimg/CNCSGFL.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "CNCSGFS",
+      "name": "Cnc Surface Grinder For Screw Machines",
+      "img": "../assets/img/catimg/CNCSGFS.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "CNCB",
+      "name": "Cnc Boring Machines",
+      "img": "../assets/img/catimg/CNCB.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "CNCHB",
+      "name": "Cnc Horizontal Boring And Milling Machine",
+      "img": "../assets/img/catimg/CNCHB.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "CNCVMC",
+      "name": "Cnc Vertical Machining Centers",
+      "img": "../assets/img/catimg/CNCVMC.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "CNCH",
+      "name": "Cnc Horizontal Machining Center",
+      "img": "../assets/img/catimg/CNCH.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "MCVH",
+      "name": "Machining Center, Vertical And Horizontal",
+      "img": "../assets/img/catimg/MCVH.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "DCMC",
+      "name": "Double-column Machining Centers",
+      "img": "../assets/img/catimg/DCMC.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "CNCC",
+      "name": "Cnc Copying Machining Center",
+      "img": "../assets/img/catimg/CNCC.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "HSB",
+      "name": "High Speed Bridge Type Machining Center",
+      "img": "../assets/img/catimg/HSB.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "MCPTC",
+      "name": "Machining Center (Plano Or Traveling Column)",
+      "img": "../assets/img/catimg/MCPTC.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "HCVMC",
+      "name": "Heavy Cutting Vertical Machining Centers",
+      "img": "../assets/img/catimg/HCVMC.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "GTMC",
+      "name": "Gantry Type Machining Center",
+      "img": "../assets/img/catimg/GTMC.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "HT5F",
+      "name": "Housing Type Machining Center, 5 Faces",
+      "img": "../assets/img/catimg/HT5F.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "CNCDV",
+      "name": "Cnc Dual Table Vertical Machine Center",
+      "img": "../assets/img/catimg/CNCDV.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "MGP",
+      "name": "Moving Gantry Plano Machining Center",
+      "img": "../assets/img/catimg/MGP.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "5FMCDC",
+      "name": "5-face Machining Center, Double Column Type",
+      "img": "../assets/img/catimg/5FMCDC.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "5FMC",
+      "name": "5-face Machining Center",
+      "img": "../assets/img/catimg/5FMC.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "SWED",
+      "name": "Submerge Wire-cut Electric Discharge Machine",
+      "img": "../assets/img/catimg/SWED.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "CNCEDM",
+      "name": "Cnc Electric Discharge Machine",
+      "img": "../assets/img/catimg/CNCEDM.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "CNCWCM",
+      "name": "Cnc Wire Cut Machine",
+      "img": "../assets/img/catimg/CNCWCM.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "CNCDED",
+      "name": "Cnc Drilling Electric Discharge Machine",
+      "img": "../assets/img/catimg/CNCDED.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "CNC5AWC",
+      "name": "Cnc 5 Axis Wire Cutting Machines",
+      "img": "../assets/img/catimg/CNC5AWC.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "ADEDM",
+      "name": "Atc Drilling Electric Discharge Machine",
+      "img": "../assets/img/catimg/ADEDM.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "CNCTM",
+      "name": "Cnc Training Machine",
+      "img": "../assets/img/catimg/CNCTM.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "CNCVM",
+      "name": "Cnc Virtual Machine",
+      "img": "../assets/img/catimg/CNCVM.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "CNCAEE",
+      "name": "Cnc Automatic Electrode Exchanger",
+      "img": "../assets/img/catimg/CNCAEE.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "CNCWC",
+      "name": "Cnc Wire Cut Edm Machine",
+      "img": "../assets/img/catimg/CNCWC.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "CNCSM",
+      "name": "Cnc Slicing Machines For P.c. Board",
+      "img": "../assets/img/catimg/CNCSM.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "3DT",
+      "name": "3-d Tester For Machining Center",
+      "img": "../assets/img/catimg/3DT.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "UCE",
+      "name": "Ultra-compact Edm",
+      "img": "../assets/img/catimg/UCE.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "CMCSWE",
+      "name": "Cnc Submerged Wire Edm",
+      "img": "../assets/img/catimg/CMCSWE.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "GEM",
+      "name": "Graphite Electrode Miller/machining Center",
+      "img": "../assets/img/catimg/GEM.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "CNCGEC",
+      "name": "Cnc Graphite Electrode Cutting/machining Center",
+      "img": "../assets/img/catimg/CNCGEC.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical"
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical"
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A"
+        }
+      ]
+    },
+    {
+      "id": "CNCRDC",
+      "name": "Cnc Rotary Die Cutting Machine",
+      "img": "../assets/img/catimg/CNCRDC.jpg",
       "items": [{
           "id": "BT40V",
           "name": "BT40 Vertical"

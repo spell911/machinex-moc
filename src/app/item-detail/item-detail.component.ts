@@ -120,8 +120,8 @@ export class ItemDetailComponent implements OnInit {
   }
 
   checkAll(ele, type, btn) {
-    console.log(ele);
-    console.log(type);
+    // console.log(ele);
+    // console.log(type);
     var checkboxes_guide_form = document.forms["guide_form"].getElementsByTagName('input');
     var checkboxes_control_form = document.forms["control_form"].getElementsByTagName('input');
     var checkboxes_language_form = document.forms["language_form"].getElementsByTagName('input');

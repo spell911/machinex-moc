@@ -9,7 +9,7 @@
           <h5>Guide</h5>
           <form id="guide_form" [formGroup]="guideForm" *ngFor="let item of arrItem | filter:specFilter">
             <div *ngFor="let guide of item.guide" class="col l6 m12 s6">
-              <input type="checkbox" class="filled-in" value="{{guide}}" (change)="onChange(guide, $event.target.checked, 'guideForm', 'single')" id="{{guide}}" />
+              <input *ngIf="guide?.length > 0" type="checkbox" class="filled-in" value="{{guide}}" (change)="onChange(guide, $event.target.checked, 'guideForm', 'single')" id="{{guide}}" />
               <label for="{{guide}}">{{guide}}</label>
             </div>
           </form>
@@ -22,11 +22,11 @@
           <h5>Control</h5>
           <form id="control_form" [formGroup]="controlForm" *ngFor="let item of arrItem | filter:specFilter">
             <div *ngFor="let control of item.control" class="col l6 m12 s6">
-              <input type="checkbox" class="filled-in" value="{{control}}" id="{{control}}" (change)="onChange(control, $event.target.checked, 'controlForm')" />
+              <input *ngIf="control?.length > 0" type="checkbox" class="filled-in" value="{{control}}" id="{{control}}" (change)="onChange(control, $event.target.checked, 'controlForm')" />
               <label for="{{control}}">{{control}}</label>
             </div>
           </form>
-          <div class="col l6 m12 s12">
+          <div class="col l6 m12 s12"> 
             <input type="checkbox" class="filled-in" id="allControl" (click)="checkAll($event,'controlForm')" />
             <label for="allControl">ALL</label>
           </div>

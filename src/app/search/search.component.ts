@@ -23,24 +23,21 @@ export class SearchComponent implements OnInit {
   protected searchStr: string;
   protected captain: string;
   protected dataService: CompleterData;
-  protected searchDatas = [
-    { color: 'red', value: '#f00' },
-    { color: 'green', value: '#0f0' },
-    { color: 'blue', value: '#00f' },
-    { color: 'cyan', value: '#0ff' },
-    { color: 'magenta', value: '#f0f' },
-    { color: 'yellow', value: '#ff0' },
-    { color: 'black', value: '#000' }
-  ];
-
+  categoriesData: any;
   constructor(private dataservice: DataService, private completerService: CompleterService) {
     this.dataservice.fetchSearchData().subscribe(
       (data) => {
         this.dataService = completerService.local(this.filterData(data), 'name', 'name');
       }
     );
+    this.dataservice.fetchCategoriesData().subscribe(
+      (data) => {
+        this.categoriesData = data;
+      }
+    );
   }
   ngOnInit() {
+
   }
 
   filterData(data: any) {
@@ -64,62 +61,29 @@ export class SearchComponent implements OnInit {
 
   searchData(val: string) {
     var cateId, cateName, itemId, itemName;
-    var i;
-    for (i in this.locations) {
-      console.log(this.locations[i]);
-      if (val.indexOf(this.locations[i]) > -1) {
-        cateId = "MC";
-        cateName = "Machining Center"
-        itemId = "BT30V"
-        itemName = "BT30 Vertical"
-        window.location.href = 'ItemView/' + cateId + '/' + cateName + '/itemdetail/' + itemId + '/' + itemName
+    var i, j;
+    var splitName = val.split('- ')[1];
+    // console.log(splitName);
+    for (i in this.categoriesData) {
+      cateId = this.categoriesData[i].id;
+      cateName = this.categoriesData[i].name;
+      if (val.indexOf(cateName) > -1) {
+        if (splitName === '' || splitName === undefined) {
+          window.location.href = 'ItemView/' + cateId + '/' + cateName;
+        } else {
+          for (j in this.categoriesData[i].items) {
+            itemId = this.categoriesData[i].items[j].id;
+            itemName = this.categoriesData[i].items[j].name;
+            if (splitName.indexOf(itemName) > -1) {
+              console.log(cateId);
+              console.log(cateName);
+              console.log(itemId);
+              console.log(itemName);
+              window.location.href = 'ItemView/' + cateId + '/' + cateName + '/itemdetail/' + itemId + '/' + itemName;
+            }
+          }
+        }
       }
     }
-
-    if (val.indexOf('Machining Center') > -1) {
-      cateId = "MC";
-      cateName = "Machining Center"
-      window.location.href = 'ItemView/' + cateId + '/' + cateName;
-    }
-    if (val.indexOf('Machining Center BT30 - Vertical') > -1) {
-      cateId = "MC";
-      cateName = "Machining Center"
-      itemId = "BT30V"
-      itemName = "BT30 Vertical"
-      window.location.href = 'ItemView/' + cateId + '/' + cateName + '/itemdetail/' + itemId + '/' + itemName
-    }
-    if (val.indexOf('Machining Center - BT40 Vertical') > -1) {
-      cateId = "MC";
-      cateName = "Machining Center"
-      itemId = "BT40V"
-      itemName = "BT40 Vertical"
-      window.location.href = 'ItemView/' + cateId + '/' + cateName + '/itemdetail/' + itemId + '/' + itemName
-    }
-    if (val.indexOf('Machining Center - BT50 Vertical') > -1) {
-      cateId = "MC";
-      cateName = "Machining Center"
-      itemId = "BT50V"
-      itemName = "BT50 Vertical"
-      window.location.href = 'ItemView/' + cateId + '/' + cateName + '/itemdetail/' + itemId + '/' + itemName;
-    }
-    if (val.indexOf('Machining Center  - BT40 Vertical 5-A') > -1) {
-      cateId = "MC";
-      cateName = "Machining Center"
-      itemId = "BT50V5A"
-      itemName = "BT40 Vertical 5-A"
-      window.location.href = 'ItemView/' + cateId + '/' + cateName + '/itemdetail/' + itemId + '/' + itemName;
-    }
-    // if (val.indexOf('CNC Double Culumn Machining Center') > -1) {
-    //   cateId = "CNCDCMC";
-    //   cateName = "CNC Double Column MC"
-    //   window.location.href = 'ItemView/' + cateId + '/' + cateName;
-    // }
-    // if (val.indexOf('CNC Drilling&Trapping Center') > -1) {
-    //   cateId = "CNCDTC";
-    //   cateName = "CNC Drilling & Tapping Center"
-    //   window.location.href = 'ItemView/' + cateId + '/' + cateName;
-    // }
-
   }
-
 }

@@ -8,7 +8,7 @@
       "email": "sales@kasuga.com",
       "fax": "+886 4 252-529-91",
       "web": "http://www.kasuga.combined",
-      "sugg": 1,
+      "sugg": 19,
       "language": ["EN", "JP"],
       "img": ["../assets/img/supimg/kasuka_img01.jpg", "../assets/img/supimg/kasuka_img02.jpg"],
       "product": ["Machining Center", "CNC Drilling & Tapping Center", "High Speed Machining Center", "CNC Double Column MC"],
@@ -47,10 +47,10 @@
       "email": "sales@numenmachinery.com",
       "fax": "+886-4-2533-0125",
       "web": "http://www.numenmachinery.com.tw/index.asp?lang=2",
-      "sugg": 0,
+      "sugg": 10,
       "language": ["TH", "EN", "JP"],
       "product": ["Machining Center"],
-      "img": ["../assets/img/supimg/kasuka_img01.jpg", "../assets/img/supimg/kasuka_img02.jpg"],
+      "img": ["../assets/img/supimg/numen_img01.jpg", "../assets/img/supimg/numen_img02.jpg"],
       "pr": "NUMEN is a manufacturer specialized in producing CNC high speed machining center. To achieve the utmost productive efficiency in mold industrial and parts machining, we always hold a steadfast belief in developing and researching for the better quality of our products. Through everlasting computerization and upgrading, we bear the best capability to satisfy our customers' needs and offer the highest class of service.",
       "categories": [{
         "id": "MC",
@@ -75,7 +75,7 @@
           }
         ]
       }],
-      "agent": ["A002"]
+      "agent": ["B001"]
     },
     {
       "id": "AKIRASEIKI",
@@ -86,7 +86,7 @@
       "email": "sales@akiraseiki.com",
       "fax": "+886-4-2355-2496",
       "web": "http://www.akiraseiki.com",
-      "sugg": 0,
+      "sugg": 31,
       "language": ["TH", "EN", "JP"],
       "product": ["CNC Machining Center"],
       "img": ["../assets/img/supimg/kasuka_img01.jpg", "../assets/img/supimg/kasuka_img02.jpg"],
@@ -112,15 +112,15 @@
     },
     {
       "id": "co001",
-      "name": "A",
+      "name": "A COMPANY CO., LTD.",
       "nickname": "a",
       "address": "No.6 Chung Hsing 1st ST., MING HSIUNG IND.AREA,CHIA YI HSIEN, TAIWAN",
       "tel": "886-5-2210485",
       "email": "Sales@ysia.com",
       "fax": "88652210219",
       "web": "www.ysia.com",
-      "sugg": 0,
-      "language": ["EN"],
+      "sugg": 30,
+      "language": ["CH", "EN"],
       "product": ["Vertical Machine", "CNC Lathe"],
       "img": ["../assets/img/supimg/co001_img01.jpg", "../assets/img/supimg/co001_img02.jpg"],
       "pr": "We develope machines and turn ket solutuibs ti suit your specific demands. In the meantimem we iffer exoert caoabulity and support for machinign and automation aaplication. Our company streategy emphasizes offering the most updated, efficiency and high quality machines and services for global markets",
@@ -128,20 +128,20 @@
           "id": "VM",
           "name": "Vertical Machine",
           "items": [{
-              "id": "BT30V",
-              "name": "BT30 Vertical",
+              "id": "BT30",
+              "name": "BT30",
               "guide": ["Linear Guide"],
               "control": ["Fanuc"]
             },
             {
-              "id": "BT40V",
-              "name": "BT40 Vertical",
+              "id": "BT40",
+              "name": "BT40",
               "guide": ["Linear Guide", "Box Way"],
               "control": ["Fanuc", "Mitsubishi"]
             },
             {
-              "id": "BT50V",
-              "name": "BT50 Vertical",
+              "id": "BT50",
+              "name": "BT50",
               "guide": ["Linear Guide", "Box Way"],
               "control": ["Fanuc", "Mitsubishi"]
             }
@@ -173,15 +173,15 @@
     },
     {
       "id": "co002",
-      "name": "B",
+      "name": "B COMPANY CO., LTD.",
       "nickname": "b",
       "address": "No.12-10, Gongyequ 31st Rd., Xitun Dsit., Taichung City Taiwan",
       "tel": "886-4-3703-0909",
       "email": "service@king.com",
       "fax": "886-4-3703-0908",
       "web": "www.king.com",
-      "sugg": 0,
-      "language": ["EN", "CH","JP"],
+      "sugg": 24,
+      "language": ["EN", "CH", "JP"],
       "product": ["Vertical Machine", "CNC Lathe"],
       "img": ["../assets/img/supimg/co002_img01.jpg", "../assets/img/supimg/co002_img02.jpg"],
       "pr": "We develope machines and turn ket solutuibs ti suit your specific demands. In the meantimem we iffer exoert caoabulity and support for machinign and automation aaplication. Our company streategy emphasizes offering the most updated, efficiency and high quality machines and services for global markets",
@@ -189,14 +189,14 @@
           "id": "VM",
           "name": "Vertical Machine",
           "items": [{
-              "id": "BT30V",
-              "name": "BT30 Vertical",
+              "id": "BT30",
+              "name": "BT30",
               "guide": ["Linear Guide"],
               "control": ["Fanuc", "Mitsubishi"]
             },
             {
-              "id": "BT40V",
-              "name": "BT40 Vertical",
+              "id": "BT40",
+              "name": "BT40",
               "guide": ["Linear Guide", "Box Way"],
               "control": ["Fanuc", "Mitsubishi"]
             }
@@ -206,24 +206,29 @@
           "id": "CNCL",
           "name": "CNC Lathe",
           "items": [{
-            "id": "CHK",
-            "name": "Chuck",
-            "size": ["6", "8", "10"]
+            "id": "C4INCH",
+            "name": "Chuck 4 Inch"
+          }, {
+            "id": "C6INCH",
+            "name": "Chuck 6 Inch"
+          }, {
+            "id": "C8INCH",
+            "name": "Chuck 8 Inch"
           }]
         }
       ],
-      "agent": ["A001"]
+      "agent": ["B001"]
     },
     {
       "id": "co003",
-      "name": "C",
+      "name": "C COMPANY CO., LTD.",
       "nickname": "c",
       "address": "No.56, Fu Hsiang Rd. Chung Ho District, New Taipei Citym Taiwan. Zip Code:235",
       "tel": "886-2-2244-8488",
       "email": "info@entech.com",
       "fax": "886-2-2244-8486",
       "web": "www.lywentech.com",
-      "sugg": 0,
+      "sugg": 11,
       "language": ["CH", "RU"],
       "product": ["CMC Machining Center", "CNC Lathe"],
       "img": ["../assets/img/supimg/co003_img01.jpg", "../assets/img/supimg/co003_img02.jpg"],
@@ -249,24 +254,26 @@
           "id": "CNCL",
           "name": "CNC Lathe",
           "items": [{
-            "id": "CHK",
-            "name": "Chuck",
-            "size": ["6", "8"]
+            "id": "C6INCH",
+            "name": "Chuck 6 Inch"
+          }, {
+            "id": "C8INCH",
+            "name": "Chuck 8 Inch"
           }]
         }
       ],
-      "agent": ["A001"]
+      "agent": ["C001"]
     },
     {
       "id": "co004",
-      "name": "D",
+      "name": "D COMPANY CO., LTD.",
       "nickname": "d",
       "address": "2088, Sec 4 Taiwan Blvd., Taichung,Taiwan, R.O.C.",
       "tel": "886-4-23592101",
       "email": "info@mail.or.com.tw",
       "fax": "886-4-23592103",
       "web": "www.victortaichung.com",
-      "sugg": 0,
+      "sugg": 5,
       "language": ["EN", "CH"],
       "product": ["Turn-milling Center"],
       "img": ["../assets/img/supimg/co004_img01.jpg", "../assets/img/supimg/co004_img02.jpg"],
@@ -292,68 +299,76 @@
           "id": "CNCL",
           "name": "CNC Lathe",
           "items": [{
-            "id": "CHK",
-            "name": "Chuck",
-            "size": ["8", "10"]
+            "id": "C8INCH",
+            "name": "Chuck 8 Inch"
+          }, {
+            "id": "C10INCH",
+            "name": "Chuck 10 Inch"
           }]
         }
       ],
-      "agent": ["A001"]
+      "agent": ["D001"]
     },
     {
       "id": "co005",
-      "name": "E",
+      "name": "E COMPANY CO., LTD.",
       "nickname": "e",
       "address": "No/., Jingke 2nd Rd., Namtun Dist., Taichung City 408, Taiwan",
       "tel": "886-4-23586111",
       "email": "salew@scc.com.tw",
       "fax": "886-4-23583300",
       "web": "www.scc.com.tw",
-      "sugg": 0,
+      "sugg": 3,
       "language": ["CN", "EN"],
-      "product": [""],
+      "product": ["Vertical Machining Center", "CNC Lathe"],
       "img": ["../assets/img/supimg/co005_img01.jpg", "../assets/img/supimg/co005_img02.jpg"],
       "pr": "We develope machines and turn ket solutuibs ti suit your specific demands. In the meantimem we iffer exoert caoabulity and support for machinign and automation aaplication. Our company streategy emphasizes offering the most updated, efficiency and high quality machines and services for global markets",
       "categories": [{
-        "id": "VMC",
-        "name": "Vertical Machine Center",
-        "items": [{
-            "id": "BT30",
-            "name": "BT30",
-            "guide": ["Linear Guide"],
-            "control": ["Fanuc", "Mitsubishi"]
-          },
-          {
-            "id": "BT40V",
-            "name": "BT40 Vertical",
-            "guide": ["Linear Guide", "Box Way"],
-            "control": ["Fanuc", "Mitsubishi"]
-          },
-          {
-            "id": "CNCL",
-            "name": "CNC Lathe",
-            "items": [{
-              "id": "CHK",
-              "name": "Chuck",
-              "size": ["6", "8", "10"]
-            }]
-          }
-        ],
-        "agent": ["A001"]
-      }]
+          "id": "VMC",
+          "name": "Vertical Machining Center",
+          "items": [{
+              "id": "BT30",
+              "name": "BT30",
+              "guide": ["Linear Guide"],
+              "control": ["Fanuc", "Mitsubishi"]
+            },
+            {
+              "id": "BT40V",
+              "name": "BT40",
+              "guide": ["Linear Guide"],
+              "control": ["Fanuc", "Mitsubishi"]
+            }
+          ]
+        },
+        {
+          "id": "CNCL",
+          "name": "CNC Lathe",
+          "items": [{
+            "id": "C6INCH",
+            "name": "Chuck 6 Inch"
+          }, {
+            "id": "C8INCH",
+            "name": "Chuck 8 Inch"
+          }, {
+            "id": "C10INCH",
+            "name": "Chuck 10 Inch"
+          }]
+        }
+      ],
+      "agent": ["E001"]
     },
     {
       "id": "co006",
-      "name": "F",
+      "name": "F COMPANY CO., LTD.",
       "nickname": "f",
       "address": "No.730, Shen Chou Road, Shenkang, Taichung,Taiwan (R.O.C)",
       "tel": "886-4-25627062",
       "email": "sister.tech@msa.hinet.net",
       "fax": "886-4-256243961",
       "web": "www.sister-cnc.com",
-      "sugg": 0,
+      "sugg": 2,
       "language": ["CN", "EN"],
-      "product": [""],
+      "product": ["Turn-milling Center"],
       "img": ["../assets/img/supimg/co006_img01.jpg", "../assets/img/supimg/co006_img02.jpg"],
       "pr": "We develope machines and turn ket solutuibs ti suit your specific demands. In the meantimem we iffer exoert caoabulity and support for machinign and automation aaplication. Our company streategy emphasizes offering the most updated, efficiency and high quality machines and services for global markets",
       "categories": [{
@@ -370,110 +385,92 @@
           "id": "CNCL",
           "name": "CNC Lathe",
           "items": [{
-            "id": "CHK",
-            "name": "Chuck",
-            "size": ["8"]
+            "id": "C8INCH",
+            "name": "Chuck 8 Inch"
           }]
         }
       ],
-      "agent": ["A001"]
-    },
-    {
+      "agent": ["F001"]
+    }, {
       "id": "co007",
-      "name": "G",
+      "name": "G COMPANY CO., LTD.",
       "nickname": "g",
       "address": "No.63, Industrial Park 35th Rd., Situn Dist , Taichung 40768",
       "tel": "886-4-2355-1899",
       "email": "salse@averxecnc.com",
       "fax": "886-4-2350-997",
       "web": "www.averxecnc.com",
-      "sugg": 0,
+      "sugg": 7,
       "language": ["CH"],
       "product": ["Hirizontal Machining Center", "CNC Lathe"],
       "img": ["../assets/img/supimg/co007_img01.jpg", "../assets/img/supimg/co007_img02.jpg"],
       "pr": "We develope machines and turn ket solutuibs ti suit your specific demands. In the meantimem we iffer exoert caoabulity and support for machinign and automation aaplication. Our company streategy emphasizes offering the most updated, efficiency and high quality machines and services for global markets",
       "categories": [{
-        "id": "Hirizontal Machining Center",
-        "name": "HMC",
-        "items": [{
+          "id": "HMC",
+          "name": "Hirizontal Machining Center",
+          "items": [{
             "id": "BT40",
             "name": "BT40",
             "guide": ["Box Way"],
             "control": ["Fanuc"]
-
-          },
-          {
-            "id": "CNCL",
-            "name": "CNC Lathe",
-            "items": [{
-              "id": "CHK",
-              "name": "Chuck",
-              "size": ["8", "10", "12"]
-            }]
-          }
-        ],
-        "agent": ["A001"]
-      }]
+          }]
+        },
+        {
+          "id": "CNCL",
+          "name": "CNC Lathe",
+          "items": [{
+            "id": "C8INCH",
+            "name": "Chuck 8 Inch"
+          }, {
+            "id": "C10INCH",
+            "name": "Chuck 10 Inch"
+          }, {
+            "id": "C12INCH",
+            "name": "Chuck 12 Inch"
+          }]
+        }
+      ],
+      "agent": ["G001"]
     },
     {
       "id": "co008",
-      "name": "H",
+      "name": "H COMPANY CO., LTD.",
       "nickname": "h",
       "address": "No. 40-33, Bogong Vallet, SanYi Township, Miaoli County 36744",
       "tel": "886-37-877059",
       "email": "biz@ecoca.com",
       "fax": "886-37-877071",
       "web": "www.ecoca.com",
-      "sugg": 0,
+      "sugg": 3,
       "language": ["CH", "EN"],
-      "product": ["CNC Lathe", "CNC Lathe"],
+      "product": ["CNC Lathe"],
       "img": ["../assets/img/supimg/co008_img01.jpg", "../assets/img/supimg/co008_img02.jpg"],
       "pr": "We develope machines and turn ket solutuibs ti suit your specific demands. In the meantimem we iffer exoert caoabulity and support for machinign and automation aaplication. Our company streategy emphasizes offering the most updated, efficiency and high quality machines and services for global markets",
       "categories": [{
-          "id": "CNCL",
-          "name": "CNC Lathe",
-          "items": [{
-              "id": "BT30",
-              "name": "BT40",
-              "guide": ["Box Way"],
-              "control": ["Fanuc", "Mitsubishi"]
-            },
-            {
-              "id": "BT40",
-              "name": "BT40",
-              "guide": ["Box Way"],
-              "control": ["Fanuc", "Mitsubishi"]
-            },
-            {
-              "id": "BT50",
-              "name": "BT40",
-              "guide": ["Box Way"],
-              "control": ["Fanuc", "Mitsubishi"]
-            }
-          ]
-        },
-        {
-          "id": "CNCL",
-          "name": "CNC Lathe",
-          "items": [{
-            "id": "CHK",
-            "name": "Chuck",
-            "size": ["8", "10", "12"]
-          }]
-        }
-      ],
-      "agent": ["A001"]
-    },
-    {
+        "id": "CNCL",
+        "name": "CNC Lathe",
+        "items": [{
+          "id": "C8INCH",
+          "name": "Chuck 8 Inch"
+        }, {
+          "id": "C10INCH",
+          "name": "Chuck 10 Inch"
+        }, {
+          "id": "C12INCH",
+          "name": "Chuck 12 Inch"
+        }]
+      }],
+      "agent": ["H001"]
+    }, {
       "id": "co009",
-      "name": "I",
+      "name": "I COMPANY CO., LTD.",
       "nickname": "i",
       "address": "630, Suezhetue Section, Kwanpu Rd., Wenshan Li, Xinpu, Hsinchu 305, Taiwan",
       "tel": "886-4-2562-3211",
       "email": "sales@ycmcnc.com",
       "fax": "886-4-2562-6479",
       "web": "www.ycmcnc.com",
-      "sugg": 0,
+      "sugg": 1,
       "language": ["CH"],
       "product": ["Hirizontal Machining Center", "CNC Lathe"],
       "img": ["../assets/img/supimg/co009_img01.jpg", "../assets/img/supimg/co009_img02.jpg"],
@@ -486,71 +483,81 @@
               "name": "BT40",
               "guide": ["Box Way"],
               "control": ["Mitsubishi"]
-
             },
             {
-              "id": "CNCL",
-              "name": "CNC Lathe",
-              "items": [{
-                "id": "CHK",
-                "name": "Chuck",
-                "size": ["8", "10", "12"]
-              }]
+              "id": "BT50",
+              "name": "BT50",
+              "guide": ["Linear Guide", "Box Way"],
+              "control": ["Mitsubishi"]
             }
-          ],
-          "agent": ["A001"]
+          ]
         },
         {
-          "id": "co010",
-          "name": "I",
-          "nickname": "i",
-          "address": "629, Suezhetue Section, Kwanpu Rd., Wenshan Li, Xinpu, Hsinchu 305, Taiwan",
-          "tel": "886-3-588-5191",
-          "email": "sales@awea.com",
-          "fax": "886-3-588-5194",
-          "web": "www.awea.com",
-          "sugg": 0,
-          "language": ["CH"],
-          "product": ["High Speed Vertical Machining Center", "CNC Lathe"],
-          "img": ["../assets/img/supimg/co010_img01.jpg", "../assets/img/supimg/co010_img02.jpg"],
-          "pr": "We develope machines and turn ket solutuibs ti suit your specific demands. In the meantimem we iffer exoert caoabulity and support for machinign and automation aaplication. Our company streategy emphasizes offering the most updated, efficiency and high quality machines and services for global markets",
-          "categories": [{
-              "id": "",
-              "name": "High Speed Vertical Machining Center",
-              "items": [{
-                  "id": "BT30",
-                  "name": "BT30",
-                  "guide": ["Linear Guide"],
-                  "control": ["Fanuc", "Mitsubishi"]
-                },
-                {
-                  "id": "BT40",
-                  "name": "BT40",
-                  "guide": ["Linear Guide", "Box Way"],
-                  "control": ["Fanuc", "Mitsubishi"]
-                },
-                {
-                  "id": "BT50",
-                  "name": "BT50",
-                  "guide": ["Linear Guide", "Box Way"],
-                  "control": ["Fanuc", "Mitsubishi"]
-                }
-              ]
+          "id": "CNCL",
+          "name": "CNC Lathe",
+          "items": [{
+            "id": "C8INCH",
+            "name": "Chuck 8 Inch"
+          }, {
+            "id": "C10INCH",
+            "name": "Chuck 10 Inch"
+          }]
+        }
+      ],
+      "agent": ["I001"]
+    }, {
+      "id": "co010",
+      "name": "J COMPANY CO., LTD.",
+      "nickname": "j",
+      "address": "629, Suezhetue Section, Kwanpu Rd., Wenshan Li, Xinpu, Hsinchu 305, Taiwan",
+      "tel": "886-3-588-5191",
+      "email": "sales@awea.com",
+      "fax": "886-3-588-5194",
+      "web": "www.awea.com",
+      "sugg": 1,
+      "language": ["CH"],
+      "product": ["High Speed Vertical Machining Center", "CNC Lathe"],
+      "img": ["../assets/img/supimg/co010_img01.jpg", "../assets/img/supimg/co010_img02.jpg"],
+      "pr": "We develope machines and turn ket solutuibs ti suit your specific demands. In the meantimem we iffer exoert caoabulity and support for machinign and automation aaplication. Our company streategy emphasizes offering the most updated, efficiency and high quality machines and services for global markets",
+      "categories": [{
+          "id": "HSVMC",
+          "name": "High Speed Vertical Machining Center",
+          "items": [{
+              "id": "BT30",
+              "name": "BT30",
+              "guide": ["Linear Guide"],
+              "control": ["Fanuc", "Mitsubishi"]
             },
             {
-              "id": "CNCL",
-              "name": "CNC Lathe",
-              "items": [{
-                "id": "CHK",
-                "name": "Chuck",
-                "size": ["6", "8", "10"]
-              }]
+              "id": "BT40",
+              "name": "BT40",
+              "guide": ["Linear Guide", "Box Way"],
+              "control": ["Fanuc", "Mitsubishi"]
+            },
+            {
+              "id": "BT50",
+              "name": "BT50",
+              "guide": ["Linear Guide", "Box Way"],
+              "control": ["Fanuc", "Mitsubishi"]
             }
-          ],
-          "agent": ["A001"]
+          ]
+        },
+        {
+          "id": "CNCL",
+          "name": "CNC Lathe",
+          "items": [{
+            "id": "C6INCH",
+            "name": "Chuck 6 Inch"
+          }, {
+            "id": "C8INCH",
+            "name": "Chuck 8 Inch"
+          }, {
+            "id": "C10INCH",
+            "name": "Chuck 10 Inch"
+          }]
         }
-      ]
+      ],
+      "agent": ["J001"]
     }
-
   ]
 }

@@ -32,65 +32,63 @@
       </ul>
       <div class="row">
         <ul *ngFor="let supimg of sup.img">
-          <li class="col l1 m12 s12"></li>
-          <li class="col l5 m12 s12"><img src="{{supimg}}" width=" 300 " height="300 "></li>
-          <li class="col l1 m12 s12"></li>
+          <!-- <li class="col l1 m12 s12"></li> -->
+          <li class="col l6 m12 s12 center-align"><img src="{{supimg}}" width=" 300 " height="300 "></li>
+          <!-- <li class="col l1 m12 s12"></li> -->
         </ul>
       </div>
       <div class="card horizontal z-depth-2 hoverable">
-        <div class="col s12 m12 l12">
-          <div class="col s12 m12 l12" style="padding-top: 0px;padding-bottom: 0px;padding-left: 0px;">
-            <div class="card-content col s12 m6 l6">
-              <h6><b>Contact :</b> <a href="{{sup.web}}" target="_blank">Direct to {{sup.name}}</a></h6>
-            </div>
-            <div class="card-content col s12 m6 l6">
-              <p><b>Telephone Number : </b>{{sup.tel}}</p>
-              <p><b>E-Mail : </b><a href="mailto:{{sup.email}}?Subject=Hello%20{{sup.nickname}}.">{{sup.email}}</a></p>
-              <p><b>Language : </b>{{sup.language}}</p>
-            </div>
+        <div class="card-content col s12 m12 l12">
+          <div class="col l6 m12 s12">
+            <h6><b>Contact :</b> <a href="{{sup.web}}" target="_blank">Direct to {{sup.name}}</a></h6>
+          </div>
+          <div class="col l6 m12 s12">
+            <p><b>Telephone Number : </b>{{sup.tel}}</p>
+            <p><b>E-Mail : </b><a href="mailto:{{sup.email}}?Subject=Hello%20{{sup.nickname}}.">{{sup.email}}</a></p>
+            <p><b>Language : </b>{{sup.language}}</p>
           </div>
         </div>
       </div>
 
-      <div *ngFor="let agentid of sup.agent;let index of agentid">
-        <div class="card horizontal z-depth-2 hoverable" *ngFor="let agent of arrAgent">
-          <div class="col s12 m12 l12" *ngIf="(agent.id == index)">
-            <div class="col s12 m12 l12" style="padding-top: 0px;padding-bottom: 0px;padding-left: 0px;">
-              <div class="card-content col s12 m6 l6">
-                <h6><b>Contact : Agent in your country</b></h6>
-                <br>
-                <ul>
-                  <li *ngFor="let agentcompany of agent.company">
-                    <p><b>{{agentcompany.country}}</b> : <a href="{{agentcompany.link}}" target="_blank">{{agentcompany.name}}</a></p>
-                  </li>
-                </ul>
-              </div>
-              <div class="card-content col s12 m6 l6">
-                <p><b>Telephone Number : </b>{{agent.tel}}</p>
-                <p><b>E-Mail : </b><a href="mailto:{{agent.email}}?Subject=Hello%20{{agent.name}}.">{{agent.email}}</a></p>
-                <ul>
-                  <li *ngFor="let agentcompany of agent.company"><b>Language</b> : {{agentcompany.language}}</li>
-                </ul>
-              </div>
+      <div *ngFor="let agent of arrAgent">
+        <div class="card horizontal z-depth-2 hoverable" *ngIf="(agent.id == sup.agent)">
+          <div class="card-content col l12 m12 s12">
+            <div class="col l6 m12 s12">
+              <h6><b>Contact : Agent in your country</b></h6>
+            </div>
+            <div class="col l6 m12 s12">
+              <b>Telephone Number : </b>{{agent.tel}}<br>
+              <b>E-Mail : </b><a href="mailto:{{agent.email}}?Subject=Hello%20{{agent.name}}.">{{agent.email}}</a>
+            </div>
+            <div class="col l6 m6 s12">
+              <ul>
+                <li *ngFor="let agentcompany of agent.company">
+                  <b>{{agentcompany.country}}</b> : <a href="{{agentcompany.link}}" target="_blank">{{agentcompany.name}}</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col l6 m6 s12">
+              <ul>
+                <li *ngFor="let agentcompany of agent.company"><b>Language</b> : {{agentcompany.language}}</li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
 
       <div class="card horizontal z-depth-2 hoverable">
-        <div class="col s12 m12 l12">
-          <div class="col s12 m12 l12" style="padding-top: 0px;padding-bottom: 0px;padding-left: 0px;">
-            <div class="card-content col s12 m6 l6">
-              <h6><b>Access Point For Muilti-Language in Machinex</b></h6>
-            </div>
-            <div class="card-content col s12 m6 l6">
-              <p><b>Telephone Number : </b>+662-300-5583</p>
-              <p><b>E-Mail : </b><a href="mailto:sales@machinex.co.th?Subject=Hello%20Machinex.">sales@machinex.co.th</a></p>
-              <p><b>Language : </b>JP, EN, TH, CH, VN</p>
-            </div>
+        <div class="card-content col s12 m12 l12">
+          <div class="col s12 m12 l6">
+            <h6><b>Access Point For Muilti-Language in Machinex</b></h6>
+          </div>
+          <div class="col s12 m12 l6">
+            <p><b>Telephone Number : </b>+662-300-5583</p>
+            <p><b>E-Mail : </b><a href="mailto:sales@machinex.co.th?Subject=Hello%20Machinex.">sales@machinex.co.th</a></p>
+            <p><b>Language : </b>JP, EN, TH, CH, VN</p>
           </div>
         </div>
       </div>
+
     </div>
   </div>
 </div>

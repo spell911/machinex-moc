@@ -24,6 +24,192 @@
       ]
     },
     {
+      "id": "HMC",
+      "name": "Horizontal Machining Centers",
+      "img": "../assets/img/catimg/HMC.jpg",
+      "items": [{
+          "id": "BT30",
+          "name": "BT30",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
+        },
+        {
+          "id": "BT40",
+          "name": "BT40",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
+        },
+        {
+          "id": "BT50",
+          "name": "BT50",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
+        }
+      ]
+    },
+    {
+      "id": "TMC",
+      "name": "Turn-Milling Center",
+      "img": "../assets/img/catimg/TMC.jpg",
+      "items": [{
+          "id": "BT30",
+          "name": "BT30",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
+        }, {
+          "id": "BT40",
+          "name": "BT40",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
+        },
+        {
+          "id": "BT50",
+          "name": "BT50",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
+        },
+        {
+          "id": "BT405A",
+          "name": "BT40 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
+        }
+      ]
+    },
+    {
+      "id": "CNCL",
+      "name": "CNC Lathe",
+      "img": "../assets/img/catimg/CNCL.jpg",
+      "items": [{
+          "id": "C4INCH",
+          "name": "Chuck 4 Inch"
+        }, {
+          "id": "C6INCH",
+          "name": "Chuck 6 Inch"
+        },
+        {
+          "id": "C8INCH",
+          "name": "Chuck 8 Inch"
+        },
+        {
+          "id": "C10INCH",
+          "name": "Chuck 10 Inch"
+        },
+        {
+          "id": "C12INCH",
+          "name": "Chuck 12 Inch"
+        }
+      ]
+    },
+    {
+      "id": "VM",
+      "name": "Vertical Machine",
+      "img": "../assets/img/catimg/VM.jpg",
+      "items": [{
+          "id": "BT30",
+          "name": "BT30",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
+        }, {
+          "id": "BT40",
+          "name": "BT40",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
+        },
+        {
+          "id": "BT50",
+          "name": "BT50",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
+        },
+        {
+          "id": "BT405A",
+          "name": "BT40 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
+
+        }
+      ]
+    },
+    {
+      "id": "VMC",
+      "name": "Vertical Machining Centers",
+      "img": "../assets/img/catimg/VMC.jpg",
+      "items": [{
+          "id": "BT30",
+          "name": "BT30",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
+        },
+        {
+          "id": "BT40",
+          "name": "BT40",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
+        },
+        {
+          "id": "BT50",
+          "name": "BT50",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
+        }
+      ]
+    },
+    {
+      "id": "HSVMC",
+      "name": "High Speed Vertical Machining Center",
+      "img": "../assets/img/catimg/HSVMC.jpg",
+      "items": [{
+          "id": "BT30",
+          "name": "BT30",
+          "guide": ["Linear Guide"],
+          "control": ["Fanuc", "Mitsubishi"]
+        },
+        {
+          "id": "BT40",
+          "name": "BT40",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
+        },
+        {
+          "id": "BT50",
+          "name": "BT50",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
+        },
+        {
+          "id": "BT405A",
+          "name": "BT40 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
+        }
+      ]
+    },
+    {
+      "id": "CNCMC",
+      "name": "CNC Machining Center",
+      "img": "../assets/img/catimg/CNCMC.jpg",
+      "items": [{
+          "id": "BT40",
+          "name": "BT40",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
+        },
+        {
+          "id": "BT50",
+          "name": "BT50",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
+        },
+        {
+          "id": "BT405A",
+          "name": "BT40 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
+        }
+      ]
+    },
+    {
       "id": "CNCDTC",
       "name": "CNC Drilling And Tapping Center",
       "img": "../assets/img/catimg/CNC-DTC.jpg",
@@ -51,15 +237,21 @@
       "img": "../assets/img/catimg/HSMC.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -68,87 +260,6 @@
       "name": "CNC Double Column MC",
       "img": "../assets/img/catimg/CNC-DCMC.jpg",
       "items": [{
-          "id": "BT40V",
-          "name": "BT40 Vertical"
-        },
-        {
-          "id": "BT50V",
-          "name": "BT50 Vertical"
-        },
-        {
-          "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
-        }
-      ]
-    },
-    {
-      "id": "CNCL",
-      "name": "CNC Lathe",
-      "img": "../assets/img/catimg/CNCL.jpg",
-      "items": [{
-          "id": "C6INCH",
-          "name": "Chuck 6 Inch"
-        },
-        {
-          "id": "C8INCH",
-          "name": "Chuck 8 Inch"
-        },
-        {
-          "id": "C10INCH",
-          "name": "Chuck 10 Inch"
-        },
-        {
-          "id": "C12INCH",
-          "name": "Chuck 12 Inch"
-        }
-      ]
-    },
-    {
-      "id": "SBCL",
-      "name": "Slant Bed, Cnc Lathes",
-      "img": "../assets/img/catimg/SBCL.jpg",
-      "items": [{
-          "id": "BT40V",
-          "name": "BT40 Vertical"
-        },
-        {
-          "id": "BT50V",
-          "name": "BT50 Vertical"
-        },
-        {
-          "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
-        }
-      ]
-    },
-    {
-      "id": "CNCVL",
-      "name": "Cnc Vertical Lathes",
-      "img": "../assets/img/catimg/CNCVL.jpg",
-      "items": [{
-          "id": "BT40V",
-          "name": "BT40 Vertical"
-        },
-        {
-          "id": "BT50V",
-          "name": "BT50 Vertical"
-        },
-        {
-          "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
-        }
-      ]
-    },
-    {
-      "id": "VM",
-      "name": "Vertical Machine",
-      "img": "../assets/img/catimg/VM.jpg",
-      "items": [{
-          "id": "BT30V",
-          "name": "BT30 Vertical",
-          "guide": ["Linear Guide", "Box Way"],
-          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
-        }, {
           "id": "BT40V",
           "name": "BT40 Vertical",
           "guide": ["Linear Guide", "Box Way"],
@@ -165,7 +276,54 @@
           "name": "BT40 Vertical 5-A",
           "guide": ["Linear Guide", "Box Way"],
           "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
-
+        }
+      ]
+    },
+    {
+      "id": "SBCL",
+      "name": "Slant Bed, Cnc Lathes",
+      "img": "../assets/img/catimg/SBCL.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
+        }
+      ]
+    },
+    {
+      "id": "CNCVL",
+      "name": "Cnc Vertical Lathes",
+      "img": "../assets/img/catimg/CNCVL.jpg",
+      "items": [{
+          "id": "BT40V",
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
+        },
+        {
+          "id": "BT50V",
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
+        },
+        {
+          "id": "BT40V5A",
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -175,15 +333,21 @@
       "img": "../assets/img/catimg/CNCCB.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -193,15 +357,21 @@
       "img": "../assets/img/catimg/CNCL4A.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -211,15 +381,21 @@
       "img": "../assets/img/catimg/CNCTC.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -229,15 +405,21 @@
       "img": "../assets/img/catimg/HSPTC.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -247,15 +429,21 @@
       "img": "../assets/img/catimg/CLVB.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -265,15 +453,21 @@
       "img": "../assets/img/catimg/CPL.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -283,33 +477,21 @@
       "img": "../assets/img/catimg/CNC5AMC.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
-        }
-      ]
-    },
-    {
-      "id": "CNCMC",
-      "name": "CNC Machining Center",
-      "img": "../assets/img/catimg/CNCMC.jpg",
-      "items": [{
-          "id": "BT40V",
-          "name": "BT40 Vertical"
-        },
-        {
-          "id": "BT50V",
-          "name": "BT50 Vertical"
-        },
-        {
-          "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -319,15 +501,21 @@
       "img": "../assets/img/catimg/CNCAL.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -337,15 +525,21 @@
       "img": "../assets/img/catimg/CNCOTM.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -355,15 +549,21 @@
       "img": "../assets/img/catimg/SPCNCL.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -373,15 +573,21 @@
       "img": "../assets/img/catimg/TICNCL.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -391,15 +597,21 @@
       "img": "../assets/img/catimg/GTCNCL.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -409,15 +621,21 @@
       "img": "../assets/img/catimg/TSCNCL.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -427,15 +645,21 @@
       "img": "../assets/img/catimg/CNCPMTF.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -445,15 +669,21 @@
       "img": "../assets/img/catimg/TC.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -463,15 +693,21 @@
       "img": "../assets/img/catimg/GB.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -481,15 +717,21 @@
       "img": "../assets/img/catimg/CNCCDMFP.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -499,15 +741,21 @@
       "img": "../assets/img/catimg/CNCDMC.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -517,15 +765,21 @@
       "img": "../assets/img/catimg/CNCDM.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -535,15 +789,21 @@
       "img": "../assets/img/catimg/CNCTGHM.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -553,15 +813,21 @@
       "img": "../assets/img/catimg/CNCTSD.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -571,15 +837,21 @@
       "img": "../assets/img/catimg/CNCJPD.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -589,15 +861,21 @@
       "img": "../assets/img/catimg/CNCTDM.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -607,15 +885,21 @@
       "img": "../assets/img/catimg/CNCDTM.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -625,15 +909,21 @@
       "img": "../assets/img/catimg/CNCDDC.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -643,15 +933,21 @@
       "img": "../assets/img/catimg/CNCGD.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -661,15 +957,21 @@
       "img": "../assets/img/catimg/CNCMM.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -679,15 +981,21 @@
       "img": "../assets/img/catimg/CMMB.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -697,15 +1005,21 @@
       "img": "../assets/img/catimg/CNCCMM.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -715,15 +1029,21 @@
       "img": "../assets/img/catimg/CNCPMM.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -733,15 +1053,21 @@
       "img": "../assets/img/catimg/CNCVMM.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -751,15 +1077,21 @@
       "img": "../assets/img/catimg/CNCMSM.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -769,15 +1101,21 @@
       "img": "../assets/img/catimg/CP.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -787,15 +1125,21 @@
       "img": "../assets/img/catimg/CNCENM.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -805,15 +1149,21 @@
       "img": "../assets/img/catimg/CNCGMM.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -823,15 +1173,21 @@
       "img": "../assets/img/catimg/CNGM.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -841,15 +1197,21 @@
       "img": "../assets/img/catimg/CNCSG.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -859,15 +1221,21 @@
       "img": "../assets/img/catimg/CNCVG.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -877,15 +1245,21 @@
       "img": "../assets/img/catimg/CNCVT.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -895,15 +1269,21 @@
       "img": "../assets/img/catimg/CNCCIG.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -913,15 +1293,21 @@
       "img": "../assets/img/catimg/CNCCEG.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -931,15 +1317,21 @@
       "img": "../assets/img/catimg/CNCCGM.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -949,15 +1341,21 @@
       "img": "../assets/img/catimg/CNCPG.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -967,15 +1365,21 @@
       "img": "../assets/img/catimg/CNCTCG.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -985,15 +1389,21 @@
       "img": "../assets/img/catimg/CNCGM.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -1003,15 +1413,21 @@
       "img": "../assets/img/catimg/CNCCS.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -1021,15 +1437,21 @@
       "img": "../assets/img/catimg/CNCSGFL.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -1039,15 +1461,21 @@
       "img": "../assets/img/catimg/CNCSGFS.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -1057,15 +1485,21 @@
       "img": "../assets/img/catimg/CNCB.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -1075,15 +1509,21 @@
       "img": "../assets/img/catimg/CNCHB.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -1093,15 +1533,21 @@
       "img": "../assets/img/catimg/CNCVMC.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -1111,15 +1557,21 @@
       "img": "../assets/img/catimg/CNCH.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -1129,15 +1581,21 @@
       "img": "../assets/img/catimg/MCVH.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -1147,15 +1605,21 @@
       "img": "../assets/img/catimg/DCMC.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -1165,15 +1629,21 @@
       "img": "../assets/img/catimg/CNCC.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -1183,15 +1653,21 @@
       "img": "../assets/img/catimg/HSB.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -1201,15 +1677,21 @@
       "img": "../assets/img/catimg/MCPTC.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -1219,15 +1701,21 @@
       "img": "../assets/img/catimg/HCVMC.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -1237,15 +1725,21 @@
       "img": "../assets/img/catimg/GTMC.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -1255,15 +1749,21 @@
       "img": "../assets/img/catimg/HT5F.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -1273,15 +1773,21 @@
       "img": "../assets/img/catimg/CNCDV.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -1291,15 +1797,21 @@
       "img": "../assets/img/catimg/MGP.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -1309,15 +1821,21 @@
       "img": "../assets/img/catimg/5FMCDC.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -1327,15 +1845,21 @@
       "img": "../assets/img/catimg/5FMC.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -1345,15 +1869,21 @@
       "img": "../assets/img/catimg/SWED.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -1363,15 +1893,21 @@
       "img": "../assets/img/catimg/CNCEDM.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -1381,15 +1917,21 @@
       "img": "../assets/img/catimg/CNCWCM.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -1399,15 +1941,21 @@
       "img": "../assets/img/catimg/CNCDED.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -1417,15 +1965,21 @@
       "img": "../assets/img/catimg/CNC5AWC.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -1435,15 +1989,21 @@
       "img": "../assets/img/catimg/ADEDM.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -1453,15 +2013,21 @@
       "img": "../assets/img/catimg/CNCTM.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -1471,15 +2037,21 @@
       "img": "../assets/img/catimg/CNCVM.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -1489,15 +2061,21 @@
       "img": "../assets/img/catimg/CNCAEE.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -1507,15 +2085,21 @@
       "img": "../assets/img/catimg/CNCWC.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -1525,15 +2109,21 @@
       "img": "../assets/img/catimg/CNCSM.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -1543,15 +2133,21 @@
       "img": "../assets/img/catimg/3DT.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -1561,15 +2157,21 @@
       "img": "../assets/img/catimg/UCE.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -1579,15 +2181,21 @@
       "img": "../assets/img/catimg/CMCSWE.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -1597,15 +2205,21 @@
       "img": "../assets/img/catimg/GEM.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -1615,15 +2229,21 @@
       "img": "../assets/img/catimg/CNCGEC.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     },
@@ -1633,15 +2253,21 @@
       "img": "../assets/img/catimg/CNCRDC.jpg",
       "items": [{
           "id": "BT40V",
-          "name": "BT40 Vertical"
+          "name": "BT40 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT50V",
-          "name": "BT50 Vertical"
+          "name": "BT50 Vertical",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         },
         {
           "id": "BT40V5A",
-          "name": "BT40 Vertical 5-A"
+          "name": "BT40 Vertical 5-A",
+          "guide": ["Linear Guide", "Box Way"],
+          "control": ["Fanuc", "HEIDENHAIN", "Mitsubishi"]
         }
       ]
     }

@@ -4,7 +4,7 @@
       Home
     </a>
     <a *ngIf="cateIdCheck == false" [routerLink]="['/']" class="breadcrumb" replaceUrl=true>
-      Search by category
+      Search by category <font style="color:red"> Important! In Progress Website.</font>
     </a>
     <a *ngIf="cateIdCheck == true" [routerLink]="['/ItemView/',cateId,cateName]" class="breadcrumb" replaceUrl=true>
       {{cateName}}

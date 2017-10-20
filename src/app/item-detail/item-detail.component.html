@@ -26,7 +26,7 @@
               <label for="{{control}}">{{control}}</label>
             </div>
           </form>
-          <div class="col l6 m12 s12"> 
+          <div class="col l6 m12 s12">
             <input type="checkbox" class="filled-in" id="allControl" (click)="checkAll($event,'controlForm')" />
             <label for="allControl">ALL</label>
           </div>
@@ -40,7 +40,19 @@
             </div>
             <div class="col l6 m6 s6">
               <input type="checkbox" class="filled-in" name="langCheck" value="JP" id="lang-jp" (change)="onChange('JP', $event.target.checked, 'languageForm')" />
-              <label style="margin-left: 5%" for="lang-jp">JP</label>
+              <label for="lang-jp">JP</label>
+            </div>
+            <div class="col l6 m6 s6">
+              <input type="checkbox" class="filled-in" name="langCheck" value="CH" id="lang-ch" (change)="onChange('CH', $event.target.checked, 'languageForm')" />
+              <label for="lang-ch">CH</label>
+            </div>
+            <div class="col l6 m6 s6">
+              <input type="checkbox" class="filled-in" name="langCheck" value="KR" id="lang-kr" (change)="onChange('KR', $event.target.checked, 'languageForm')" />
+              <label for="lang-kr">KR</label>
+            </div>
+            <div class="col l6 m6 s6">
+              <input type="checkbox" class="filled-in" name="langCheck" value="RU" id="lang-ru" (change)="onChange('RU', $event.target.checked, 'languageForm')" />
+              <label for="lang-ru">RU</label>
             </div>
             <div class="col l6 m6 s6">
               <input type="checkbox" class="filled-in" name="langCheck" value="TH" id="lang-th" (change)="onChange('TH', $event.target.checked, 'languageForm')" />
@@ -48,7 +60,7 @@
             </div>
             <div class="col l6 m6 s6">
               <input type="checkbox" class="filled-in" name="langCheck" value="VN" id="lang-vn" (change)="onChange('VN', $event.target.checked, 'languageForm')" />
-              <label style="margin-left: 5%" for="lang-vn">VN</label>
+              <label for="lang-vn">VN</label>
             </div>
           </form>
           <div class="col l6 m12 s12">
@@ -68,8 +80,9 @@
       <a id="supnameAtag" [routerLink]="['/ItemView/',cateId,cateName,'itemdetail',itemId,itemName,'supdetail',sup.id,sup.name]" replaceUrl=true>
         {{sup.name}}
       </a>
-      <a style="color:#4db6ac" *ngIf="sup.sugg == 1" href="#" materialize="tooltip" class="tooltipped right" data-position="bottom" data-delay="30" data-tooltip="Suggest!">
-          <i class="material-icons">grade</i>
+      <span class="badge" data-badge-caption="Viewer">{{sup.sugg}}</span>
+      <a style="color:#4db6ac" *ngIf="sup.sugg > 0" href="#" materialize="tooltip" class="tooltipped right" data-position="left" data-delay="30" data-tooltip="Suggest!">
+        <i *ngIf="sup.sugg > 10" class="material-icons">grade</i>
       </a>
     </li>
   </ul>

@@ -92,6 +92,9 @@ export class FilterPipe implements PipeTransform {
                     } else if (languageCheck == 1 && (guide.guide[0] == undefined && control.control[0] == undefined)) {
                       arr.push(arrData[i]);
                     }
+                    languageCheck = 0;
+                    controlCheck = 0;
+                    languageCheck = 0;
                   }
                 }
               }

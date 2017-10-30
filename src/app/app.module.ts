@@ -20,6 +20,7 @@ import { FilterPipe } from './filter.pipe';
 import { SupplierDetailComponent } from './supplier-detail/supplier-detail.component';
 import { PreloaderComponent } from './preloader/preloader.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,

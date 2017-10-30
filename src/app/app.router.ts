@@ -4,7 +4,6 @@ import { BreadcrumbsComponent } from "./breadcrumbs/breadcrumbs.component";
 import { ItemViewComponent } from "./item-view/item-view.component";
 import { ItemDetailComponent } from "./item-detail/item-detail.component";
 import { SupplierDetailComponent } from "./supplier-detail/supplier-detail.component";
-
 const APP_ROUTES: Routes = [
   {
     path: '',

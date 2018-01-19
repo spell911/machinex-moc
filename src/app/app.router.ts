@@ -4,11 +4,17 @@ import { BreadcrumbsComponent } from "./breadcrumbs/breadcrumbs.component";
 import { ItemViewComponent } from "./item-view/item-view.component";
 import { ItemDetailComponent } from "./item-detail/item-detail.component";
 import { SupplierDetailComponent } from "./supplier-detail/supplier-detail.component";
+import { SupplierViewComponent } from "./supplier-view/supplier-view.component";
+
 const APP_ROUTES: Routes = [
   {
     path: '',
     component: CategoriesViewComponent,
     data: { breadcrumb: 'Home' }
+  },
+  {
+    path: 'SupplierView',
+    component: SupplierViewComponent
   },
   {
     path: 'ItemView/:cateId/:cateName',
@@ -20,6 +26,10 @@ const APP_ROUTES: Routes = [
   },
   {
     path: 'ItemView/:cateId/:cateName/itemdetail/:itemId/:itemName/supdetail/:supId/:supName',
+    component: SupplierDetailComponent
+  },
+  {
+    path: 'SupplierView/:supdetail/:supId/:supName',
     component: SupplierDetailComponent
   }
 ];

@@ -19,6 +19,7 @@ import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 import { FilterPipe } from './filter.pipe';
 import { SupplierDetailComponent } from './supplier-detail/supplier-detail.component';
 import { PreloaderComponent } from './preloader/preloader.component';
+import { SupplierViewComponent } from './supplier-view/supplier-view.component';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { PreloaderComponent } from './preloader/preloader.component';
     ItemDetailComponent,
     FilterPipe,
     SupplierDetailComponent,
-    PreloaderComponent
+    PreloaderComponent,
+    SupplierViewComponent
   ],
   imports: [
     BrowserModule,

@@ -1,9 +1,12 @@
 <nav class="clean col l8 m12 s12">
   <div class="nav-wrapper" id="div2">
-    <a *ngIf="cateIdCheck == true" [routerLink]="['/']" class="breadcrumb" replaceUrl=true>
-      Home
+    <a *ngIf="cateIdCheck == true && supIdCheck == false" [routerLink]="['/']" class="breadcrumb" replaceUrl=true>
+      Categories
     </a>
-    <a *ngIf="cateIdCheck == false" [routerLink]="['/']" class="breadcrumb" replaceUrl=true>
+    <a *ngIf="cateIdCheck == false && supIdCheck == true" [routerLink]="['/SupplierView']" class="breadcrumb" replaceUrl=true>
+      Suppliers
+    </a>
+    <a *ngIf="cateIdCheck == false && supIdCheck == false" [routerLink]="['/']" class="breadcrumb" replaceUrl=true>
       Search by category <font style="color:red"> Important! In Progress Website.</font>
     </a>
     <a *ngIf="cateIdCheck == true" [routerLink]="['/ItemView/',cateId,cateName]" class="breadcrumb" replaceUrl=true>
@@ -13,6 +16,9 @@
       {{itemName}}
     </a>
     <a *ngIf="itemIdCheck == true && cateIdCheck == true && supIdCheck == true" [routerLink]="['/ItemView/',cateId,cateName,'itemdetail',itemId,itemName,'supdetail',supId]" class="breadcrumb" replaceUrl=true>
+      {{supName}}
+    </a>
+    <a *ngIf="cateIdCheck == false && supIdCheck == true" [routerLink]="['/SupplierView/','supdetail',supId]" class="breadcrumb" replaceUrl=true>
       {{supName}}
     </a>
   </div>

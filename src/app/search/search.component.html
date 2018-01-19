@@ -1,6 +1,6 @@
 <div class="input-field col s12 m12 l4">
   <div class="col s10 m10 l10">
-    <ng2-completer id="searchOnLage" placeholder="Let me search it!" (class)="completer-dropdown" [(ngModel)]="searchStr" [datasource]="dataService" [minSearchLength]="3" [textSearching]="'Please wait...'"></ng2-completer>
+    <ng2-completer id="searchOnLage" placeholder="Search" (class)="completer-dropdown" [(ngModel)]="searchStr" [datasource]="dataService" [minSearchLength]="3" [textSearching]="'Please wait...'"></ng2-completer>
   </div>
   <div class="col s2 m2 l2">
     <a (click)="searchData(searchStr)" class="btn-floating waves-effect waves-light teal" style="margin-top: 6%"><i class="material-icons">search</i></a>

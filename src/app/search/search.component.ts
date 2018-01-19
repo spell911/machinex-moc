@@ -23,19 +23,30 @@ export class SearchComponent implements OnInit {
   protected searchStr: string;
   protected captain: string;
   protected dataService: CompleterData;
+  protected suppliersData: CompleterData;
   categoriesData: any;
   constructor(private dataservice: DataService, private completerService: CompleterService) {
+
     this.dataservice.fetchSearchData().subscribe(
       (data) => {
         this.dataService = completerService.local(this.filterData(data), 'name', 'name');
       }
     );
+
     this.dataservice.fetchCategoriesData().subscribe(
       (data) => {
         this.categoriesData = data;
       }
     );
+
+    this.dataservice.fetchSupplierData().subscribe(
+      (data) => {
+        this.suppliersData = completerService.local(this.filterData(data), 'name', 'name');
+      }
+    );
+
   }
+  
   ngOnInit() {
 
   }
@@ -60,8 +71,8 @@ export class SearchComponent implements OnInit {
   }
 
   searchData(val: string) {
-    var cateId, cateName, itemId, itemName;
-    var i, j;
+    var cateId, cateName, itemId, itemName, supname, supid;
+    var i, j, k;
     var splitName = val.split('- ')[1];
     // console.log(splitName);
     for (i in this.categoriesData) {
@@ -69,6 +80,7 @@ export class SearchComponent implements OnInit {
       cateName = this.categoriesData[i].name;
       if (val.indexOf(cateName) > -1) {
         if (splitName === '' || splitName === undefined) {
+          console.log(cateName);
           window.location.href = 'ItemView/' + cateId + '/' + cateName;
         } else {
           for (j in this.categoriesData[i].items) {
@@ -82,6 +94,16 @@ export class SearchComponent implements OnInit {
               window.location.href = 'ItemView/' + cateId + '/' + cateName + '/itemdetail/' + itemId + '/' + itemName;
             }
           }
+        }
+      }
+    }
+    for (k in this.suppliersData) {
+      supid = this.suppliersData[k].id;
+      supname = this.suppliersData[k].name;
+      if (val.indexOf(supname) > -1) {
+        if (splitName === '' || splitName === undefined) {
+          console.log(supname);
+          window.location.href = 'SupllierView/' + supid + '/' + supname;
         }
       }
     }

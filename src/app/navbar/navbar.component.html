@@ -17,14 +17,14 @@
       <a href="#" data-activates="mobile-demo" class="button-collapse" data-sidenav="left" data-menuwidth="500" data-closeonclick="false"><i class="material-icons">menu</i></a>
       <ul class="hide-on-med-and-down right">
         <li><a [routerLink]="['/']" replaceUrl=true>Categories</a></li>
-        <li><a href="#">Suppliers</a></li>
+        <li><a [routerLink]="['/SupplierView']">Suppliers</a></li>
         <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Language Web<i class="material-icons right">arrow_drop_down</i></a></li>
       </ul>
-      <ul class="side-nav" id="mobile-demo">
-        <li><a href="#">Categories</a></li>
-        <li><a href="#">Suppliers</a></li>
+      <!-- <ul class="side-nav" id="mobile-demo">
+        <li><a [routerLink]="['/']" replaceUrl=true>Categories</a></li>
+        <li><a [routerLink]="['/SupplierView']" replaceUrl=true>Suppliers</a></li>
         <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Language Web<i class="material-icons right">arrow_drop_down</i></a></li>
-      </ul>
+      </ul> -->
     </div>
   </div>
   <app-preloader></app-preloader>
